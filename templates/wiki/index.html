@@ -1,0 +1,26 @@
+    
+       {% extends 'wiki/base.html' %}
+{% block title %}list of all pages{% endblock %}
+
+
+{% block body_block %}
+
+
+        <h1>List of pages</h1>
+
+
+        {% if defaultpages %}
+            <table>
+                {% for defaultpage in defaultpages %}
+                <tr>
+                <td><a href="/wiki/page/{{defaultpage.slug}}">{{ defaultpage.title }}</a></td>
+
+                </tr>
+
+                {% endfor %}
+            
+            </table>
+        {% else %}
+            <strong>There are no pages present.</strong>
+        {% endif %}
+{% endblock %}

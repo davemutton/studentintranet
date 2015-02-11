@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page</title>
+    </head>
+
+    <body>
+       <h1>Page creation / editing</h1>
+
+<form action="{% url "page-new" %}" method="POST">
+  {% csrf_token %}
+  <ul>
+    {{ form.as_ul}}
+  </ul>
+  <input id="save_page" type="submit" value="Save" />
+</form>
+
+    </body>
+</html>

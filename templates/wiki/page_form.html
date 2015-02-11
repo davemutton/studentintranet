@@ -1,0 +1,16 @@
+{% extends 'wiki/base.html' %}
+{% block title %}Create page{% endblock %}
+
+    {% block extra-head %}  {{ form.media }}{% endblock %}
+
+{% block body_block %}
+
+
+  <h1>Create new page</h1>
+          <h2>{{parent_page_id}}</h2>
+<form action='' method='post'>{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Submit' />
+</form>
+
+{% endblock %}

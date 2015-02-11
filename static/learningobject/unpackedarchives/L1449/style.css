@@ -1,0 +1,33 @@
+html, body
+  {
+    height: 100%;
+  }
+
+div
+  {
+    height: 95%;
+  }
+  
+#divcenter
+  {
+    text-align: center;
+  }
+
+#copyright
+  {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+  }
+  
+#conditions
+  {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+  }
+  
+p
+  {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10pt;
+  }
+

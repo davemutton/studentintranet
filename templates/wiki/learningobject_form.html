@@ -1,0 +1,15 @@
+{% extends 'wiki/base.html' %}
+{% block title %}Add learningobject{% endblock %}
+    {% block extra-head %}
+  {{ form.media }}
+    <title>test</title>
+
+{% endblock %}
+{% block body_block %}
+
+          <h2>{{parent_page_id}}</h2>
+<form action='' enctype="multipart/form-data" method='post'>{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Submit' />
+</form>
+{% endblock %}
