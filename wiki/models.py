@@ -30,7 +30,7 @@ class SubjectPage(DefaultPage):
 	pass
 
 class LearningObject(DefaultPage):
-	archivefile = models.FileField(upload_to='static/learningobject/archivefiles/%Y/%m/%d')
+	archivefile = models.FileField(upload_to='/static/learningobject/archivefiles/%Y/%m/%d')
 	indexpath = models.CharField(max_length=254,editable=False)
 	def unpackarchive(self):
 		archive = self.archivefile

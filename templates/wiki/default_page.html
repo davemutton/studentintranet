@@ -9,7 +9,7 @@
         {{default_page.page.body|safe}}
         <p>
           {%elif default_page.learningobject.indexpath %}
-        <iframe scrolling="no" src="http://192.168.1.150/{{default_page.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
+        <iframe scrolling="no" src="/{{default_page.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
         </iframe>
           {% endif  %}
 

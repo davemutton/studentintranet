@@ -48,12 +48,16 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #Third party apps
-    'froala_editor',
-    'gunicorn',
+    #Third party apps installed with pip
 
-    #local apps
+    'gunicorn',
+    'taggit',
+
+    #local apps created or downloaded with git clone.
     'wiki',
+    'mediamanager',
+    'froala_editor',
+    'taggit_autosuggest'
 
 )
 

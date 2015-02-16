@@ -1,4 +1,3 @@
-from django_summernote.widgets import SummernoteWidget
 from froala_editor.widgets import FroalaEditor
 from wiki.models import LearningObject
 from django import forms
