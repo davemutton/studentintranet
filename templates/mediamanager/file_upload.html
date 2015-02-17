@@ -1,12 +1,21 @@
 {% extends 'base.html' %}
 {% block title %}Create a learningobject resource{% endblock %}
-{% block body_block %}
-
 {% block extra-head %}
+
+
 <link href="/static/jquery-autosuggest/css/autoSuggest-upshot.css" type="text/css" media="all" rel="stylesheet" />
 <script type="text/javascript" src="/static/jquery-autosuggest/js/jquery.autoSuggest.minified.js"> </script>
+
 {% endblock %}
-       <h1>Create a File resource</h1>
+
+{% block body_block %}
+
+
+       <h1>Create a learningobject resource</h1>
+
+
+
+
 
 <form action="{% url "fileresource-new" %}" method="POST">
   {% csrf_token %}
