@@ -17,7 +17,7 @@ class createPage(CreateView):
 		
 class createLearningobject(CreateView):
 	model = LearningObject
-	template_name = 'wiki/edit_learningobject.html'
+	template_name = 'wiki/learningobject_form.html'
 	def get_success_url(self):
 		return reverse('index')
 

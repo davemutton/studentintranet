@@ -47,7 +47,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('created_date', models.DateTimeField(auto_now_add=True)),
-                ('attachedfiles', models.FileField(upload_to=b'/static/attachedfiles/%Y/%m/%d')),
+                ('attachedfiles', models.FileField(upload_to=b'static/attachedfiles/%Y/%m/%d')),
             ],
             options={
             },
@@ -61,6 +61,7 @@ class Migration(migrations.Migration):
                 ('created_date', models.DateTimeField(auto_now_add=True)),
                 ('edited_date', models.DateTimeField(auto_now=True)),
                 ('slug', models.SlugField(max_length=100, editable=False, blank=True)),
+                ('score', models.DecimalField(default=1, max_digits=20, decimal_places=2, blank=True)),
             ],
             options={
             },
@@ -79,8 +80,9 @@ class Migration(migrations.Migration):
             name='LearningObject',
             fields=[
                 ('defaultresource_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='mediamanager.DefaultResource')),
-                ('archivefile', models.FileField(upload_to=b'/static/learningobject/archivefiles/%Y/%m/%d')),
-                ('indexpath', models.CharField(max_length=254, editable=False)),
+                ('archivefile', models.FileField(upload_to=b'static/learningobject/archivefiles/%Y/%m/%d')),
+                ('indexpath', models.CharField(max_length=254, editable=False, blank=True)),
+                ('description', models.TextField(blank=True)),
             ],
             options={
             },
@@ -89,31 +91,31 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='defaultresource',
             name='agebracket',
-            field=models.ManyToManyField(to='mediamanager.AgeBracket'),
+            field=models.ManyToManyField(to='mediamanager.AgeBracket', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='level',
-            field=models.ManyToManyField(to='mediamanager.AssoeLevel'),
+            field=models.ManyToManyField(to='mediamanager.AssoeLevel', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='pathway',
-            field=models.ManyToManyField(to='mediamanager.AssoePathway'),
+            field=models.ManyToManyField(to='mediamanager.AssoePathway', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='tags',
-            field=taggit_autosuggest.managers.TaggableManager(to='taggit.Tag', through='taggit.TaggedItem', help_text='A comma-separated list of tags.', verbose_name='Tags'),
+            field=taggit_autosuggest.managers.TaggableManager(to='taggit.Tag', through='taggit.TaggedItem', blank=True, help_text='A comma-separated list of tags.', verbose_name='Tags'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='attachedfiles',
             name='fileresource',
-            field=models.ForeignKey(to='mediamanager.FileResource'),
+            field=models.ForeignKey(blank=True, to='mediamanager.FileResource', null=True),
             preserve_default=True,
         ),
     ]

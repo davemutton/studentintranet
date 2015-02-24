@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}{{default_resource.title}}{% endblock %}
+
+
+{% block body_block %}
+       <h1>{{default_resource.title}}</h1>
+       {% if default_resource.page.body %}
+       <p>
+        {{default_resource.page.body|safe}}
+        <p>
+          {%elif default_resource.learningobject.indexpath %}
+        <iframe scrolling="no" src="/{{default_resource.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
+        </iframe>
+          {% endif  %}
+
+
+<br />
+
+
+<br />
+{% endblock %}

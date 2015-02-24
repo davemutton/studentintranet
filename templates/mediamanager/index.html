@@ -1,0 +1,27 @@
+    
+       {% extends 'base.html' %}
+{% block title %}list of all Resources{% endblock %}
+
+
+{% block body_block %}
+
+
+        <h1>List of pages</h1>
+
+
+        {% if default_resource_list %}
+            <table>
+                {% for resource in default_resource_list %}
+                <tr>
+                <td>{{ resource.score }}</td><td><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></td><td>
+                {{ resource.learningobject.description }}</td>
+
+                </tr>
+
+                {% endfor %}
+            
+            </table>
+        {% else %}
+            <strong>There are no resources present.</strong>
+        {% endif %}
+{% endblock %}

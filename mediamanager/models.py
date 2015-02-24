@@ -47,33 +47,36 @@ class DefaultResource(models.Model):
 	pathway= models.ManyToManyField(AssoePathway)
 	tags = TaggableManager()
 	slug = models.SlugField(max_length=100,editable=False,blank=True)
+	score = models.DecimalField(max_digits=20,decimal_places=2,default=1,blank=True)
 
 	def __unicode__ (self): 
 		return self.title
 	def save(self, *args, **kwargs):
 		if not self.id:
 			self.slug = slugify(self.title)
-		super(DefaultPage, self).save(*args, **kwargs)
+		super(DefaultResource, self).save(*args, **kwargs)
 
 class FileResource(DefaultResource):
 	#
 	#This class creates a object to store collections attached file objects
 	#
-	pass
+	def __unicode__ (self): 
+		return self.title
 class AttachedFiles(models.Model):
 	#
 	#This class creates stores attached files so they can be attached to other objects
 	#
 	created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
-	attachedfiles = models.FileField(upload_to='/static/attachedfiles/%Y/%m/%d')
-	fileresource =models.ForeignKey(FileResource) 
+	attachedfiles = models.FileField(upload_to='static/attachedfiles/%Y/%m/%d')
+	fileresource =models.ForeignKey(FileResource,blank=True, null=True) 
 	def __unicode__ (self): 
 		return self.attachedfiles
 
 
 class LearningObject(DefaultResource):
-	archivefile = models.FileField(upload_to='/static/learningobject/archivefiles/%Y/%m/%d')
-	indexpath = models.CharField(max_length=254,editable=False)
+	archivefile = models.FileField(upload_to='static/learningobject/archivefiles/%Y/%m/%d')
+	indexpath = models.CharField(max_length=254,editable=False,blank=True)
+	description = models.TextField(blank=True)
 	def unpackarchive(self):
 		archive = self.archivefile
 		filename = os.path.basename(str(archive))

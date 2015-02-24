@@ -9,13 +9,14 @@
     <body>
  
         <!-- IMPORTANT enctype attribute! -->
-        <form class="dropzone" action="test" method="post" enctype="multipart/form-data">
+        <form class="dropzone" action="/mediamanager/test/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-        </form>
-        <button id="submit-all">
+        
+         <button id="submit-all">
             Submit all files
         </button>
- 
+        </form>
+
         <script src="{% static 'dropzone/js/dropzone.js' %}"></script>
         
 
@@ -39,6 +40,7 @@
                     // files are dropped here:
                     this.on("addedfile", function() {
                         // Show submit button here and/or inform user to click it.
+                        console.log("blah")
                     });
  
                 }
