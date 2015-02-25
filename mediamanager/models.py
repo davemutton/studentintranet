@@ -47,7 +47,16 @@ class DefaultResource(models.Model):
 	pathway= models.ManyToManyField(AssoePathway)
 	tags = TaggableManager()
 	slug = models.SlugField(max_length=100,editable=False,blank=True)
-	score = models.DecimalField(max_digits=20,decimal_places=2,default=1,blank=True)
+	upvotes = models.DecimalField(max_digits=20,decimal_places=2,default=1,blank=True)
+	downvotes = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
+	views = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
+	
+	def calculate_score(self):
+		return "it is working"
+		#print type(self.upvotes)
+		#score = float(self.upvotes) - float(self.downvotes)
+		#score = score + (float(self.views) / float(100))
+		#return score
 
 	def __unicode__ (self): 
 		return self.title

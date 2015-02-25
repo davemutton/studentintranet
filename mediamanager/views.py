@@ -38,7 +38,7 @@ class createFileResource(CreateView):
 
 def index(request):
 	context = RequestContext(request)
-	default_resource_list = DefaultResource.objects.order_by('-score')
+	default_resource_list = DefaultResource.objects.order_by('-views')
 	context_dict = {'default_resource_list':default_resource_list}
 	return render_to_response('mediamanager/index.html', context_dict, context)
 
@@ -51,9 +51,9 @@ def defaultresourceview(request, default_resource_slug):
 	try:
 		default_resource = DefaultResource.objects.get(slug=default_resource_slug)
 
-		default_resource.score = default_resource.score + 1
+		default_resource.views = default_resource.views + 1
 		default_resource.save()
-		print default_resource.score
+		print default_resource.views
 		context_dict['default_resource'] = default_resource
 	except:
 		pass

@@ -10,11 +10,13 @@
 
 
         {% if default_resource_list %}
-            <table>
+            <table class="table table-condensed">
                 {% for resource in default_resource_list %}
                 <tr>
-                <td>{{ resource.score }}</td><td><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></td><td>
-                {{ resource.learningobject.description }}</td>
+                <td></td>
+
+                <td><h6><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></h6>
+                <p>{{ resource.learningobject.description }}</p></td>
 
                 </tr>
 
