@@ -2,24 +2,37 @@
        {% extends 'base.html' %}
 {% block title %}list of all Resources{% endblock %}
 
-
 {% block body_block %}
 
 
-        <h1>List of pages</h1>
+        <h1>List of resources</h1>
 
 
         {% if default_resource_list %}
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                 {% for resource in default_resource_list %}
                 <tr>
-                <td></td>
+                <td class="span1" style="text-align: center;vertical-align:middle;">
+                    <div id="upvote{{resource.pk}}">Upvote</div>
 
+                    <div id="score{{resource.pk}}">{{resource.calculate_score}}</div>
+                    <div id="downvote{{resource.pk}}">Downvote</div></td>
                 <td><h6><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></h6>
                 <p>{{ resource.learningobject.description }}</p></td>
 
                 </tr>
-
+                <script>
+                var current_score{{resource.pk}} = $(score{{resource.pk}}).text()
+        $( "#downvote{{resource.pk}}" ).click(function() {
+       $(score{{resource.pk}}).html(parseFloat(current_score{{resource.pk}})-1);
+        $.get( "/{{resource.pk}}/rate/-1" );
+        
+    });
+        $( "#upvote{{resource.pk}}" ).click(function() {
+        $.get( "/{{resource.pk}}/rate/1" );
+        $(score{{resource.pk}}).html(parseFloat(current_score{{resource.pk}})+1);
+        });
+        </script>
                 {% endfor %}
             
             </table>

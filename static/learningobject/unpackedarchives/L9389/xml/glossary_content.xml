@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><gWords>
+<!--
+
+ NOTE TO DEVELOPERS:
+ 
+ 	- All attributes are required, except the graphic attribute.
+	- While it seems there is quite a few superfluous and repititive attributes that carry the same values, it was found while integrating the glossary tool 
+	  into various LO's that it was necessary to break it down to this level to allow for more flexibility while integrating the glossary words.
+ 
+ Explantion of attributes:
+ 
+ id 		- The id is used to match glossary words (<g> tag encapsulated words) in the learning object content xml
+ list_txt	- This is the display text that appears in the left hand side list within the full glossary view (after having activated a letter a-z)
+ list_sort	- The first letter of the list_sort attribute is used by the full glossary view to decide which letter buttons will be active.
+ 		  The entire value of the list_sort attribute is used to decide which words will appear in the list and also to sort the list alphabetically.
+ def_title	- This is the definition title that appears in both the single and full glossary views depending on which glossary word is selected
+ hear_txt	- This is the display text when the hear sound button is activated for both the single and full glossary views.
+ plural		- The plural attribute allows you to set whether or not plural variations for this word are used for a particular word, the two accepted values are 0=false or 1=true.
+ mp3		- The path to the audio file for each glossary word.
+ graphic	- Optional: The path to the graphic swf/jpg/png that is displayed for each glossary word, if left blank (graphic="") the See picture button will be set inactive.
+ (node value)	- The body text that is encapsulated by the <word> tag is the display definition text for each glossary word.
+
+-->
+<word id="affect" list_txt="affect" list_sort="affect" def_title="to affect (v)" hear_txt="affect" plural="n" mp3="mp3/def_1_a.mp3" graphic=""><![CDATA[To have an effect on something; <br>to change it.]]></word>
+	<word id="aluminium" list_txt="aluminium" list_sort="aluminium" def_title="aluminium (n)" hear_txt="aluminium" plural="n" mp3="mp3/def_2_a.mp3" graphic="swf/aluminium.swf"><![CDATA[A chemical element which is also a metal.]]></word>
+	<word id="apart" list_txt="apart" list_sort="apart" def_title="apart (adj)" hear_txt="apart" plural="n" mp3="mp3/def_18_a.mp3" graphic=""><![CDATA[Away from each other; separated.]]></word>
+	<word id="argon" list_txt="argon" list_sort="argon" def_title="argon (n)" hear_txt="argon" plural="n" mp3="mp3/def_19_a.mp3" graphic=""><![CDATA[An unreactive, colourless gas found <br>in the air.]]></word>
+	<word id="arranged" list_txt="arrange" list_sort="arrange" def_title="to arrange (v)" hear_txt="arrange" plural="n" mp3="mp3/def_20_a.mp3" graphic=""><![CDATA[To put things in order, in position.]]></word>
+	<word id="arrangements" list_txt="arrangement" list_sort="arrangement" def_title="arrangement (n)" hear_txt="arrangement" plural="n" mp3="mp3/def_21_a.mp3" graphic=""><![CDATA[Pattern made by things that are set out in a special way.]]></word>
+	<word id="classify" list_txt="classify" list_sort="classify" def_title="to classify (v)" hear_txt="classify" plural="n" mp3="mp3/def_3_a.mp3" graphic="swf/classify.swf"><![CDATA[To put things with similar features <br>into groups.]]></word>
+	<word id="container" list_txt="container" list_sort="container" def_title="container (n)" hear_txt="container" plural="n" mp3="mp3/def_4_a.mp3" graphic=""><![CDATA[Something that can hold things inside it.]]></word>
+	
+	<word id="discovered" list_txt="discover" list_sort="discover" def_title="to discover (v)" hear_txt="discover" plural="n" mp3="mp3/def_5_a.mp3" graphic=""><![CDATA[To find new information about something.]]></word>
+	<word id="electron microscope" list_txt="electron microscope" list_sort="electron microscope" def_title="electron microscope (n)" hear_txt="electron microscope" plural="n" mp3="mp3/def_6_a.mp3" graphic=""><![CDATA[A powerful microscope that can magnify many more times than a normal microscope.]]></word>
+	<word id="fact sheet" list_txt="fact sheet" list_sort="fact sheet" def_title="fact sheet (n)" hear_txt="fact sheet" plural="n" mp3="mp3/def_22_a.mp3" graphic=""><![CDATA[A list of information about something.]]></word>	
+	<word id="findings" list_txt="findings" list_sort="findings" def_title="findings (n)" hear_txt="findings" plural="n" mp3="mp3/def_7_a.mp3" graphic=""><![CDATA[Information gained from research.]]></word>
+	<word id="fixed" list_txt="fixed" list_sort="fixed" def_title="fixed (adj)" hear_txt="fixed" plural="n" mp3="mp3/def_23_a.mp3" graphic=""><![CDATA[Not moving.]]></word>
+	<word id="held in position" list_txt="hold in position" list_sort="hold in position" def_title="to hold in position" hear_txt="hold in position" plural="n" mp3="mp3/def_24_a.mp3" graphic=""><![CDATA[To stop something from moving.]]></word>
+	<word id="investigating" list_txt="investigate" list_sort="investigate" def_title="to investigate (v)" hear_txt="investigate" plural="n" mp3="mp3/def_8_a2.mp3" graphic=""><![CDATA[To examine something or someone so you can make a discovery.<br><br>investigating, <i>present participle</i>]]></word>
+	
+	<word id="investigations" list_txt="investigation" list_sort="investigation" def_title="investigation (n)" hear_txt="investigation" plural="n" mp3="mp3/def_9_a.mp3" graphic=""><![CDATA[An examination of something or someone that leads to a discovery.]]></word>
+	<word id="kerosene" list_txt="kerosene" list_sort="kerosene" def_title="kerosene (n)" hear_txt="kerosene" plural="n" mp3="mp3/def_10_a.mp3" graphic=""><![CDATA[A thin oil used as a fuel and <br>a cleaning agent.]]></word>
+	<word id="magnification" list_txt="magnification" list_sort="magnification" def_title="magnification (n)" hear_txt="magnification" plural="n" mp3="mp3/def_11_a.mp3" graphic="swf/magnification.swf"><![CDATA[Something that appears larger, usually with a special type of lens.]]></word>
+	
+	<word id="magnify" list_txt="magnify" list_sort="magnify" def_title="to magnify (v)" hear_txt="magnify" plural="n" mp3="mp3/def_12_a.mp3" graphic="swf/magnification.swf"><![CDATA[To make something appear bigger, usually with a special type of lens.]]></word>
+	<word id="magnifying tool" list_txt="magnifying tool" list_sort="magnifying tool" def_title="magnifying tool (n)" hear_txt="magnifying tool" plural="n" mp3="mp3/def_13_a.mp3" graphic="swf/magnification.swf"><![CDATA[An object with a special type of lens to make something look bigger.]]></word>
+	<word id="matter" list_txt="matter" list_sort="matter" def_title="matter (n)" hear_txt="matter" plural="n" mp3="mp3/def_17_a.mp3" graphic=""><![CDATA[Anything that takes up space.]]></word>
+	<word id="motion" list_txt="motion" list_sort="motion" def_title="motion (n)" hear_txt="matter" plural="n" mp3="mp3/def_25_a.mp3" graphic=""><![CDATA[Movement.]]></word>
+	<word id="properties" list_txt="property" list_sort="property" def_title="property (n)" hear_txt="property" plural="n" mp3="mp3/def_26_a.mp3" graphic=""><![CDATA[Feature of a substance that can be used to describe it.]]></word>
+	<word id="reduce" list_txt="reduce" list_sort="reduce" def_title="to reduce (v)" hear_txt="reduce" plural="n" mp3="mp3/def_16_a.mp3" graphic="swf/reduce.swf"><![CDATA[To make less; to decrease.]]></word>
+	<word id="regular arrangement" list_txt="regular arrangement" list_sort="regular arrangement" def_title="regular arrangement (n)" hear_txt="regular arrangement" plural="n" mp3="mp3/def_29_a.mp3" graphic=""><![CDATA[A pattern made by things that repeat at a uniform spacing.]]></word>
+	
+	<word id="samples" list_txt="sample" list_sort="sample" def_title="sample (n)" hear_txt="sample" plural="n" mp3="mp3/def_14_a.mp3" graphic="swf/sample.swf"><![CDATA[People or objects chosen to represent others from the same group.]]></word>
+	<word id="spreading out" list_txt="spread out" list_sort="spread out" def_title="to spread out (phrasal verb)" hear_txt="spread out" plural="n" mp3="mp3/def_27_a.mp3" graphic="swf/spread_out.swf"><![CDATA[To cover an area; to extend.]]></word>
+	<word id="substance" list_txt="substance" list_sort="substance" def_title="substance (n)" hear_txt="substance" plural="n" mp3="mp3/def_15_a.mp3" graphic=""><![CDATA[A type of matter or material.]]></word>
+	<word id="vibrating" list_txt="vibrate" list_sort="vibrate" def_title="to vibrate (v)" hear_txt="vibrate" plural="n" mp3="mp3/def_28_a.mp3" graphic=""><![CDATA[To move or shake very quickly and repeatedly.]]></word>
+	
+</gWords>

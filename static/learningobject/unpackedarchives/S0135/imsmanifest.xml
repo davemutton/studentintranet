@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cp:manifest xmlns:lom="http://ltsc.ieee.org/xsd/LOM" identifier="s64420d93-aee0-4c2a-ab36-db77f12aab63" xmlns:cp="http://www.imsglobal.org/xsd/imscp_v1p1">
+  <cp:metadata>
+    <cp:schema>IMS Content</cp:schema>
+    <cp:schemaversion>1.1.4</cp:schemaversion>
+    <lom:lom>
+      <lom:general>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+          <lom:entry>S0135</lom:entry>
+        </lom:identifier>
+        <lom:title>
+          <lom:string language="en">Number chart</lom:string>
+        </lom:title>
+        <lom:keyword>
+          <lom:string language="en">Early years</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Reception</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Counting</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Mathematics</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Multiplication</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Number patterns</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Numbers</lom:string>
+        </lom:keyword>
+        <lom:aggregationLevel>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>2</lom:value>
+        </lom:aggregationLevel>
+        <lom:language>en</lom:language>
+        <lom:description>
+          <lom:string language="en">A visual numeracy tool representing numbers 1-100. Students select a number and find all the numerals within numbers 1-100. They can use the colour tool to create number patterns.  Students can look at groups of numbers and multiplication. These can be printed.</lom:string>
+        </lom:description>
+      </lom:general>
+      <lom:lifeCycle>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>MARC Relator</lom:source>
+            <lom:value>Copyright holder</lom:value>
+          </lom:role>
+          <lom:entity>BEGIN:VCARD
+ORG:Department of Education and Children's Services\, South Australia
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>http://id.loc.gov/vocabulary/relators/dtm</lom:source>
+            <lom:value>Data manager</lom:value>
+          </lom:role>
+          <lom:date>
+            <lom:dateTime>2010-03-25</lom:dateTime>
+          </lom:date>
+          <lom:entity>BEGIN:VCARD
+REV:2014-04-29T13:38:56.0+10:00
+ORG:Education Services Australia
+N:;;;;
+FN:Education Services Australia
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:version>
+          <lom:string>2.0</lom:string>
+        </lom:version>
+        <lom:status>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>final</lom:value>
+        </lom:status>
+      </lom:lifeCycle>
+      <lom:metaMetadata>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Metadata</lom:catalog>
+          <lom:entry>S0135</lom:entry>
+        </lom:identifier>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>MARC Relator</lom:source>
+            <lom:value>Copyright holder</lom:value>
+          </lom:role>
+          <lom:entity>BEGIN:VCARD
+ORG:Department of Education and Children's Services\, South Australia
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:language>en</lom:language>
+        <lom:metadataSchema>LOMv1.0</lom:metadataSchema>
+        <lom:metadataSchema>ANZ-LOMv1.0</lom:metadataSchema>
+      </lom:metaMetadata>
+      <lom:technical>
+        <lom:format>text/html</lom:format>
+        <lom:format>application/x-javascript</lom:format>
+        <lom:format>application/x-shockwave-flash</lom:format>
+        <lom:format>image/gif</lom:format>
+        <lom:location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/5828599</lom:location>
+        <lom:size>23307</lom:size>
+      </lom:technical>
+      <lom:educational>
+        <lom:learningResourceType>
+          <lom:source>DCMI Type</lom:source>
+          <lom:value>Interactive resource</lom:value>
+        </lom:learningResourceType>
+        <lom:intendedEndUserRole>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>learner</lom:value>
+        </lom:intendedEndUserRole>
+        <lom:context>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>school</lom:value>
+        </lom:context>
+        <lom:typicalAgeRange>
+          <lom:string>4-13</lom:string>
+        </lom:typicalAgeRange>
+        <lom:language>en</lom:language>
+      </lom:educational>
+      <lom:rights>
+        <lom:cost>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>no</lom:value>
+        </lom:cost>
+        <lom:copyrightAndOtherRestrictions>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>yes</lom:value>
+        </lom:copyrightAndOtherRestrictions>
+        <lom:description>
+          <lom:string language="en">© Minister for Education and Children's Services for and on behalf of the Crown in right of the State of South Australia.</lom:string>
+        </lom:description>
+      </lom:rights>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0082</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0131</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0132</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0133</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0134</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0136</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0137</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0138</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0139</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0140</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0142</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0143</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0144</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0145</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0147</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0149</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0150</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0151</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0152</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0153</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0154</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0155</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0156</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:relation>
+        <lom:kind>
+          <lom:source>GEM Element Set Qualifier Vocabulary</lom:source>
+          <lom:value>issiblingof</lom:value>
+        </lom:kind>
+        <lom:resource>
+          <lom:identifier>
+            <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+            <lom:entry>S0157</lom:entry>
+          </lom:identifier>
+          <lom:description>
+            <lom:string language="en" />
+          </lom:description>
+        </lom:resource>
+      </lom:relation>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>educational objective</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string>Interactives</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string>TLF_studentactivity</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string>Data manipulation and interpretation</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string>TLF_studentactivity</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string>Critical thinking activity</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string>TLF_studentactivity</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>educational level</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">0</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">4</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">1</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">5</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">2</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">6</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">3</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">7</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>discipline</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string>Mathematics</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string>edna-kla</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string>Numeracy</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string>edna-kla</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>discipline</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">Mathematics</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">Number</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">TLF_Strand</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>idea</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>230</lom:id>
+            <lom:entry>
+              <lom:string language="en">Counting</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>976</lom:id>
+            <lom:entry>
+              <lom:string language="en">Mathematics</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>1625</lom:id>
+            <lom:entry>
+              <lom:string language="en">Multiplication</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>7774</lom:id>
+            <lom:entry>
+              <lom:string language="en">Number patterns</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>1093</lom:id>
+            <lom:entry>
+              <lom:string language="en">Numbers</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+    </lom:lom>
+  </cp:metadata>
+  <cp:organizations default="sc95f3cb6-0c4a-4c16-bfcc-0501caf2ddc2">
+    <cp:organization identifier="sc95f3cb6-0c4a-4c16-bfcc-0501caf2ddc2" structure="hierarchical">
+      <cp:title>Number chart</cp:title>
+      <cp:item identifier="sfcd189c8-dcc2-4d64-b9a1-098d241dcf0c" identifierref="sf2272e29-ac9e-4192-9c60-9bec7f515c91">
+        <cp:title>Start: Number chart</cp:title>
+      </cp:item>
+    </cp:organization>
+  </cp:organizations>
+  <cp:resources>
+    <cp:resource href="reception_13279_06/index.html" identifier="sf2272e29-ac9e-4192-9c60-9bec7f515c91" type="webcontent">
+      <cp:file href="reception_13279_06/index.html" />
+      <cp:file href="reception_13279_06/interact/NEALs%20logo%20small.gif" />
+      <cp:file href="reception_13279_06/interact/logo.swf" />
+      <cp:file href="reception_13279_06/interact/numberchart.swf" />
+      <cp:file href="reception_13279_06/interact/indexi1f1.js" />
+      <cp:file href="reception_13279_06/interact/indexi1f2.js" />
+    </cp:resource>
+  </cp:resources>
+</cp:manifest>

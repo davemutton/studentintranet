@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cp:manifest xmlns:lom="http://ltsc.ieee.org/xsd/LOM" identifier="sfb593a3e-2c10-4ba1-82be-28c3b2c2391e" xmlns:cp="http://www.imsglobal.org/xsd/imscp_v1p1">
+  <cp:metadata>
+    <cp:schema>IMS Content</cp:schema>
+    <cp:schemaversion>1.1.4</cp:schemaversion>
+    <lom:lom>
+      <lom:general>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+          <lom:entry>S6259</lom:entry>
+        </lom:identifier>
+        <lom:title>
+          <lom:string language="en">Rewarding maths</lom:string>
+        </lom:title>
+        <lom:keyword>
+          <lom:string language="en">Learning objects</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Student awards</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Group learning</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Connected Learning Awards</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">WeCreate</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Teachers TV</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Teacher TV</lom:string>
+        </lom:keyword>
+        <lom:aggregationLevel>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>2</lom:value>
+        </lom:aggregationLevel>
+        <lom:language>en</lom:language>
+        <lom:description>
+          <lom:string language="en">This is a video clip in which a small group of year 10 maths students, and their teacher, explain and demonstrate the students’ awarding-winning interactive maths learning object. The learning object was created as part of a maths project integrating ICT, and was entered into the Connected Learning Awards (now called WeCreate). In this clip, the students show how they used ICT to design a visual presentation of a unit of maths; and the teacher describes the benefits of the program to teachers, the school and the students themselves.</lom:string>
+        </lom:description>
+      </lom:general>
+      <lom:lifeCycle>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>MARC</lom:source>
+            <lom:value>Publisher</lom:value>
+          </lom:role>
+          <lom:date>
+            <lom:dateTime>2013-05-31</lom:dateTime>
+          </lom:date>
+          <lom:entity>BEGIN:VCARD
+REV:2013-05-31T15:33:15.0+10:00
+ORG:Global Rock Challenge Holdings Pty Ltd
+URL:http://www.rockchallenge.com.au/
+N:;;;;
+FN:Global Rock Challenge Holdings Pty Ltd
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>MARC</lom:source>
+            <lom:value>Copyright holder</lom:value>
+          </lom:role>
+          <lom:date>
+            <lom:dateTime>2013-05-31</lom:dateTime>
+          </lom:date>
+          <lom:entity>BEGIN:VCARD
+REV:2013-05-31T15:34:10.0+10:00
+ORG:Global Rock Challenge Holdings Pty Ltd
+URL:http://www.rockchallenge.com.au/
+N:;;;;
+FN:Global Rock Challenge Holdings Pty Ltd
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>http://id.loc.gov/vocabulary/relators/dtm</lom:source>
+            <lom:value>Data manager</lom:value>
+          </lom:role>
+          <lom:date>
+            <lom:dateTime>2013-06-14</lom:dateTime>
+          </lom:date>
+          <lom:entity>BEGIN:VCARD
+REV:2013-06-14T16:11:32.0+10:00
+ORG:Education Services Australia
+N:;;;;
+FN:Education Services Australia
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:version>
+          <lom:string>4.0</lom:string>
+        </lom:version>
+        <lom:status>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>final</lom:value>
+        </lom:status>
+      </lom:lifeCycle>
+      <lom:metaMetadata>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Metadata</lom:catalog>
+          <lom:entry>S6259</lom:entry>
+        </lom:identifier>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>METAMARC</lom:source>
+            <lom:value>Copyright holder</lom:value>
+          </lom:role>
+          <lom:date>
+            <lom:dateTime>2013-05-31</lom:dateTime>
+          </lom:date>
+          <lom:entity>BEGIN:VCARD
+REV:2013-05-31T15:35:04.0+10:00
+ORG:Education Services Australia Ltd
+N:;;;;
+FN:Education Services Australia Ltd
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:language>en</lom:language>
+        <lom:metadataSchema>LOMv1.0</lom:metadataSchema>
+        <lom:metadataSchema>ANZ-LOMv1.0</lom:metadataSchema>
+      </lom:metaMetadata>
+      <lom:technical>
+        <lom:format>image/jpeg</lom:format>
+        <lom:format>text/css</lom:format>
+        <lom:format>text/html</lom:format>
+        <lom:location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/5844541</lom:location>
+        <lom:requirement>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>browser</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/firefox</lom:source>
+              <lom:value>Firefox</lom:value>
+            </lom:name>
+            <lom:minimumVersion>(MS-Windows)</lom:minimumVersion>
+          </lom:orComposite>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>browser</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/internetExplorer</lom:source>
+              <lom:value>ms-internet explorer</lom:value>
+            </lom:name>
+            <lom:minimumVersion>8.0 (MS-Windows)</lom:minimumVersion>
+            <lom:maximumVersion>9.0 (MS-Windows)</lom:maximumVersion>
+          </lom:orComposite>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>browser</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/safari</lom:source>
+              <lom:value>Safari</lom:value>
+            </lom:name>
+            <lom:minimumVersion>5.1 (MacOS)</lom:minimumVersion>
+          </lom:orComposite>
+        </lom:requirement>
+        <lom:requirement>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>plug-in</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/adobeFlashPlayer</lom:source>
+              <lom:value>Adobe Flash Player</lom:value>
+            </lom:name>
+            <lom:minimumVersion>10</lom:minimumVersion>
+          </lom:orComposite>
+        </lom:requirement>
+        <lom:requirement>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>operating system</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/windows</lom:source>
+              <lom:value>ms-windows</lom:value>
+            </lom:name>
+            <lom:minimumVersion>XP</lom:minimumVersion>
+            <lom:maximumVersion>7</lom:maximumVersion>
+          </lom:orComposite>
+          <lom:orComposite>
+            <lom:type>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement</lom:source>
+              <lom:value>operating system</lom:value>
+            </lom:type>
+            <lom:name>
+              <lom:source>http://vocabulary.curriculum.edu.au/technicalRequirement/macOS</lom:source>
+              <lom:value>macos</lom:value>
+            </lom:name>
+            <lom:minimumVersion>10.6</lom:minimumVersion>
+          </lom:orComposite>
+        </lom:requirement>
+        <lom:size>80893</lom:size>
+      </lom:technical>
+      <lom:educational>
+        <lom:learningResourceType>
+          <lom:source>TLF learning resource type</lom:source>
+          <lom:value>Teacher guide</lom:value>
+        </lom:learningResourceType>
+        <lom:learningResourceType>
+          <lom:source>DCMI Type</lom:source>
+          <lom:value>Moving image</lom:value>
+        </lom:learningResourceType>
+        <lom:intendedEndUserRole>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>learner</lom:value>
+        </lom:intendedEndUserRole>
+        <lom:intendedEndUserRole>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>teacher</lom:value>
+        </lom:intendedEndUserRole>
+        <lom:context>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>school</lom:value>
+        </lom:context>
+        <lom:typicalAgeRange>
+          <lom:string>12-16</lom:string>
+        </lom:typicalAgeRange>
+      </lom:educational>
+      <lom:rights>
+        <lom:cost>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>no</lom:value>
+        </lom:cost>
+        <lom:copyrightAndOtherRestrictions>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>yes</lom:value>
+        </lom:copyrightAndOtherRestrictions>
+        <lom:description>
+          <lom:string language="en">© Global Rock Challenge Holdings Pty Ltd unless otherwise indicated. This material may be used, reproduced, published and adapted free of charge for non-commercial educational purposes until 30 June 2018, provided all acknowledgements are retained.</lom:string>
+        </lom:description>
+      </lom:rights>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>discipline</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/framework/M</lom:id>
+            <lom:entry>
+              <lom:string language="en">Mathematics</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:id />
+            <lom:entry />
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Australian Curriculum Framework</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>educational level</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/schoolLevel/8</lom:id>
+            <lom:entry>
+              <lom:string language="en">Year8</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/schoolLevel/9</lom:id>
+            <lom:entry>
+              <lom:string language="en">Year9</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/schoolLevel/10</lom:id>
+            <lom:entry>
+              <lom:string language="en">Year10</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/schoolLevel/7</lom:id>
+            <lom:entry>
+              <lom:string language="en">Year7</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Australian school level</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>educational level</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">8</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">9</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">10</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">7</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">edna-userlevel</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>educational objective</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:entry>
+              <lom:string language="en">This video is valuable because it integrates the mathematics curriculum with the information and communication technology (ICT) capability across many years in early and middle secondary school. It is particularly relevant to years 7, 8, 9 and 10 mathematics teachers who would like to engage their students in a project that links mathematics learning with ICT skills and understanding. This video is also helpful to students as it provides some guidance about how to plan, design and develop an interactive learning resource with a significant level of independence.</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Educational value</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>idea</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/scot/10472</lom:id>
+            <lom:entry>
+              <lom:string language="en">Group learning</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Schools Online Thesaurus (ScOT)</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/scot/10042</lom:id>
+            <lom:entry>
+              <lom:string language="en">Learning objects</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Schools Online Thesaurus (ScOT)</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>http://vocabulary.curriculum.edu.au/scot/10194</lom:id>
+            <lom:entry>
+              <lom:string language="en">Student awards</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">Schools Online Thesaurus (ScOT)</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+    </lom:lom>
+  </cp:metadata>
+  <cp:organizations default="sbb7cd409-278c-4ff4-bacc-6a054f892f60">
+    <cp:organization identifier="sbb7cd409-278c-4ff4-bacc-6a054f892f60" structure="hierarchical">
+      <cp:title>Students create a maths learning object</cp:title>
+      <cp:item identifier="s74865f5e-0197-473d-a368-035024f6bd3c" identifierref="s4e3c512a-6b64-4c8a-8908-afb147d010f0">
+        <cp:title>Start: Students create a maths learning object</cp:title>
+      </cp:item>
+    </cp:organization>
+  </cp:organizations>
+  <cp:resources>
+    <cp:resource href="index.html" identifier="s4e3c512a-6b64-4c8a-8908-afb147d010f0" type="webcontent">
+      <cp:file href="index.html" />
+      <cp:file href="css/cou-acc.css" />
+      <cp:file href="css/ie7.css" />
+      <cp:file href="css/mystyle.css" />
+      <cp:file href="support_files/esalogo_b_lscape.jpg" />
+      <cp:file href="support_files/teacherstv_logo-trim.jpg" />
+      <cp:file href="support_files/thumb.jpg" />
+      <cp:file href="conditionsofuse_sharingexchangelicence.html" />
+      <cp:file href="support_files%2fmain.jpg" />
+    </cp:resource>
+  </cp:resources>
+</cp:manifest>

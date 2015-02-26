@@ -2,7 +2,7 @@ from django.db import models
 #create slugs for pages
 from django.template.defaultfilters import slugify
 from taggit_autosuggest.managers import TaggableManager
-
+from updown.fields import RatingField
 
 #need zipfile to unpack archive
 import zipfile, os,fnmatch
@@ -47,23 +47,38 @@ class DefaultResource(models.Model):
 	pathway= models.ManyToManyField(AssoePathway)
 	tags = TaggableManager()
 	slug = models.SlugField(max_length=100,editable=False,blank=True)
-	upvotes = models.DecimalField(max_digits=20,decimal_places=2,default=1,blank=True)
-	downvotes = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
+	updownvotes = RatingField(can_change_vote=True)
 	views = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
-	
+	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
+
 	def calculate_score(self):
-		return "it is working"
-		#print type(self.upvotes)
-		#score = float(self.upvotes) - float(self.downvotes)
-		#score = score + (float(self.views) / float(100))
-		#return score
+		score = float(self.updownvotes.likes) - float(self.updownvotes.dislikes)
+		score = score + (float(self.views)**(float(1)/float(2)))
+		self.score = score
+		rounded_score = int(round(self.score))
+		if rounded_score < -1:
+			return -1
+		else:
+			return rounded_score
 
 	def __unicode__ (self): 
 		return self.title
+
 	def save(self, *args, **kwargs):
+		self.calculate_score()
 		if not self.id:
 			self.slug = slugify(self.title)
 		super(DefaultResource, self).save(*args, **kwargs)
+
+
+class VideoResource(DefaultResource):
+	videofile = models.FileField(upload_to='static/videofile/%Y/%m/%d')
+
+
+
+
+
+
 
 class FileResource(DefaultResource):
 	#
@@ -71,6 +86,10 @@ class FileResource(DefaultResource):
 	#
 	def __unicode__ (self): 
 		return self.title
+
+
+
+
 class AttachedFiles(models.Model):
 	#
 	#This class creates stores attached files so they can be attached to other objects

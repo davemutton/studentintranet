@@ -61,7 +61,12 @@ class Migration(migrations.Migration):
                 ('created_date', models.DateTimeField(auto_now_add=True)),
                 ('edited_date', models.DateTimeField(auto_now=True)),
                 ('slug', models.SlugField(max_length=100, editable=False, blank=True)),
-                ('score', models.DecimalField(default=1, max_digits=20, decimal_places=2, blank=True)),
+                ('upvotes', models.DecimalField(default=1, max_digits=20, decimal_places=2, blank=True)),
+                ('downvotes', models.DecimalField(default=0, max_digits=20, decimal_places=2, blank=True)),
+                ('views', models.DecimalField(default=0, max_digits=20, decimal_places=2, blank=True)),
+                ('score', models.DecimalField(default=0, max_digits=20, decimal_places=4, blank=True)),
+                ('updownvotes_likes', models.PositiveIntegerField(default=0, editable=False, blank=True)),
+                ('updownvotes_dislikes', models.PositiveIntegerField(default=0, editable=False, blank=True)),
             ],
             options={
             },
@@ -91,25 +96,25 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='defaultresource',
             name='agebracket',
-            field=models.ManyToManyField(to='mediamanager.AgeBracket', blank=True),
+            field=models.ManyToManyField(to='mediamanager.AgeBracket'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='level',
-            field=models.ManyToManyField(to='mediamanager.AssoeLevel', blank=True),
+            field=models.ManyToManyField(to='mediamanager.AssoeLevel'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='pathway',
-            field=models.ManyToManyField(to='mediamanager.AssoePathway', blank=True),
+            field=models.ManyToManyField(to='mediamanager.AssoePathway'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='defaultresource',
             name='tags',
-            field=taggit_autosuggest.managers.TaggableManager(to='taggit.Tag', through='taggit.TaggedItem', blank=True, help_text='A comma-separated list of tags.', verbose_name='Tags'),
+            field=taggit_autosuggest.managers.TaggableManager(to='taggit.Tag', through='taggit.TaggedItem', help_text='A comma-separated list of tags.', verbose_name='Tags'),
             preserve_default=True,
         ),
         migrations.AddField(

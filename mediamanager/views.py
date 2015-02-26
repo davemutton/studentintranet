@@ -38,7 +38,7 @@ class createFileResource(CreateView):
 
 def index(request):
 	context = RequestContext(request)
-	default_resource_list = DefaultResource.objects.order_by('-views')
+	default_resource_list = DefaultResource.objects.order_by('-score')
 	context_dict = {'default_resource_list':default_resource_list}
 	return render_to_response('mediamanager/index.html', context_dict, context)
 

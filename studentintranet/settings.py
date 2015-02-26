@@ -57,7 +57,8 @@ INSTALLED_APPS = (
     'wiki',
     'mediamanager',
     'froala_editor',
-    'taggit_autosuggest'
+    'taggit_autosuggest',
+    'updown'
 
 )
 
