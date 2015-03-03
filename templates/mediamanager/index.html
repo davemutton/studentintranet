@@ -4,7 +4,8 @@
 
 {% block body_block %}
 
-
+{% load taggit_extras %}
+{% load taggit_templatetags2_tags %}
         <h1>List of resources</h1>
 
 
@@ -13,14 +14,61 @@
                 {% for resource in default_resource_list %}
                 <tr>
                 <td class="span1" style="text-align: center;vertical-align:middle;">
-                    <div id="upvote{{resource.pk}}">Upvote</div>
+                    <div id="upvote{{resource.pk}}"><img class="updownbutton" src="/static/images/upvote.png"></div>
 
                     <div id="score{{resource.pk}}">{{resource.calculate_score}}</div>
-                    <div id="downvote{{resource.pk}}">Downvote</div></td>
-                <td><h6><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></h6>
+                    <div id="downvote{{resource.pk}}"><img class="updownbutton" src="/static/images/downvote.png"></div></td>
+                    <td class="span1" style="text-align: center;vertical-align:middle;"><img src="{{resource.icon}}" >
+                    </td>
+   
+                <td class="span4"><h6><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></h6>
                 <p>{{ resource.learningobject.description }}</p></td>
+                <td class="span1">
+                {% for level in resource.level.all %}
+                <span class="level tag {{level}}">{{level}}</span>
+                {%endfor%}
+    
+                    </td>
+                <td class="span1">
+                {% for agebracket in resource.agebracket.all %}
+                <span class="agebracket {{agebracket}} tag">{{agebracket}}</span>
+                {%endfor%}
+    
+                    </td>
+                <td class="span1">
+                {% for pathway in resource.pathway.all %}
+                <span class="pathway {{pathway}} tag">{{pathway}}</span>
+                {%endfor%}
+    
+                    </td>
+                 <td class="span2">
+                        {% get_tags_for_object resource as "tags" %}
+                        {% for tag in tags %}
+                        <span class="tagging {{tag.slug}} tag"><a>{{tag}}</a></span>
+                        
+                        <script>
+                        $( ".{{tag.slug}}" ).click(function() {
+                            var tags = getQueryVariable('tag');
+                            var level = getQueryVariable('level');
+                            var age = getQueryVariable('age');
+                            var pathway = getQueryVariable('pathway');
+                            tags = tags + ",{{tag}}"
+                            var base_url = window.location.origin;
+                            console.log(base_url);
+                            url = base_url+"/mediamanager/search?tag="+tags+"&level="+level+"&age="+age+"&pathway="+pathway;
+                            window.location = url;
+                        });
+                        </script>
+
+
+                        {%endfor%}
+    
+                    </td>
+
+
 
                 </tr>
+
                 <script>
                 var current_score{{resource.pk}} = $(score{{resource.pk}}).text()
         $( "#downvote{{resource.pk}}" ).click(function() {

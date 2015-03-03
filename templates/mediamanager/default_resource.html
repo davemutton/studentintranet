@@ -11,6 +11,19 @@
           {%elif default_resource.learningobject.indexpath %}
         <iframe scrolling="no" src="/{{default_resource.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
         </iframe>
+        {%elif default_resource.videoresource.videofile %}
+        <div id="center"><video width="900" height="560" controls autoplay>
+  		<source src="/media/{{default_resource.videoresource.videofile}}" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<strong>Video link:</strong>http://django-dev.adsecenglish.sa.edu.au/media/{{default_resource.videoresource.videofile.url}}
+
+	</div>
+
+
+        
+
+
           {% endif  %}
 
 

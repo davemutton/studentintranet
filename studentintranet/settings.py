@@ -51,14 +51,17 @@ INSTALLED_APPS = (
     #Third party apps installed with pip
 
     'gunicorn',
-    'taggit',
+
 
     #local apps created or downloaded with git clone.
     'wiki',
     'mediamanager',
     'froala_editor',
     'taggit_autosuggest',
-    'updown'
+    'updown',
+    'taggit',
+    'taggit_templatetags',
+        'taggit_templatetags2'
 
 )
 

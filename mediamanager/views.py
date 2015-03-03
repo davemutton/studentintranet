@@ -1,29 +1,39 @@
 from django.shortcuts import render, render_to_response
 from django.views.generic import CreateView
-from mediamanager.models import LearningObject, FileResource, AttachedFiles, DefaultResource
+from mediamanager.models import LearningObject, FileResource, AttachedFiles, DefaultResource,AssoeLevel
 from forms import UploadFileForm
 from django.http import HttpResponseRedirect
 from mediamanager.forms import FileResourceForm, LearningObjectuploadform
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
+from taggit.models import Tag
 import sys
 # Create your views here.
 
 def createLearningobject(request):
-	print request.POST
 	if request.method == 'GET':
 		form = LearningObjectuploadform()
 	else:
-		print request.POST
 		form = LearningObjectuploadform(request.POST, request.FILES)
-		print form.errors.as_data()
 		if form.is_valid():
 			print form.cleaned_data
 			learningobject = request.FILES['archivefile']
 			title = form.cleaned_data['title']
 			description = form.cleaned_data['description']
-			print form.cleaned_data
+			tags = form.cleaned_data['tags']
+			levels = form.cleaned_data['level']
+			pathways = form.cleaned_data['pathway']
+			agebrackets = form.cleaned_data['agebracket']
 			post = LearningObject.objects.create(archivefile=learningobject,title=title, description=description)
+			for tag in tags:
+				post.tags.add(tag)
+			for level in levels:
+				post.level.add(level.pk)
+			for pathway in pathways:
+				post.pathway.add(pathway.pk)
+			for agebracket in agebrackets:
+				post.agebracket.add(agebracket.pk)
+			post.save()
 			return HttpResponseRedirect(reverse('index', ))
 		else:
 			print "form not valid"
@@ -38,7 +48,73 @@ class createFileResource(CreateView):
 
 def index(request):
 	context = RequestContext(request)
-	default_resource_list = DefaultResource.objects.order_by('-score')
+	exclusiveurltags = request.GET.get('extag', False)
+	urltags = request.GET.get('tag', False)
+	if exclusiveurltags:
+		print exclusiveurltags
+		exclusiveurltagslist = exclusiveurltags.split(",")
+		default_resource_list =[]
+		if urltags:
+			urltagslist = urltags.split(",")
+			exclusiveurltagslist = exclusiveurltagslist + urltagslist
+			exclusiveurltagslist = list(set(exclusiveurltagslist))
+		default_resource_list = DefaultResource.objects.filter(tags__name__in=exclusiveurltagslist)
+	else:
+		if urltags:
+			urltagslist = urltags.split(",")
+			default_resource_list =[]
+			for tag in urltagslist:
+				for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
+					default_resource_list.append(objects)
+
+			default_resource_list = list(set(default_resource_list))
+			default_resource_list.sort(key=lambda x: x.score, reverse=True)
+			
+		else:
+			default_resource_list = DefaultResource.objects.order_by('-score')
+
+	urlpathway = request.GET.get('pathway', False)
+	urlpathwayfiltered_list = []
+	if urlpathway:
+		urlpathwaylist = urlpathway.split(",")
+		print urlpathwaylist
+		for objects in default_resource_list:
+			for taggedpathway in objects.pathway.all():
+				print taggedpathway.pathway
+				print "1!"
+				for pathway in urlpathwaylist:
+					print type(pathway) 
+					print type(taggedpathway.pathway)
+					if pathway == str(taggedpathway):
+						urlpathwayfiltered_list.append(objects)
+		default_resource_list = urlpathwayfiltered_list
+		default_resource_list = list(set(default_resource_list))
+		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+
+	urlage = request.GET.get('age', False)
+	urlagefiltered_list = []
+	if urlage:
+		urlagelist = urlage.split(",")
+		print urlagelist
+		for objects in default_resource_list:
+			for taggedage in objects.agebracket.all():
+				for age in urlagelist:
+					if age == str(taggedage):
+						urlagefiltered_list.append(objects)
+		default_resource_list = urlagefiltered_list
+		default_resource_list = list(set(default_resource_list))
+		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+	
+
+
+
+
+
+
+
+
+
+	
 	context_dict = {'default_resource_list':default_resource_list}
 	return render_to_response('mediamanager/index.html', context_dict, context)
 

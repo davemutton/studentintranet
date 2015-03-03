@@ -3,6 +3,7 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from taggit_autosuggest.managers import TaggableManager
 from updown.fields import RatingField
+from taggit.models import Tag
 
 #need zipfile to unpack archive
 import zipfile, os,fnmatch
@@ -50,6 +51,11 @@ class DefaultResource(models.Model):
 	updownvotes = RatingField(can_change_vote=True)
 	views = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
 	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
+	icon = models.CharField(max_length=254,editable=False,blank=True)
+
+	#def return_tags(self):
+	#	taglist = self.tags.names()
+	#	return taglist
 
 	def calculate_score(self):
 		score = float(self.updownvotes.likes) - float(self.updownvotes.dislikes)
@@ -72,13 +78,10 @@ class DefaultResource(models.Model):
 
 
 class VideoResource(DefaultResource):
-	videofile = models.FileField(upload_to='static/videofile/%Y/%m/%d')
-
-
-
-
-
-
+	videofile = models.FileField(upload_to='videofile/%Y/%m/%d')
+	def save(self, *args, **kwargs):
+		self.icon = "/static/images/icons/video.png"
+		super(VideoResource, self).save(*args, **kwargs)
 
 class FileResource(DefaultResource):
 	#
@@ -134,5 +137,6 @@ class LearningObject(DefaultResource):
 		print self.indexpath
 
 	def save(self, *args, **kwargs):
+		self.icon = "/static/images/icons/box.png"
 		self.unpackarchive()
 		super(LearningObject, self).save(*args, **kwargs)
