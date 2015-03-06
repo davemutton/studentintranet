@@ -48,30 +48,44 @@ class createFileResource(CreateView):
 
 def index(request):
 	context = RequestContext(request)
-	exclusiveurltags = request.GET.get('extag', False)
-	urltags = request.GET.get('tag', False)
-	if exclusiveurltags:
-		print exclusiveurltags
-		exclusiveurltagslist = exclusiveurltags.split(",")
-		default_resource_list =[]
-		if urltags:
-			urltagslist = urltags.split(",")
-			exclusiveurltagslist = exclusiveurltagslist + urltagslist
-			exclusiveurltagslist = list(set(exclusiveurltagslist))
-		default_resource_list = DefaultResource.objects.filter(tags__name__in=exclusiveurltagslist)
-	else:
-		if urltags:
-			urltagslist = urltags.split(",")
-			default_resource_list =[]
-			for tag in urltagslist:
-				for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
-					default_resource_list.append(objects)
+	exclusiveurltags = request.GET.get_all('extag', False)
+	urltags = request.GET.get_all('tag', False)
 
-			default_resource_list = list(set(default_resource_list))
-			default_resource_list.sort(key=lambda x: x.score, reverse=True)
-			
-		else:
-			default_resource_list = DefaultResource.objects.order_by('-score')
+	if urltags:
+		urltagslist = urltags.split("&")
+		default_resource_list =[]
+		for tag in urltagslist:
+			for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
+				default_resource_list.append(objects)
+
+		default_resource_list = list(set(default_resource_list))
+		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+		
+	else:
+		default_resource_list = DefaultResource.objects.order_by('-score')
+#Start exclusive keyword tags		
+	if exclusiveurltags:
+		print "1"
+		exclusiveurltagslist = exclusiveurltags.split(",")
+		print exclusiveurltagslist
+		for objects in default_resource_list:
+			print objects.tags.names()
+			for tag in objects.tags.names():
+				print tag
+
+#end exclusive keyword tags		
+	if urltags:
+		urltagslist = urltags.split(",")
+		default_resource_list =[]
+		for tag in urltagslist:
+			for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
+				default_resource_list.append(objects)
+
+		default_resource_list = list(set(default_resource_list))
+		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+		
+	else:
+		default_resource_list = DefaultResource.objects.order_by('-score')
 
 	urlpathway = request.GET.get('pathway', False)
 	urlpathwayfiltered_list = []

@@ -23,7 +23,7 @@ class LearningObjectuploadform(forms.ModelForm):
         pathway = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=None,required=False)
         class Meta: 
             model = LearningObject 
-            fields =['title','archivefile','description','tags','pathway','level','agebracket']
+            fields =['title','archivefile','description','tags','pathway','level','subject','agebracket']
                  
         def __init__(self, *args, **kwargs):
         	super(LearningObjectuploadform, self).__init__(*args, **kwargs)

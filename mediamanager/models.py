@@ -36,6 +36,14 @@ class AgeBracket(models.Model):
 	def __unicode__ (self): 
 		return self.agebracket
 
+class AssoeSubjects(models.Model):
+	#
+	# Used for content tagging
+	#
+	subject = models.CharField(max_length=55)
+	def __unicode__ (self): 
+		return self.subject
+
 class DefaultResource(models.Model):
 	#
 	# This class is the parent class for all resources in the media manager
@@ -52,6 +60,7 @@ class DefaultResource(models.Model):
 	views = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
 	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
 	icon = models.CharField(max_length=254,editable=False,blank=True)
+	subject = models.ManyToManyField(AssoeSubjects)
 
 	#def return_tags(self):
 	#	taglist = self.tags.names()
