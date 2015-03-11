@@ -48,16 +48,16 @@ class createFileResource(CreateView):
 
 def index(request):
 	context = RequestContext(request)
-	exclusiveurltags = request.GET.get_all('extag', False)
-	urltags = request.GET.get_all('tag', False)
-
+	exclusiveurltags = request.GET.get('extag', False)
+	urltags = request.GET.get('tag', False)
+	urlpathwaylist =[]
 	if urltags:
-		urltagslist = urltags.split("&")
+		urltagslist = urltags.split("/")
 		default_resource_list =[]
 		for tag in urltagslist:
+			print tag
 			for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
 				default_resource_list.append(objects)
-
 		default_resource_list = list(set(default_resource_list))
 		default_resource_list.sort(key=lambda x: x.score, reverse=True)
 		
@@ -65,32 +65,18 @@ def index(request):
 		default_resource_list = DefaultResource.objects.order_by('-score')
 #Start exclusive keyword tags		
 	if exclusiveurltags:
-		print "1"
-		exclusiveurltagslist = exclusiveurltags.split(",")
-		print exclusiveurltagslist
 		for objects in default_resource_list:
 			print objects.tags.names()
 			for tag in objects.tags.names():
 				print tag
 
 #end exclusive keyword tags		
-	if urltags:
-		urltagslist = urltags.split(",")
-		default_resource_list =[]
-		for tag in urltagslist:
-			for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
-				default_resource_list.append(objects)
-
-		default_resource_list = list(set(default_resource_list))
-		default_resource_list.sort(key=lambda x: x.score, reverse=True)
-		
-	else:
-		default_resource_list = DefaultResource.objects.order_by('-score')
+	
 
 	urlpathway = request.GET.get('pathway', False)
 	urlpathwayfiltered_list = []
 	if urlpathway:
-		urlpathwaylist = urlpathway.split(",")
+		urlpathwaylist = urlpathway.split("/")
 		print urlpathwaylist
 		for objects in default_resource_list:
 			for taggedpathway in objects.pathway.all():
@@ -108,7 +94,7 @@ def index(request):
 	urlage = request.GET.get('age', False)
 	urlagefiltered_list = []
 	if urlage:
-		urlagelist = urlage.split(",")
+		urlagelist = urlage.split("/")
 		print urlagelist
 		for objects in default_resource_list:
 			for taggedage in objects.agebracket.all():
@@ -118,6 +104,15 @@ def index(request):
 		default_resource_list = urlagefiltered_list
 		default_resource_list = list(set(default_resource_list))
 		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+	for objects in default_resource_list:
+		print objects
+		print objects.tags.all()
+		for each in objects.tags.all():
+			print objects
+			print objects.tags.all()
+			print each
+			print each.name
+
 	
 
 
