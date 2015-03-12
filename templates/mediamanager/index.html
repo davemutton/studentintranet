@@ -4,8 +4,55 @@
 
 {% block body_block %}
 
+
+
 {% load taggit_extras %}
 {% load taggit_templatetags2_tags %}
+<div class="cloud-wrapper">
+{% get_tagcloud as tags %}
+{% for tag in tags %}
+<span class="tag cloud-{{tag.slug}} tagcloud"><font size={{tag.weight|floatformat:0}}>{{tag}}</font></span>
+ <script>
+                        $(document).ready(function() {
+                        var tagstring = $( ".cloud-{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        if (clean_tags_list.indexOf(tagstring) >=0){
+                            $( ".cloud-{{tag.slug}}" ).css("opacity","1.0")
+                        }
+                    })
+
+                        $( ".cloud-{{tag.slug}}" ).click(function() {
+                        var tagstring = $( ".cloud-{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var index = clean_tags_list .indexOf(tagstring)
+                       
+
+                        if ( index >=0){   
+                            tags_list.sort().splice(index, 1);
+                      
+                      window.location = RewriteUrlWithTags(); 
+                      console.log(tagstring+" is already in place")
+
+                          } else{
+                           tags_list.push("{{tag}}");
+                        window.location = RewriteUrlWithTags(); 
+                          }
+                    
+                        });
+                        </script>
+{% endfor %}
+</div>
+<script>
+var tags = getQueryVariable('tag');
+clean_tags = tags.replace("%20","-").replace(" ","-").toLowerCase()
+var clean_tags_list = clean_tags.split("/")
+var tags_list = tags.split("/")
+var level = getQueryVariable('level');
+var level_list = level.split("/")
+var age = getQueryVariable('age');
+var agebracket_list = age.split("/")
+var pathway = getQueryVariable('pathway');
+var pathway_list = pathway.split("/")               
+
+</script>
         <h1>List of resources</h1>
 
 
@@ -25,31 +72,81 @@
                 <p>{{ resource.learningobject.description }}</p></td>
                 <td class="span1">
                 {% for level in resource.level.all %}
-                <span class="level tag {{level}}">{{level}}</span>
+                <span class="level tag {{resource.pk}}{{level}}">{{level}}</span>
+                <script>
+                        $(document).ready(function() {
+                        var levelstring = $( ".{{resource.pk}}{{level}}" ).text()
+                        if (level_list .indexOf(levelstring) >=0){
+                            $( ".{{resource.pk}}{{level}}" ).css("opacity","1.0")
+                            }
+                         })
+                        $( ".{{resource.pk}}{{level}}" ).click(function() {    
+                        var levelstring = $( ".{{resource.pk}}{{level}}" ).text()
+                        var index = level_list.indexOf(levelstring)
+                        if ( index >=0){ 
+                            level_list.splice(index, 1);
+                            console.log(levelstring+" is already in place")
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            level_list.push("{{level}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+
                 {%endfor%}
     
                     </td>
                 <td class="span1">
                 {% for agebracket in resource.agebracket.all %}
-                <span class="agebracket {{agebracket}} tag">{{agebracket}}</span>
+                <span class="agebracket {{resource.pk}}{{agebracket}} tag">{{agebracket}}</span>
+                  <script>
+                        $(document).ready(function() {
+                        var agebracketstring = $( ".{{resource.pk}}{{agebracket}}" ).text()
+                        if (agebracket_list .indexOf(agebracketstring) >=0){
+                            $( ".{{resource.pk}}{{agebracket}}" ).css("opacity","1.0")
+                            }
+                         })
+                        $( ".{{resource.pk}}{{agebracket}}" ).click(function() {    
+                        var agebracketstring = $( ".{{resource.pk}}{{agebracket}}" ).text()
+                        var index = agebracket_list.indexOf(agebracketstring)
+                        if ( index >=0){ 
+                            agebracket_list.splice(index, 1);
+                            console.log(agebracketstring+" is already in place")
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            agebracket_list.push("{{agebracket}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
                 {%endfor%}
     
                     </td>
                 <td class="span1">
                 {% for pathway in resource.pathway.all %}
-                <span class="pathway {{pathway}} tag">{{pathway}}</span>
+                <span class="pathway {{resource.pk}}{{pathway}} tag">{{pathway}}</span>
                          <script>
-
-                        $( ".{{pathway}}" ).click(function() {
-                            var tags = getQueryVariable('tag');
-                            var level = getQueryVariable('level');
-                            var age = getQueryVariable('age');
-                            var pathway = getQueryVariable('pathway');
-                            pathway = pathway + ",{{pathway}}"
-                            var base_url = window.location.origin;
-                            console.log(base_url);
-                            url = base_url+"/mediamanager/search?tag="+tags+"&level="+level+"&age="+age+"&pathway="+pathway;
-                            window.location = url;
+                        $(document).ready(function() {
+                        var pathwaystring = $( ".{{resource.pk}}{{pathway}}" ).text()
+                        if (pathway_list .indexOf(pathwaystring) >=0){
+                            $( ".{{resource.pk}}{{pathway}}" ).css("opacity","1.0")
+                            }
+                         })
+                        $( ".{{resource.pk}}{{pathway}}" ).click(function() {    
+                        var pathwaytring = $( ".{{resource.pk}}{{pathway}}" ).text()
+                        var index = pathway_list.indexOf(pathwaytring)
+                        if ( index >=0){ 
+                            pathway_list.splice(index, 1);
+                            console.log(pathwaytring+" is already in place")
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            pathway_list.push("{{pathway}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
                         });
                         </script>
 
@@ -73,34 +170,32 @@
                  <td class="span2">
                         {% get_tags_for_object resource as "tags" %}
                         {% for tag in tags %}
-                        <span class="tagging {{tag.slug}} tag"><a>{{tag}}</a></span>
+                        <span class="tagging {{resource.pk}}{{tag.slug}} tag"><a>{{tag}}</a></span>
                         
                         <script>
-                        var tags = getQueryVariable('tag');
-                        var tagslist = tags.split(',');
-                        var tagstring = $( ".{{tag.slug}}" ).text()
-                        if (tagslist.indexOf(tagstring) >=0){
-                            $( ".{{tag.slug}}" ).css("opacity","1.0")
+                        $(document).ready(function() {
+                        var tagstring = $( ".{{resource.pk}}{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        if (clean_tags_list.indexOf(tagstring) >=0){
+                            $( ".{{resource.pk}}{{tag.slug}}" ).css("opacity","1.0")
                         }
+                    })
 
-                        $( ".{{tag.slug}}" ).click(function() {
-                            if (tagslist.indexOf(tagstring) >=0){
-                            var tags = getQueryVariable('tag');
-                            var level = getQueryVariable('level');
-                            var age = getQueryVariable('age');
-                            var pathway = getQueryVariable('pathway');
+                        $( ".{{resource.pk}}{{tag.slug}}" ).click(function() {
+                        var tagstring = $( ".{{resource.pk}}{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var index = clean_tags_list .indexOf(tagstring)
+                       
 
-                        } else{
-                            var tags = getQueryVariable('tag');
-                            var level = getQueryVariable('level');
-                            var age = getQueryVariable('age');
-                            var pathway = getQueryVariable('pathway');
-                            tags = tags + ",{{tag}}"
-                            var base_url = window.location.origin;
-                            console.log(base_url);
-                            url = base_url+"/mediamanager/search?tag="+tags+"&level="+level+"&age="+age+"&pathway="+pathway;
-                            window.location = url;
-                        }
+                        if ( index >=0){   
+                            tags_list.sort().splice(index, 1);
+                      
+                      window.location = RewriteUrlWithTags(); 
+                      console.log(tagstring+" is already in place")
+
+                          } else{
+                           tags_list.push("{{tag}}");
+                        window.location = RewriteUrlWithTags(); 
+                          }
+                    
                         });
                         </script>
 
