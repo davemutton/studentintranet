@@ -5,8 +5,10 @@ from mediamanager import views
 urlpatterns = patterns('',
 	
 #urls for adding resources
-	url(r'^new/learningobject', views.createLearningobject, name='learningobject-edit',),
-    url(r'^new/fileresource', views.FileResourceFormView, name='fileresource-edit',),
+	url(r'^edit/learningobject/(?P<pk>\d+)', views.UpdateLearningObject.as_view(), name='learningobject-edit',),
+	url(r'^edit/learningobject/', views.createLearningobject, name='learningobject-new',),
+
+    url(r'^edit/fileresource', views.FileResourceFormView, name='fileresource-edit',),
 
 
 

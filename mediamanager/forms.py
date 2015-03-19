@@ -30,3 +30,15 @@ class LearningObjectuploadform(forms.ModelForm):
         	self.fields['level'].queryset = AssoeLevel.objects.all()
         	self.fields['pathway'].queryset = AssoePathway.objects.all()
         	self.fields['agebracket'].queryset = AgeBracket.objects.all()
+
+class LearningObjectuploadform2(LearningObjectuploadform): 
+        archivefile = forms.FileField(required=False)
+        class Meta: 
+            model = LearningObject 
+            fields =['title','archivefile','description','tags','pathway','level','subject','agebracket']
+                 
+        def __init__(self, *args, **kwargs):
+            super(LearningObjectuploadform, self).__init__(*args, **kwargs)
+            self.fields['level'].queryset = AssoeLevel.objects.all()
+            self.fields['pathway'].queryset = AssoePathway.objects.all()
+            self.fields['agebracket'].queryset = AgeBracket.objects.all()

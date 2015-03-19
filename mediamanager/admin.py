@@ -1,5 +1,5 @@
 from django.contrib import admin
-from mediamanager.models import AssoeLevel, AssoePathway, AgeBracket, LearningObject, AttachedFiles, FileResource,VideoResource,AssoeSubjects
+from mediamanager.models import AssoeLevel, AssoePathway, AgeBracket, LearningObject, AttachedFiles, FileResource,VideoResource,AssoeSubjects,UrlResource
 # Register your models here.
 
 class FileAttachedInline(admin.TabularInline):
@@ -18,4 +18,4 @@ admin.site.register(LearningObject)
 admin.site.register(AttachedFiles)
 admin.site.register(VideoResource)
 admin.site.register(AssoeSubjects)
-
+admin.site.register(UrlResource)

@@ -17,6 +17,7 @@ class AssoeLevel(models.Model):
 	# Used for content tagging
 	#
 	level = models.CharField(max_length=25)
+	order = models.IntegerField()
 	def __unicode__ (self): 
 		return self.level	
 
@@ -25,6 +26,7 @@ class AssoePathway(models.Model):
 	# Used for content tagging
 	#
 	pathway = models.CharField(max_length=1)
+	order = models.IntegerField()
 	def __unicode__ (self): 
 		return self.pathway
 
@@ -33,6 +35,7 @@ class AgeBracket(models.Model):
 	# Used for content tagging
 	#
 	agebracket = models.CharField(max_length=25)
+	order = models.IntegerField()
 	def __unicode__ (self): 
 		return self.agebracket
 
@@ -41,6 +44,7 @@ class AssoeSubjects(models.Model):
 	# Used for content tagging
 	#
 	subject = models.CharField(max_length=55)
+	order = models.IntegerField()
 	def __unicode__ (self): 
 		return self.subject
 
@@ -99,7 +103,13 @@ class FileResource(DefaultResource):
 	def __unicode__ (self): 
 		return self.title
 
-
+class UrlResource(DefaultResource):
+	#
+	#This class creates a object to store URLS
+	#
+	url = models.URLField(max_length=400)
+	def __unicode__ (self): 
+		return self.title
 
 
 class AttachedFiles(models.Model):
@@ -118,24 +128,27 @@ class LearningObject(DefaultResource):
 	indexpath = models.CharField(max_length=254,editable=False,blank=True)
 	description = models.TextField(blank=True)
 	def unpackarchive(self):
-		archive = self.archivefile
-		filename = os.path.basename(str(archive))
-		
-		folder = str(filename).split(".")[0]
-		print folder
-		index_found = "False"
-		with zipfile.ZipFile(archive,"r") as z:
-			for each in z.namelist():
-				if each == "index.html" or each == "index.htm":
-					index_found = "True"
-				else:
-					pass
-			if not index_found:
-				print "zip file does not contain a valid index.html file"
-			else:
-				path = os.path.join("static","learningobject","unpackedarchives",folder)
-				z.extractall(path)
-				self.findindex(path)
+		if not self.pk:
+			if self.archivefile:
+				archive = self.archivefile
+				filename = os.path.basename(str(archive))
+				folder = str(filename).split(".")[0]
+				print folder
+				index_found = "False"
+				with zipfile.ZipFile(archive,"r") as z:
+					for each in z.namelist():
+						if each == "index.html" or each == "index.htm":
+							index_found = "True"
+						else:
+							pass
+					if not index_found:
+						print "zip file does not contain a valid index.html file"
+					else:
+						path = os.path.join("static","learningobject","unpackedarchives",folder)
+						z.extractall(path)
+						self.findindex(path)
+		else:
+			pass
 	def findindex(self,path):
 
 		print path

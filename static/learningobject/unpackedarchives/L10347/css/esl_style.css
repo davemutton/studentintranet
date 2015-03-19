@@ -1,0 +1,58 @@
+body, html {
+	background-color: #005C8A; font-family: Arial,Helvetica,sans-serif;
+}
+
+#headercontainer {
+	height: 30px;
+	margin-bottom: 6px;
+}
+
+div, img{margin:0; padding:0}
+
+.container{margin-left:auto; margin-right:auto; width:624px}
+
+.centred{  text-align:center;   background-image:url(../images/esl_header.jpg); background-repeat:no-repeat;   background-position:top center;   padding-top:200px}
+
+div.main{  background-image:url(../images/main.jpg); background-repeat:repeat-y;   background-position:center center;   padding-left:1em; padding-right:1em; margin-top:1.2em; padding-top:.5em; text-align:left; font-size:.9em;   padding-bottom:1.5em}
+
+h1{text-align:center}
+<!--Sandy via Joy said not italic-->
+<!--ul.objectList, ul.objectList li{font-style:italic}-->
+
+ul.objectList li{padding-left:0; margin-left:-25px}
+
+div.footer{  background-image:url(../images/esl_footer.jpg); background-repeat:repeat-y;  background-position:center center;  height:101px}
+
+.right{float:right; width:auto}
+
+a.start:link{font-weight:bold; color:#000}
+
+a.start:hover, a.start:focus{font-weight:bold; color:#ddd; border:1px dotted #000}
+
+a.start:visited{font-weight:bold}
+
+#divcenter{ text-align:center;  height:95%}
+
+.copyright-conditions{ float:left;  width:100%}
+
+#copyright{ font-family:Arial,Helvetica,sans-serif;  font-size:8pt}
+
+#conditions{ color:#f00;  font-family:Arial,Helvetica,sans-serif;  font-size:8pt}
+
+#bold-italic{ font-weight:bold;  font-style:italic}
+
+.logo{ width:20%;  float:left}
+
+#logo{ width:165px;  height:57px;  float:left;  margin-top:1em}
+
+.partnerlogo{ width:20%;  float:right;  margin-top:1em;  margin-right:40px}
+
+#conditions a, #conditions a:link{ color:#fff;  margin-top:1em}
+
+#conditions a:visited{ color:#909;  margin-top:1em}
+
+#conditions a:active{ color:#afa;  margin-top:1em}
+
+#conditions a:hover, #conditions a:focus{ color:#f00;  outline:1px solid #000;  margin-top:1em}
+
+.divCenter{text-align:center; width:auto}
