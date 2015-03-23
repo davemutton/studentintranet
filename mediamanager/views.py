@@ -10,7 +10,14 @@ from taggit.models import Tag
 import sys
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import UpdateView
-# Create your views here.
+from itertools import chain
+
+
+
+ #Create your views here.
+
+
+
 '''
 def createLearningobject(request,learningobject_pk=False):
 	if request.method == 'GET':
@@ -80,8 +87,6 @@ class UpdateLearningObject(UpdateView):
 	def get_success_url(self):
 		return reverse('index')
 
-
-
 class createFileResource(CreateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
@@ -116,6 +121,7 @@ def index(request):
 
 #end exclusive keyword tags		
 	
+# Start of Pathway retreiving section.
 
 	try:
 		urlpathway = request.GET.get('pathway', False).lstrip("/")
@@ -126,40 +132,21 @@ def index(request):
 	if urlpathway:
 		urlpathwaylist = urlpathway.split("/")
 		if len(urlpathwaylist) > 0:
+			objectslist=[]
+			for each in urlpathwaylist:
+				objectslist.append(AssoePathway.objects.get(pathway=each).pk)
+			default_resource_list = default_resource_list.filter(pathway__in=objectslist).distinct()
 
-			for pathways in urlpathwaylist:
-				p = AssoePathway.objects.get(pathway=pathways)
-				for pathway in AssoePathway.objects.all():
-					if pathway not in urlpathwaylist:
-						default_resource_list = default_resource_list.exclude(pathway=pathway.pk)
-
-
-	try:
-		urlage = request.GET.get('age', False).lstrip("/")
-	except:
-		urlage = False
-	urlagefiltered_list = []
-	if urlage:
-		urlagelist = urlage.split("/")
-		if len(urlagelist) > 0:
-			for ages in urlagelist:
-				p = AgeBracket.objects.get(agebracket=ages)
-				default_resource_list = default_resource_list.filter(agebracket=p.pk)
+		#if len(urlpathwaylist) > 0:
+		#	for pathways in urlpathwaylist:
+		#		for pathway in AssoePathway.objects.all():
+		#			if str(pathway.pathway) not in urlpathwaylist:
+		#				default_resource_list = default_resource_list.exclude(pathway=pathway.pk)
+# END of Pathway retreiving section.
 
 
-
-
-
-
-			for objects in default_resource_list:
-				for taggedage in objects.agebracket.all():
-					for age in urlagelist:
-						if age == str(taggedage):
-							urlagefiltered_list.append(objects)
-			default_resource_list = urlagefiltered_list
-			default_resource_list = list(set(default_resource_list))
-			default_resource_list.sort(key=lambda x: x.score, reverse=True)
-
+# Start of Level retreiving section.
+	
 	try:
 		urllevel = request.GET.get('level', False).lstrip("/")
 	except:
@@ -168,34 +155,54 @@ def index(request):
 	if urllevel:
 		urllevellist = urllevel.split("/")
 		if len(urllevellist) > 0:
-			print urllevellist
-			for objects in default_resource_list:
-				for taggedlevel in objects.level.all():
-					for level in urllevellist:
-						if level == str(taggedlevel):
-							urllevelfiltered_list.append(objects)
-			default_resource_list = urllevelfiltered_list
-			default_resource_list = list(set(default_resource_list))
-			default_resource_list.sort(key=lambda x: x.score, reverse=True)
+			objectslist=[]
+			for each in urllevellist:
+				objectslist.append(AssoeLevel.objects.get(level=each).pk)
+			default_resource_list = default_resource_list.filter(level__in=objectslist).distinct()
+
+# End of Level retreiving section.
+
+# Start of AGE retreiving section.
+#
+#Rework this to match pathway becuase it retains it as a queryset object
 	
+	try:
+		urlage = request.GET.get('age', False).lstrip("/")
+	except:
+		urlage = []
+	urlagefiltered_list = []
+	if urlage:
+		urlagelist = urlage.split("/")
+		if len(urlagelist) > 0:
+			objectslist=[]
+			for each in urlagelist:
+				objectslist.append(AgeBracket.objects.get(agebracket=each).pk)
+			default_resource_list = default_resource_list.filter(agebracket__in=objectslist).distinct()
+# END of AGE retreiving section. request.GET.get('age', False) returns a value then default_resource_list is now a list filtered by agebracket.
+
 	try:
 		urlsubject = request.GET.get('subject', False).lstrip("/")
 	except:
-		urlsubject = [] 
+		urlsubject = []
 	urlsubjectfiltered_list = []
 	if urlsubject:
 		urlsubjectlist = urlsubject.split("/")
 		if len(urlsubjectlist) > 0:
-			print urlsubjectlist
-			for objects in default_resource_list:
-				for taggedsubject in objects.subject.all():
-					for subject in urlsubjectlist:
-						if subject == str(taggedsubject):
-							urlsubjectfiltered_list.append(objects)
-			default_resource_list = urlsubjectfiltered_list
-			default_resource_list = list(set(default_resource_list))
-		
-		default_resource_list.sort(key=lambda x: x.score, reverse=True)
+			objectslist=[]
+			for each in urlsubjectlist:
+				objectslist.append(AssoeSubjects.objects.get(subject=each).pk)
+			default_resource_list = default_resource_list.filter(subject__in=objectslist).distinct()
+	
+	default_resource_list = default_resource_list.order_by('-score').select_subclasses()
+	tagcloud = []
+	for each in default_resource_list[0:100]:
+		for all in each.tags.all():
+			tagcloud.append(all)
+	print tagcloud
+
+
+	#default_resource_list.sort(key=lambda x: x.score, reverse=True)
+	
 	paginator = Paginator(default_resource_list, 20)
 	page = request.GET.get('page')
 	try:
@@ -221,9 +228,11 @@ def index(request):
 	agebracket_list = AgeBracket.objects.order_by('order')
 	pathway_list = AssoePathway.objects.order_by('order')
 	subject_list = AssoeSubjects.objects.order_by('order')
+	default_resource_list = list(set(default_resource_list))
+	default_resource_list.sort(key=lambda x: x.score, reverse=True)
 
 	
-	context_dict = {'default_resource_list':paged_list,'levels_list':levels_list,'agebracket_list':agebracket_list,'pathway_list':pathway_list,'subject_list':subject_list}
+	context_dict = {'default_resource_list':paged_list,'levels_list':levels_list,'agebracket_list':agebracket_list,'pathway_list':pathway_list,'subject_list':subject_list,'tagcloud':tagcloud}
 	return render_to_response('mediamanager/index.html', context_dict, context)
 
 
@@ -234,7 +243,6 @@ def defaultresourceview(request, default_resource_slug):
 	context_dict = {}
 	try:
 		default_resource = DefaultResource.objects.get(slug=default_resource_slug)
-
 		default_resource.views = default_resource.views + 1
 		default_resource.save()
 		print default_resource.views

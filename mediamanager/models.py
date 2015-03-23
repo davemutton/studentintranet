@@ -4,7 +4,7 @@ from django.template.defaultfilters import slugify
 from taggit_autosuggest.managers import TaggableManager
 from updown.fields import RatingField
 from taggit.models import Tag
-
+from model_utils.managers import InheritanceManager
 #need zipfile to unpack archive
 import zipfile, os,fnmatch
 
@@ -45,13 +45,19 @@ class AssoeSubjects(models.Model):
 	#
 	subject = models.CharField(max_length=55)
 	order = models.IntegerField()
+	slug = models.SlugField(max_length=100,editable=False,blank=True)
 	def __unicode__ (self): 
 		return self.subject
+	def save(self, *args, **kwargs):
+		#if not self.id:
+		self.slug = slugify(self.subject)
+		super(AssoeSubjects, self).save(*args, **kwargs)
 
 class DefaultResource(models.Model):
 	#
 	# This class is the parent class for all resources in the media manager
 	#
+	objects = InheritanceManager()
 	title = models.CharField(max_length=100)
 	created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
 	edited_date =  models.DateTimeField(auto_now_add=False,auto_now=True)

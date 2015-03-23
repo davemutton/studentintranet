@@ -1,27 +1,211 @@
     
        {% extends 'base.html' %}
 {% block title %}list of all Resources{% endblock %}
-
+{% block heading %}{% endblock %}
 {% block body_block %}
+{% load taggit_extras %} {% load taggit_templatetags2_tags %}
+<script>
+var tags = getQueryVariable('tag');
+clean_tags = DaveSlugify(tags);
+var clean_tags_list = clean_tags.split("/")
+var tags_list = tags.split("/")
+var level = getQueryVariable('level');
+var level_list = level.split("/")
+var age = getQueryVariable('age');
+var agebracket_list = age.split("/")
+var pathway = getQueryVariable('pathway');
+var pathway_list = pathway.split("/")               
+var subject = getQueryVariable('subject');
+var subject_list = subject.split("/")  
+var clean_subject = DaveSlugify(subject)
+var clean_subject_list= clean_subject.split("/")
+</script>
+
+<!-- start  selector-->
+<div class = "selector-section">
+
+{{tagcloud}}{{tagcloud}}
+
+
+<!-- start level selector-->
+<div class="level-selector selector-group">
+<h4 class="level-selector-heading">Level</h4>
+<ul>
+
+{% for level in levels_list %}
+ <li class="level-selector selector selector{{level}}"><span id="{{level}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{level}}</span></li>
+                <script>
+                        $(document).ready(function() {
+                        var levelstring = $( ".selector{{level}}" ).text()
+                        if (level_list .indexOf(levelstring) >=0){
+                            $( "#{{level}}-checkbox" ).css("background-position","0px 0px")
+                            }
+                         })
+                        $( ".selector{{level}}" ).click(function() {    
+                        var levelstring = $( ".selector{{level}}" ).text()
+                        var index = level_list.indexOf(levelstring)
+                        if ( index >=0){ 
+                            level_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            level_list.push("{{level}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+{% endfor %}
+</ul>
+</div>
+<!--end level selector -->
+
+<!--Start age bracket selector -->
+<div class="agebracket-selector selector-group">
+    <h4 class="level-selector-heading">Age bracket</h4>
+<ul>
+ {% for agebracket in agebracket_list %}
+                <li class="agebracket-selector selector{{agebracket}} selector"><span id="{{agebracket}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{agebracket}}</span></li>
+                  <script>
+                        $(document).ready(function() {
+                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
+                        if (agebracket_list .indexOf(agebracketstring) >=0){
+                            $( "#{{agebracket}}-checkbox" ).css("background-position","0px 0px")
+                            }
+                         })
+                        $( ".selector{{agebracket}}" ).click(function() {    
+                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
+                        var index = agebracket_list.indexOf(agebracketstring)
+                        if ( index >=0){ 
+                            agebracket_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            agebracket_list.push("{{agebracket}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+                {%endfor%}
+            </ul>
+</div>
+
+<!--End age bracket selector -->
+
+<!--start pathway selector -->
+<div class="pathway-selector selector-group">
+    <h4 class="level-selector-heading">Pathway</h4>
+<ul>
+ {% for pathway in pathway_list %}
+                <li class="pathway-selector selector{{pathway}} selector"><span id="{{pathway}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{pathway}}</span></li>
+                  <script>
+                        $(document).ready(function() {
+                        var pathwaystring = $( ".selector{{pathway}}" ).text()
+                        if (pathway_list .indexOf(pathwaystring) >=0){
+                            $( "#{{pathway}}-checkbox" ).css("background-position","0px 0px")
+                            }
+                         })
+                        $( ".selector{{pathway}}" ).click(function() {    
+                        var pathwaystring = $( ".selector{{pathway}}" ).text()
+                        var index = pathway_list.indexOf(pathwaystring)
+                        if ( index >=0){ 
+                            pathway_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            pathway_list.push("{{pathway}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+                {%endfor%}
+            </ul>
+</div>
+
+<!--end pathway selector -->
+<!--start subject selector -->
+<div class="subject-selector selector-group">
+    <h4 class="level-selector-heading">Subjects</h4>
+<ul>
+ {% for subject in subject_list %}
+                <li class="subject-selector selector{{subject.slug}} selector"><span id="{{subject.slug}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{subject}}</span></li>
+                  <script>
+                        $(document).ready(function() {
+                        var subjectstring = DaveSlugify($( ".selector{{subject.slug}}" ).text())
+                        if (clean_subject_list .indexOf(subjectstring) >=0){
+                            $( "#{{subject.slug}}-checkbox" ).css("background-position","0px 0px")
+                            }
+                         })
+                        $( ".selector{{subject.slug}}" ).click(function() {    
+                        var subjectstring = DaveSlugify($( ".selector{{subject.slug}}" ).text())
+                        var index = clean_subject_list.indexOf(subjectstring)
+                        if ( index >=0){ 
+                            subject_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            subject_list.push("{{subject}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+                {%endfor%}
+            </ul>
+</div>
+
+<!--end subject selector -->
 
 
 
-{% load taggit_extras %}
-{% load taggit_templatetags2_tags %}
+
+</div>
+
+
+
+<!-- end  selector-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional tag cloud. Feel like this does not belong here.
 <div class="cloud-wrapper">
 {% get_tagcloud as tags %}
 {% for tag in tags %}
 <span class="tag cloud-{{tag.slug}} tagcloud"><font size={{tag.weight|floatformat:0}}>{{tag}}</font></span>
  <script>
                         $(document).ready(function() {
-                        var tagstring = $( ".cloud-{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var tagstring = DaveSlugify($( ".cloud-{{tag.slug}}" ).text())
                         if (clean_tags_list.indexOf(tagstring) >=0){
                             $( ".cloud-{{tag.slug}}" ).css("opacity","1.0")
                         }
                     })
 
                         $( ".cloud-{{tag.slug}}" ).click(function() {
-                        var tagstring = $( ".cloud-{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var tagstring = DaveSlugify($( ".cloud-{{tag.slug}}" ).text())
                         var index = clean_tags_list .indexOf(tagstring)
                        
 
@@ -40,21 +224,26 @@
                         </script>
 {% endfor %}
 </div>
-<script>
-var tags = getQueryVariable('tag');
-clean_tags = tags.replace("%20","-").replace(" ","-").toLowerCase()
-var clean_tags_list = clean_tags.split("/")
-var tags_list = tags.split("/")
-var level = getQueryVariable('level');
-var level_list = level.split("/")
-var age = getQueryVariable('age');
-var agebracket_list = age.split("/")
-var pathway = getQueryVariable('pathway');
-var pathway_list = pathway.split("/")               
+-->
 
-</script>
-        <h1>List of resources</h1>
 
+<!-- start pageination -->
+<div class="pagination">
+    <span class="step-links">
+        {% if default_resource_list.has_previous %}
+            <a href="?page={{ default_resource_list.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ default_resource_list.number }} of {{ default_resource_list.paginator.num_pages }}.
+        </span>
+
+        {% if default_resource_list.has_next %}
+            <a href="?page={{ default_resource_list.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+<!-- end pageination -->
 
         {% if default_resource_list %}
             <table class="table table-condensed table-hover">
@@ -85,7 +274,6 @@ var pathway_list = pathway.split("/")
                         var index = level_list.indexOf(levelstring)
                         if ( index >=0){ 
                             level_list.splice(index, 1);
-                            console.log(levelstring+" is already in place")
                             window.location = RewriteUrlWithTags();
                           } else{
                             level_list.push("{{level}}");
@@ -113,7 +301,6 @@ var pathway_list = pathway.split("/")
                         var index = agebracket_list.indexOf(agebracketstring)
                         if ( index >=0){ 
                             agebracket_list.splice(index, 1);
-                            console.log(agebracketstring+" is already in place")
                             window.location = RewriteUrlWithTags();
                           } else{
                             agebracket_list.push("{{agebracket}}");
@@ -140,7 +327,6 @@ var pathway_list = pathway.split("/")
                         var index = pathway_list.indexOf(pathwaytring)
                         if ( index >=0){ 
                             pathway_list.splice(index, 1);
-                            console.log(pathwaytring+" is already in place")
                             window.location = RewriteUrlWithTags();
                           } else{
                             pathway_list.push("{{pathway}}");
@@ -156,8 +342,29 @@ var pathway_list = pathway.split("/")
                     </td>
                      <td class="span1">
                 {% for subject in resource.subject.all %}
-                <span class="subject {{subject}} tag">{{subject}}</span>
-               
+                <span class="subject {{resource.pk}}{{subject.slug}} tag">{{subject}}</span>
+                         <script>
+                        $(document).ready(function() {
+                        var subjectstring = DaveSlugify($( ".{{resource.pk}}{{subject.slug}}" ).text())
+
+
+                        if (clean_subject_list .indexOf(subjectstring) >=0){
+                            $( ".{{resource.pk}}{{subject.slug}}" ).css("opacity","1.0")
+                            }
+                         })
+                        $( ".{{resource.pk}}{{subject}}" ).click(function() {    
+                        var subjecttring = DaveSlugify($( ".{{resource.pk}}{{subject.slug}}" ).text())
+                        var index = clean_subject_list.indexOf(subjecttring)
+                        if ( index >=0){ 
+                            subject_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            subject_list.push("{{subject}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
 
 
                 {%endfor%}
@@ -174,14 +381,15 @@ var pathway_list = pathway.split("/")
                         
                         <script>
                         $(document).ready(function() {
-                        var tagstring = $( ".{{resource.pk}}{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var tagstring =  DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
+                       
                         if (clean_tags_list.indexOf(tagstring) >=0){
                             $( ".{{resource.pk}}{{tag.slug}}" ).css("opacity","1.0")
                         }
                     })
-
+   
                         $( ".{{resource.pk}}{{tag.slug}}" ).click(function() {
-                        var tagstring = $( ".{{resource.pk}}{{tag.slug}}" ).text().replace("%20","-").replace(" ","-").toLowerCase()
+                        var tagstring = DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
                         var index = clean_tags_list .indexOf(tagstring)
                        
 
@@ -189,7 +397,6 @@ var pathway_list = pathway.split("/")
                             tags_list.sort().splice(index, 1);
                       
                       window.location = RewriteUrlWithTags(); 
-                      console.log(tagstring+" is already in place")
 
                           } else{
                            tags_list.push("{{tag}}");
@@ -224,6 +431,28 @@ var pathway_list = pathway.split("/")
             
             </table>
         {% else %}
-            <strong>There are no resources present.</strong>
+            <!-- nothing was found so there is nothing here :(-->
         {% endif %}
+        
+<!-- start pageination -->
+<div class="pagination">
+    <span class="step-links">
+        {% if default_resource_list.has_previous %}
+            <a href="?page={{ default_resource_list.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ default_resource_list.number }} of {{ default_resource_list.paginator.num_pages }}.
+        </span>
+
+        {% if default_resource_list.has_next %}
+            <a href="?page={{ default_resource_list.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+<!-- end pageination -->
+
+
 {% endblock %}
+
+

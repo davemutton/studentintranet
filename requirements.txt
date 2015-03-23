@@ -1,7 +1,10 @@
-Django==1.7.3
-django-taggit==0.12.2
+Django==1.7.5
+django-classy-tags==0.6.1
+django-model-utils==2.2
 django-templatetag-sugar==1.0
 docutils==0.12
+geordi==0.3
+gprof2dot===dev
 gunicorn==19.1.1
 Unidecode==0.4.17
-uWSGI==2.0.9
+webkit2png==0.8.3

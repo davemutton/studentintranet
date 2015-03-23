@@ -14,18 +14,21 @@
 
     {% block extra-head %}{% endblock %}
         <title>ASSoE Student intranet - {% block title %}{% endblock %}</title>
-    
+           
     </head>
 
     <body>
+        <div class="container"> 
+         <h1>{% block heading %}{% endblock %}</h1>
+     </div>
 <div class="container"> 
         <nav >
             <ul class="nav nav-tabs">
+            <li><a href="/mediamanager/">View all resources</a></li>
 
+            <li><a href="/mediamanager/edit/learningobject">New resource</a></li>
 
-            <li><a href="/mediamanager/new/learningobject">New resource</a></li>
-
-
+{% block extra-menu-item %}{% endblock %}
                
             </ul>
         </nav>

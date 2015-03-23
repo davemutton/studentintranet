@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}{{default_resource.title}}{% endblock %}
+{%if default_resource.learningobject.indexpath %}
+          {% block extra-menu-item %}<li><a href="/mediamanager/edit/learningobject/{{default_resource.pk}}">Edit this resource</a></li>{% endblock %}
+    {% endif  %}
 
 
 {% block body_block %}
@@ -9,6 +12,7 @@
         {{default_resource.page.body|safe}}
         <p>
           {%elif default_resource.learningobject.indexpath %}
+        
         <iframe scrolling="no" src="/{{default_resource.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
         </iframe>
         {%elif default_resource.videoresource.videofile %}

@@ -33,7 +33,6 @@ function DaveSlugify(input_text)
 {
 var output_text = input_text.replace(/%20/g,"-").replace(/[\.,~%$!\^\*()'{}]+/g,"").replace(" ","-").toLowerCase();
 output_text =output_text.replace(" ","-")
-console.log(output_text)
 return(output_text);
 
 
