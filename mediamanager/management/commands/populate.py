@@ -24,9 +24,7 @@ class Command(BaseCommand):
 					print tag
 					n=n+1
 					print n
-					title = "test " +str(n)
-
-
+					title = "test run " +str(n) + str(subject)
 					p = UrlResource(title=title,url=url)
 					p.save()
 					p.level.add(level.pk)
@@ -34,5 +32,14 @@ class Command(BaseCommand):
 					p.pathway.add(pathway.pk)
 					p.subject.add(subject.pk)
 					p.tags.add(tag)
-
+					level = random.choice(AssoeLevel.objects.all())
+					age = random.choice(AgeBracket.objects.all())
+					pathway = random.choice(AssoePathway.objects.all())
+					subject = random.choice(AssoeSubjects.objects.all())
+					tag = random.choice(all_tags)
+					p.level.add(level.pk)
+					p.agebracket.add(age.pk)
+					p.pathway.add(pathway.pk)
+					p.subject.add(subject.pk)
+					p.tags.add(tag)
 					p.save()
