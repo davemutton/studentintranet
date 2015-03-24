@@ -51,7 +51,6 @@ INSTALLED_APPS = (
     #Third party apps installed with pip
 
     'gunicorn',
-    'geordi',
 
 
     #local apps created or downloaded with git clone.
@@ -74,7 +73,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'geordi.VisorMiddleware',
 )
 
 ROOT_URLCONF = 'studentintranet.urls'

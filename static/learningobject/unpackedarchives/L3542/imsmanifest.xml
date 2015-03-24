@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="M819595" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lom_custom.xsd" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.3</schemaversion>
+    <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <general>
+        <identifier>
+          <catalog>TLF-LearningObject</catalog>
+          <entry>L3542</entry>
+        </identifier>
+        <title>
+          <string language="en">Platonic solids</string>
+        </title>
+        <language>en</language>
+        <description>
+          <string language="en">Investigate the five Platonic solids by displaying, rotating and resizing them. Select vertices, edges, and faces to show that the number of vertices minus the number of edges plus the number of faces is equal to 2 (Euler&#x2019;s formula).</string>
+        </description>
+        <keyword>
+          <string language="en">Solids (Geometry)</string>
+        </keyword>
+        <keyword>
+          <string language="en">Nets (Geometry)</string>
+        </keyword>
+        <keyword>
+          <string language="en">Translation (Geometry)</string>
+        </keyword>
+        <aggregationLevel>
+          <source>LOMv1.0</source>
+          <value>2</value>
+        </aggregationLevel>
+      </general>
+      <lifeCycle>
+        <version>
+          <string>5.0</string>
+        </version>
+        <status>
+          <source>LOMv1.0</source>
+          <value>revised</value>
+        </status>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Technical implementer</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2005-12-16T15:03:49+10:30
+ADR:;;;Logan;Utah;;USA
+ORG:Utah State University\; National Library of Virtual Manipulatives
+URL:http://nlvm.usu.edu/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>MARC relator</source>
+            <value>Copyright holder</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2005-12-16T15:03:49+10:30
+ADR:;;;Logan;Utah;;USA
+VERSION:3.0
+ORG:Utah State University\; National Library of Virtual Manipulatives
+URL:http://nlvm.usu.edu/
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Publisher</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2010-07-12T10:09:16.0+09:30
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Education Services Australia Ltd
+URL:http://www.esa.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+          <date>
+            <dateTime>2012-03-23T03:57:36.0Z</dateTime>
+          </date>
+        </contribute>
+      </lifeCycle>
+      <metaMetadata>
+        <identifier>
+          <catalog>TLF-Metadata</catalog>
+          <entry>624914</entry>
+        </identifier>
+        <metadataSchema>LOMv1.0</metadataSchema>
+        <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+        <metadataSchema>ednav1.1</metadataSchema>
+        <language>en</language>
+      </metaMetadata>
+      <technical>
+        <format>application/octet-stream</format>
+        <format>text/html</format>
+        <format>application/x-javascript</format>
+        <format>image/jpeg</format>
+        <format>image/png</format>
+        <format>text/css</format>
+        <size>305421</size>
+        <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/7738</location>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MacOS</value>
+            </name>
+            <minimumVersion>X</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MS-Windows</value>
+            </name>
+            <minimumVersion>XP</minimumVersion>
+            <maximumVersion>Vista</maximumVersion>
+          </orComposite>
+        </requirement>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Microsoft Internet Explorer</value>
+            </name>
+            <minimumVersion>7.0 (MS-Windows)</minimumVersion>
+            <maximumVersion>8.0 (MS-Windows)</maximumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Firefox</value>
+            </name>
+            <minimumVersion>3.0 (MS-Windows)</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Safari</value>
+            </name>
+            <minimumVersion>3.0 (MacOS)</minimumVersion>
+          </orComposite>
+        </requirement>
+      </technical>
+      <educational>
+        <learningResourceType>
+          <source>DCMI Type</source>
+          <value>Interactive resource</value>
+        </learningResourceType>
+        <intendedEndUserRole>
+          <source>LOMv1.0</source>
+          <value>learner</value>
+        </intendedEndUserRole>
+        <context>
+          <source>LOMv1.0</source>
+          <value>school</value>
+        </context>
+        <typicalAgeRange>
+          <string language="en">7,8,9,10,11,12,13</string>
+        </typicalAgeRange>
+      </educational>
+      <rights>
+        <description>
+          <string language="en">&#xa9; Education Services Australia Ltd, 2012, except where indicated under Acknowledgements</string>
+        </description>
+      </rights>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>hasformat</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>URI</catalog>
+            <entry>support_files/main.jpg</entry>
+          </identifier>
+          <description>
+            <string language="en">Large thumbnail version of current resource</string>
+          </description>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>isbasedon</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L3542</entry>
+          </identifier>
+          <description>
+            <string language="en">v.5.0 Includes updated metadata.
+v.4.0 Includes updated metadata.
+v.3.0 Includes technical improvements and updated metadata.
+v.2.0 Changes made to the metadata.
+v.1.0 Originally published online and as part of a CD-ROM titled 'NLVM Math Activities' produced by National Library of Virtual Manipulatives.</string>
+          </description>
+        </resource>
+      </relation>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-userlevel</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">3</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">4</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">5</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">6</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">7</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>idea</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>8100</id>
+            <entry>
+              <string language="en">Nets (Geometry)</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>2275</id>
+            <entry>
+              <string language="en">Solids (Geometry)</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>11963</id>
+            <entry>
+              <string language="en">Translation (Geometry)</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>skill level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Knowledge</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Comprehension</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Application</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Interactives</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Experiment</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Analysis</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Modelling</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Data manipulation and interpretation</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Estimation</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Experiential learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Independent learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Visual learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students investigate the five Platonic solids.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students demonstrate Euler&#x2019;s formula by applying it to the Platonic solids.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Allows rotation and resizing of Platonic solids.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Supports repeated use through random generation of calculations of Euler's formula.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Allows students to manipulate 3-dimensional shapes to investigate a formula.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-kla</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Measurement and geometry</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Modelling</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Linear equations</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Graphs</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">mathematics</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Estimation</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">AGIFT</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Education and training</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">School education</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>accessibility restrictions</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_accessprofile</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Hearing independence</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+    </lom>
+  </metadata>
+  <organizations default="O169732">
+    <organization identifier="O169732">
+      <title>Platonic solids</title>
+      <item identifier="O169732I0" identifierref="R690586">
+        <title>Start: Platonic solids</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="R690586" type="webcontent" href="index.html">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <catalog>TLF-LearningObject</catalog>
+              <entry>L3542</entry>
+            </identifier>
+            <title>
+              <string language="en">Platonic solids</string>
+            </title>
+            <language>en</language>
+            <description>
+              <string language="en">Investigate the five Platonic solids by displaying, rotating and resizing them. Select vertices, edges, and faces to show that the number of vertices minus the number of edges plus the number of faces is equal to 2 (Euler&#x2019;s formula).</string>
+            </description>
+            <keyword>
+              <string language="en">Solids (Geometry)</string>
+            </keyword>
+            <keyword>
+              <string language="en">Nets (Geometry)</string>
+            </keyword>
+            <keyword>
+              <string language="en">Translation (Geometry)</string>
+            </keyword>
+            <aggregationLevel>
+              <source>LOMv1.0</source>
+              <value>2</value>
+            </aggregationLevel>
+          </general>
+          <lifeCycle>
+            <version>
+              <string>5.0</string>
+            </version>
+            <status>
+              <source>LOMv1.0</source>
+              <value>revised</value>
+            </status>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Technical implementer</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2005-12-16T15:03:49+10:30
+ADR:;;;Logan;Utah;;USA
+ORG:Utah State University\; National Library of Virtual Manipulatives
+URL:http://nlvm.usu.edu/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>MARC relator</source>
+                <value>Copyright holder</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2005-12-16T15:03:49+10:30
+ADR:;;;Logan;Utah;;USA
+VERSION:3.0
+ORG:Utah State University\; National Library of Virtual Manipulatives
+URL:http://nlvm.usu.edu/
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Publisher</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2010-07-12T10:09:16.0+09:30
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Education Services Australia Ltd
+URL:http://www.esa.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+              <date>
+                <dateTime>2012-03-23T03:57:36.0Z</dateTime>
+              </date>
+            </contribute>
+          </lifeCycle>
+          <metaMetadata>
+            <identifier>
+              <catalog>TLF-Metadata</catalog>
+              <entry>624914</entry>
+            </identifier>
+            <metadataSchema>LOMv1.0</metadataSchema>
+            <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+            <metadataSchema>ednav1.1</metadataSchema>
+            <language>en</language>
+          </metaMetadata>
+          <technical>
+            <format>application/octet-stream</format>
+            <format>text/html</format>
+            <format>application/x-javascript</format>
+            <format>image/jpeg</format>
+            <format>image/png</format>
+            <format>text/css</format>
+            <size>305421</size>
+            <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/7738</location>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MacOS</value>
+                </name>
+                <minimumVersion>X</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MS-Windows</value>
+                </name>
+                <minimumVersion>XP</minimumVersion>
+                <maximumVersion>Vista</maximumVersion>
+              </orComposite>
+            </requirement>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Microsoft Internet Explorer</value>
+                </name>
+                <minimumVersion>7.0 (MS-Windows)</minimumVersion>
+                <maximumVersion>8.0 (MS-Windows)</maximumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Firefox</value>
+                </name>
+                <minimumVersion>3.0 (MS-Windows)</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Safari</value>
+                </name>
+                <minimumVersion>3.0 (MacOS)</minimumVersion>
+              </orComposite>
+            </requirement>
+          </technical>
+          <educational>
+            <learningResourceType>
+              <source>DCMI Type</source>
+              <value>Interactive resource</value>
+            </learningResourceType>
+            <intendedEndUserRole>
+              <source>LOMv1.0</source>
+              <value>learner</value>
+            </intendedEndUserRole>
+            <context>
+              <source>LOMv1.0</source>
+              <value>school</value>
+            </context>
+            <typicalAgeRange>
+              <string language="en">7,8,9,10,11,12,13</string>
+            </typicalAgeRange>
+          </educational>
+          <rights>
+            <description>
+              <string language="en">&#xa9; Education Services Australia Ltd, 2012, except where indicated under Acknowledgements</string>
+            </description>
+          </rights>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>hasformat</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>URI</catalog>
+                <entry>support_files/main.jpg</entry>
+              </identifier>
+              <description>
+                <string language="en">Large thumbnail version of current resource</string>
+              </description>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>isbasedon</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L3542</entry>
+              </identifier>
+              <description>
+                <string language="en">v.5.0 Includes updated metadata.
+v.4.0 Includes updated metadata.
+v.3.0 Includes technical improvements and updated metadata.
+v.2.0 Changes made to the metadata.
+v.1.0 Originally published online and as part of a CD-ROM titled 'NLVM Math Activities' produced by National Library of Virtual Manipulatives.</string>
+              </description>
+            </resource>
+          </relation>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-userlevel</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">3</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">4</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">5</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">6</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">7</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>idea</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>8100</id>
+                <entry>
+                  <string language="en">Nets (Geometry)</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>2275</id>
+                <entry>
+                  <string language="en">Solids (Geometry)</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>11963</id>
+                <entry>
+                  <string language="en">Translation (Geometry)</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>skill level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Knowledge</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Comprehension</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Application</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Interactives</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Experiment</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Analysis</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Modelling</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Data manipulation and interpretation</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Estimation</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Experiential learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Independent learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Visual learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students investigate the five Platonic solids.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students demonstrate Euler&#x2019;s formula by applying it to the Platonic solids.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Allows rotation and resizing of Platonic solids.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Supports repeated use through random generation of calculations of Euler's formula.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Allows students to manipulate 3-dimensional shapes to investigate a formula.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-kla</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Measurement and geometry</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Modelling</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Linear equations</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Graphs</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">mathematics</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Estimation</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">AGIFT</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Education and training</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">School education</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>accessibility restrictions</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_accessprofile</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Hearing independence</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+        </lom>
+      </metadata>
+      <file href="mtext.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142771</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179413</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>38432</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="m3d.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142772</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179414</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>10087</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="boxmodel.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142774</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179416</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>16461</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mxml.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142775</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179417</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>13751</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mcore.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142776</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179418</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>93810</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mstat.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142778</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179420</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>11092</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="platonicsolids.jar">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142779</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179421</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/octet-stream</format>
+              <size>5990</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="images/tlf_logo_small.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350245</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490486</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>7333</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="images/red_angle.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350246</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490487</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>644</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="images/logo.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350247</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490488</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>3635</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="js/javascript.js">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350248</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490489</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-javascript</format>
+              <size>1438</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="js/resize.js">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350249</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490490</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-javascript</format>
+              <size>266</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/tlf_logo.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F372092</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>517115</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>2931</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/icon.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F372093</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>517116</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>17637</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/logo.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F384714</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>532849</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>3635</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/thumb.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F372091</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>3.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>517114</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>4345</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/main.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F372094</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>3.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>517117</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>27480</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="css/resource.css">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F350244</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>3.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>490485</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/css</format>
+              <size>7923</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="images/screenshot.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142770</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>3.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179412</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>28935</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="applet.html">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142773</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>4.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179415</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>3026</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="index.html">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F142777</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>5.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>179419</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>6570</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="ConditionsOfUse.html" />
+      <file href="description.html" />
+      <file href="rights.xml" />
+    </resource>
+  </resources>
+</manifest>

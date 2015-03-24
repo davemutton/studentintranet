@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  ========== Accelerate XML ====================== -->
+<!--  == set accessibility to 'hearing' for hearing impared version == -->
+<learningObject title="Accelerate" accessibility="hearing">
+	<screens>
+		<!--  ========== The START screen  ==== -->
+		<item name="Start" display="true">
+			<script>
+				<item id="s1_1" mp3="mp3/beep.mp3" heading=""><![CDATA[<p>It is the year 2084. You are the pilot of an interplanetary cargo craft.<br><br>You need to keep constant track of:<br>•  your <b><font color='#FF0000'>velocity</font></b><br>•  your <b><font color='#FF0000'>acceleration</font></b> (a change in velocity)<br>•  the <b><font color='#FF0000'>force</font></b> needed to change velocity·<br>•  the <b><font color='#FF0000'>mass</font></b> of your spacecraft.<br><br>How can you measure these factors?</p>]]></item>
+				<item id="s1_2" mp3="mp3/beepx2.mp3" heading=""><![CDATA[<p>You can use these measuring units: <br>•  <b><font color='#FF0000'>Velocity</font></b>: metres per second (m/s)<br>•  <b><font color='#FF0000'>Acceleration</font></b>: metres per second per second (m/s/s)<br>•  <b><font color='#FF0000'>Force</font></b>: newton (named after Sir Isaac Newton, a famous English scientist) (N)<br>•  <b><font color='#FF0000'>Mass</font></b>: kilograms (kg)</p>]]></item>			
+				<item id="s1_3" mp3="mp3/beepx4.mp3" heading=""><![CDATA[<p>This graph shows your spacecraft's velocity during a set period of time. When the graph line is horizontal, the velocity is constant (no acceleration).<br><br>In this example the engines are turned off, but you continue at a constant velocity because there is no friction to slow you down.</p>]]></item>			
+				<item id="s1_4" mp3="mp3/thrust_d.mp3" heading=""><![CDATA[<p>The line on the graph shows that your velocity<br>is increasing: you are accelerating.<br><br>An object accelerates when an unbalanced force is acting on it.<br><br>In this activity, you will be investigating how the size of the acceleration is related to the size of the force and the mass of the object.</p>]]></item>			
+				<item id="s1_5" mp3="mp3/amb_d.mp3" heading=""><![CDATA[<p>Now the graph shows that the craft's velocity is decreasing. This will only occur when the engines are off and your craft is being slowed down by drag. </p>]]></item>	
+			</script>
+		</item>
+		<!--  ========== The Intro screen ===== -->
+		<item name="Force" display="true">
+			<PageHeader><![CDATA[Accelerate]]></PageHeader>
+			<script>
+			</script>
+		</item>
+		<!--  ========== Mass screen ==== -->
+		<item name="Mass" display="true">
+		<PageHeader><![CDATA[Changing Force]]></PageHeader>
+			<script>
+				<item id="s3_1" mp3="none" heading=""><![CDATA[<p>To explore how acceleration is affected by mass, your spacecraft will pick up cargo. This changes its mass.<br><br>Use the spacecraft's engines to try to maintain a constant acceleration. Complete the tasks and watch the graph to see what happens.</p>]]></item>
+				<!--  ========== TASK 1 ==== -->
+				<item id="s3_t1" mp3="none" heading="Task 1 "><![CDATA[<p>The spacecraft is carrying no cargo. Its mass is 100 kg.<br><br>Use the engines to make the craft accelerate at a constant 5 m/s/s between the space beacons. You can increase or decrease the force at any time.]]></item>
+				<!--  ========== ALL TASK FEEDBACK ==== -->
+				<item id="s3_f1" mp3="none" heading=""><![CDATA[<p>Excellent! When the craft has a mass of # kg, it needs a force of * newtons to accelerate at the rate of 5 m/s/s.</p>]]></item>
+				<!--  ========== NEG FEEDBACK ==== -->
+				<item id="s3_f2" mp3="none" heading=""><![CDATA[<p>This is not the correct force needed. Check the graph and your acceleration and try again. </p>]]></item>
+				<item id="s3_f3" mp3="none" heading=""><![CDATA[<p>Still not correct. You need to use # force to achieve an acceleration of 5 m/s/s.</p>]]></item>
+				<item id="s3_f4" mp3="none" heading=""><![CDATA[<p>Sorry. To make the craft accelerate at the correct rate, you need to use a <b>Force setting</b> of # engines.<br><br>Set this <b>Force setting</b> and watch the result.</p>]]></item>				
+				<!--  ========== TASK 2 ==== -->
+				<item id="s3_t2" mp3="none" heading="Task 2 "><![CDATA[<p>The spacecraft has taken on cargo, and the total mass of the ship is now 200 kg. <br><br>Use the engines to make the craft accelerate at a constant 5 m/s/s between the space beacons. You can increase or decrease the force at any time.]]></item>
+				<!--  ========== TASK 3 ==== -->
+				<item id="s3_t3" mp3="none" heading="Task 3 "><![CDATA[<p>The spacecraft has taken on cargo, and the total mass of the ship is now 300 kg.<br><br>Use the engines to make the craft accelerate at a constant 5 m/s/s between the space beacons. You can increase or decrease the force at any time.]]></item>
+				<!--  ========== TASK 4 ==== -->
+				<item id="s3_t4" mp3="none" heading="Task 4 "><![CDATA[<p>The spacecraft has taken on cargo, and the total mass of the ship is now 400 kg.<br><br>Use the engines to make the craft accelerate at a constant 5 m/s/s between the space beacons. You can increase or decrease the force at any time.]]></item>
+				<!--  ========== Summary ==== -->
+				<item id="s3_f5" mp3="none" heading=""><![CDATA[<p>Great work! You've found the correct force necessary to produce the same acceleration each time.<br><br>The results of your journeys are recorded in this chart.<br><br>How does the mass affect the force needed to get the same acceleration?</p>]]></item>
+				<item id="s3_f6" mp3="none" heading=""><![CDATA[<p>Your results show:<br>• the greater the mass, the greater the force needed for the same acceleration.<br><br>This is summarised as Newton's second law of motion:<br>Force = mass x acceleration (F = m x a)</p>]]></item>
+			</script>
+		</item>
+		<!--  ========== Friction screen  ==== -->
+		<item name="Friction" display="true">
+		<PageHeader><![CDATA[Changing Mass]]></PageHeader>
+			<script>
+			</script>
+		</item>
+		<item name="Copyright" display="true">
+		<PageHeader></PageHeader>
+			<script>
+			<item id="copyright" mp3="none" heading=""><![CDATA[Printable worksheet &#169; Education Services Australia Ltd, 2010, except where indicated under Acknowledgements. You may use, download and reproduce this material free of charge for non-commercial educational purposes provided you retain all acknowledgements associated with the material.]]>
+			</item>
+			</script>
+		</item>
+	</screens>
+</learningObject>

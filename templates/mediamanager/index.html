@@ -2,8 +2,34 @@
        {% extends 'base.html' %}
 {% block title %}list of all Resources{% endblock %}
 {% block heading %}{% endblock %}
+ {% block extra-head %}
+<link href="/static/css/jqcloud.css" rel="stylesheet">
+<script src="/static/js/jqcloud-1.0.4.js"></script>
+
+ {% endblock %}
 {% block body_block %}
 {% load taggit_extras %} {% load taggit_templatetags2_tags %}
+
+
+<!--start tag cloud -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--end tag cloud -->
+
+
+
 <script>
 var tags = getQueryVariable('tag');
 clean_tags = DaveSlugify(tags);
@@ -24,7 +50,7 @@ var clean_subject_list= clean_subject.split("/")
 <!-- start  selector-->
 <div class = "selector-section">
 
-{{tagcloud}}{{tagcloud}}
+
 
 
 <!-- start level selector-->
@@ -157,9 +183,21 @@ var clean_subject_list= clean_subject.split("/")
 
 
 
+
+<div class="tagcloud-selector selector-group">
+    <h4 class="level-selector-heading">Tagcloud</h4>
+<script type="text/javascript">
+var word_list = JSON.parse("{{ tagcloud }}".replace(/&quot;/g,'"'));;
+
+console.log(word_list)
+$(function() {
+$("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
+});
+</script>
+
+<div id="tagcloud" style="width: 420px; height: 250px; border: 0px solid #ccc;"></div>
 </div>
-
-
+</div>
 
 <!-- end  selector-->
 
@@ -191,40 +229,7 @@ var clean_subject_list= clean_subject.split("/")
 
 
 
-<!-- Optional tag cloud. Feel like this does not belong here.
-<div class="cloud-wrapper">
-{% get_tagcloud as tags %}
-{% for tag in tags %}
-<span class="tag cloud-{{tag.slug}} tagcloud"><font size={{tag.weight|floatformat:0}}>{{tag}}</font></span>
- <script>
-                        $(document).ready(function() {
-                        var tagstring = DaveSlugify($( ".cloud-{{tag.slug}}" ).text())
-                        if (clean_tags_list.indexOf(tagstring) >=0){
-                            $( ".cloud-{{tag.slug}}" ).css("opacity","1.0")
-                        }
-                    })
 
-                        $( ".cloud-{{tag.slug}}" ).click(function() {
-                        var tagstring = DaveSlugify($( ".cloud-{{tag.slug}}" ).text())
-                        var index = clean_tags_list .indexOf(tagstring)
-                       
-
-                        if ( index >=0){   
-                            tags_list.sort().splice(index, 1);
-                      
-                      window.location = RewriteUrlWithTags(); 
-                      console.log(tagstring+" is already in place")
-
-                          } else{
-                           tags_list.push("{{tag}}");
-                        window.location = RewriteUrlWithTags(); 
-                          }
-                    
-                        });
-                        </script>
-{% endfor %}
-</div>
--->
 
 
 <!-- start pageination -->

@@ -1,0 +1,2794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="M690667" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lom_custom.xsd" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.3</schemaversion>
+    <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <general>
+        <identifier>
+          <catalog>TLF-LearningObject</catalog>
+          <entry>L927</entry>
+        </identifier>
+        <title>
+          <string language="en">Down to Earth: metals matter</string>
+        </title>
+        <language>en</language>
+        <description>
+          <string language="en">Examine everyday things around a house to find out which metals they contain. For example, the inner part of a microwave oven contains aluminium, copper, iron and manganese. Investigate the properties of each metal to explain why they are suited to particular uses. Work out how much of each metal is needed to make a particular product. Calculate supplies of resources needed to meet global demand. This learning object is one in a series of three objects</string>
+        </description>
+        <keyword>
+          <string language="en">Supply and demand</string>
+        </keyword>
+        <keyword>
+          <string language="en">Recycling</string>
+        </keyword>
+        <keyword>
+          <string language="en">Periodic table</string>
+        </keyword>
+        <keyword>
+          <string language="en">Ore deposits</string>
+        </keyword>
+        <keyword>
+          <string language="en">Nonrenewable resources</string>
+        </keyword>
+        <keyword>
+          <string language="en">Metals</string>
+        </keyword>
+        <keyword>
+          <string language="en">Industrial design</string>
+        </keyword>
+        <keyword>
+          <string language="en">Household appliances</string>
+        </keyword>
+        <keyword>
+          <string language="en">Commodities</string>
+        </keyword>
+        <keyword>
+          <string language="en">Metalloids</string>
+        </keyword>
+        <aggregationLevel>
+          <source>LOMv1.0</source>
+          <value>2</value>
+        </aggregationLevel>
+      </general>
+      <lifeCycle>
+        <version>
+          <string>2.0</string>
+        </version>
+        <status>
+          <source>LOMv1.0</source>
+          <value>revised</value>
+        </status>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Author</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2006-07-10T10:58:02+09:30
+ADR:;;;Kingston;ACT;2604;Australia
+ORG:Minerals Council of Australia
+URL:http://www.minerals.org.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Author</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2006-07-11T10:07:13+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Technical implementer</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2006-07-11T10:07:57+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Editor</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2006-07-19T14:20:53+09:30
+ADR:;;;Kingston;ACT;2604;Australia
+ORG:Minerals Council of Australia
+URL:http://www.minerals.org.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Graphical designer</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2006-07-19T14:19:52+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Publisher</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2007-02-23T06:35:47Z
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Curriculum Corporation\; The Le@rning Federation
+URL:http://www.thelearningfederation.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+          <date>
+            <dateTime>2010-02-21T10:00:50.0Z</dateTime>
+          </date>
+        </contribute>
+      </lifeCycle>
+      <metaMetadata>
+        <identifier>
+          <catalog>TLF-Metadata</catalog>
+          <entry>533536</entry>
+        </identifier>
+        <metadataSchema>LOMv1.0</metadataSchema>
+        <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+        <metadataSchema>ednav1.1</metadataSchema>
+        <language>en</language>
+      </metaMetadata>
+      <technical>
+        <format>text/html</format>
+        <format>application/x-javascript</format>
+        <format>application/x-shockwave-flash</format>
+        <format>image/jpeg</format>
+        <format>image/png</format>
+        <format>text/css</format>
+        <format>text/html</format>
+        <format>text/xml</format>
+        <size>1088814</size>
+        <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/6671</location>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MacOS</value>
+            </name>
+            <minimumVersion>X</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MS-Windows</value>
+            </name>
+            <minimumVersion>2000</minimumVersion>
+          </orComposite>
+        </requirement>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Microsoft Internet Explorer</value>
+            </name>
+            <minimumVersion>6.0 (MS-Windows)</minimumVersion>
+            <maximumVersion>7.0 (MS-Windows)</maximumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Firefox</value>
+            </name>
+            <minimumVersion>2.0 (MS-Windows)</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Safari</value>
+            </name>
+            <minimumVersion>2..0 (MacOS)</minimumVersion>
+          </orComposite>
+        </requirement>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Plug-in</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Adobe Flash Player</value>
+            </name>
+            <minimumVersion>9</minimumVersion>
+          </orComposite>
+        </requirement>
+        <otherPlatformRequirements>
+          <string language="en">Initial load time and load time on some screens may exceed 10 seconds on a dedicated 64kbps connection due to the use of rich media content.</string>
+        </otherPlatformRequirements>
+      </technical>
+      <educational>
+        <learningResourceType>
+          <source>DCMI Type</source>
+          <value>Interactive resource</value>
+        </learningResourceType>
+        <intendedEndUserRole>
+          <source>LOMv1.0</source>
+          <value>learner</value>
+        </intendedEndUserRole>
+        <context>
+          <source>LOMv1.0</source>
+          <value>school</value>
+        </context>
+        <typicalAgeRange>
+          <string language="en">9,10,11,12,13,14</string>
+        </typicalAgeRange>
+      </educational>
+      <rights>
+        <description>
+          <string language="en">&#xa9; Minerals Council of Australia, 2004</string>
+        </description>
+      </rights>
+      <relation>
+        <kind>
+          <source>The GEM Element Set Qualifier Vocabulary</source>
+          <value>issiblingof</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L925</entry>
+          </identifier>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>The GEM Element Set Qualifier Vocabulary</source>
+          <value>issiblingof</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L926</entry>
+          </identifier>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>hasformat</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>URI</catalog>
+            <entry>support_files/main.jpg</entry>
+          </identifier>
+          <description>
+            <string language="en">Large thumbnail version of current resource</string>
+          </description>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>isbasedon</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L927</entry>
+          </identifier>
+          <description>
+            <string language="en">v.2.0 Includes support files, updated metadata and branding syntax.
+v.1.0 Originally published as a .zip file on the website of Minerals Council of Australia and also published on a CD-ROM titled 'Down to Earth'.</string>
+          </description>
+        </resource>
+      </relation>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-userlevel</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">5</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">6</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">7</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">8</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>idea</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>6463</id>
+            <entry>
+              <string language="en">Household appliances</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>511</id>
+            <entry>
+              <string language="en">Industrial design</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>1015</id>
+            <entry>
+              <string language="en">Metals</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>6369</id>
+            <entry>
+              <string language="en">Nonrenewable resources</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>7893</id>
+            <entry>
+              <string language="en">Ore deposits</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>3555</id>
+            <entry>
+              <string language="en">Periodic table</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>5798</id>
+            <entry>
+              <string language="en">Recycling</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>3014</id>
+            <entry>
+              <string language="en">Supply and demand</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>skill level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Knowledge</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Comprehension</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Application</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Analysis</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Interactives</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Analysis</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Modelling</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Data manipulation and interpretation</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Experiential learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Independent learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Problem solving</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Visual learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students identify metals commonly found in household objects.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students relate demand for commodities to supply of mineral resources.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students relate properties of metals and metalloids to their industrial applications.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Demonstrates that growing world demand for commodities is dependent on limited supplies of mineral resources.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Illustrates the composition of metallic and metalloid components within household commodities.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Emphasises that alloys and composite materials are commonly used in the manufacture of household commodities.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Links the periodic table to descriptions of the properties and uses of metals and metalloids.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Provides an interactive notebook to record and print facts about commodities, metals and metalloids.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Provides an interactive calculator and global map to work out relationships between world demand for commodities and supply of mineral resources.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Includes detailed information about recycling metals in Australia.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Includes a series of questions which could be used to create a worksheet.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-kla</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Natural and processed materials</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Science inquiry skills</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Science understanding</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Industrial applications</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Quantitative data</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Materials</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Natural resources</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Periodic table</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Mineralogy</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Physical properties</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">AGIFT</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Education and training</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">School education</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>accessibility restrictions</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_accessprofile</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Generic</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+    </lom>
+  </metadata>
+  <organizations default="O150043">
+    <organization identifier="O150043">
+      <title>Down to Earth: metals matter</title>
+      <item identifier="O150043I0" identifierref="R690668">
+        <title>Start: Down to Earth: metals matter</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="R690668" type="webcontent" href="index.html">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <catalog>TLF-LearningObject</catalog>
+              <entry>L927</entry>
+            </identifier>
+            <title>
+              <string language="en">Down to Earth: metals matter</string>
+            </title>
+            <language>en</language>
+            <description>
+              <string language="en">Examine everyday things around a house to find out which metals they contain. For example, the inner part of a microwave oven contains aluminium, copper, iron and manganese. Investigate the properties of each metal to explain why they are suited to particular uses. Work out how much of each metal is needed to make a particular product. Calculate supplies of resources needed to meet global demand. This learning object is one in a series of three objects</string>
+            </description>
+            <keyword>
+              <string language="en">Supply and demand</string>
+            </keyword>
+            <keyword>
+              <string language="en">Recycling</string>
+            </keyword>
+            <keyword>
+              <string language="en">Periodic table</string>
+            </keyword>
+            <keyword>
+              <string language="en">Ore deposits</string>
+            </keyword>
+            <keyword>
+              <string language="en">Nonrenewable resources</string>
+            </keyword>
+            <keyword>
+              <string language="en">Metals</string>
+            </keyword>
+            <keyword>
+              <string language="en">Industrial design</string>
+            </keyword>
+            <keyword>
+              <string language="en">Household appliances</string>
+            </keyword>
+            <keyword>
+              <string language="en">Commodities</string>
+            </keyword>
+            <keyword>
+              <string language="en">Metalloids</string>
+            </keyword>
+            <aggregationLevel>
+              <source>LOMv1.0</source>
+              <value>2</value>
+            </aggregationLevel>
+          </general>
+          <lifeCycle>
+            <version>
+              <string>2.0</string>
+            </version>
+            <status>
+              <source>LOMv1.0</source>
+              <value>revised</value>
+            </status>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Author</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2006-07-10T10:58:02+09:30
+ADR:;;;Kingston;ACT;2604;Australia
+ORG:Minerals Council of Australia
+URL:http://www.minerals.org.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Author</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2006-07-11T10:07:13+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Technical implementer</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2006-07-11T10:07:57+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Editor</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2006-07-19T14:20:53+09:30
+ADR:;;;Kingston;ACT;2604;Australia
+ORG:Minerals Council of Australia
+URL:http://www.minerals.org.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Graphical designer</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2006-07-19T14:19:52+09:30
+ADR:;;;Canberra;ACT;2600;Australia
+ORG:Learning Curve Pty Ltd
+URL:http://www.learning-curve.com.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Publisher</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2007-02-23T06:35:47Z
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Curriculum Corporation\; The Le@rning Federation
+URL:http://www.thelearningfederation.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+              <date>
+                <dateTime>2010-02-21T10:00:50.0Z</dateTime>
+              </date>
+            </contribute>
+          </lifeCycle>
+          <metaMetadata>
+            <identifier>
+              <catalog>TLF-Metadata</catalog>
+              <entry>533536</entry>
+            </identifier>
+            <metadataSchema>LOMv1.0</metadataSchema>
+            <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+            <metadataSchema>ednav1.1</metadataSchema>
+            <language>en</language>
+          </metaMetadata>
+          <technical>
+            <format>text/html</format>
+            <format>application/x-javascript</format>
+            <format>application/x-shockwave-flash</format>
+            <format>image/jpeg</format>
+            <format>image/png</format>
+            <format>text/css</format>
+            <format>text/html</format>
+            <format>text/xml</format>
+            <size>1088814</size>
+            <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/6671</location>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MacOS</value>
+                </name>
+                <minimumVersion>X</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MS-Windows</value>
+                </name>
+                <minimumVersion>2000</minimumVersion>
+              </orComposite>
+            </requirement>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Microsoft Internet Explorer</value>
+                </name>
+                <minimumVersion>6.0 (MS-Windows)</minimumVersion>
+                <maximumVersion>7.0 (MS-Windows)</maximumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Firefox</value>
+                </name>
+                <minimumVersion>2.0 (MS-Windows)</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Safari</value>
+                </name>
+                <minimumVersion>2..0 (MacOS)</minimumVersion>
+              </orComposite>
+            </requirement>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Plug-in</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Adobe Flash Player</value>
+                </name>
+                <minimumVersion>9</minimumVersion>
+              </orComposite>
+            </requirement>
+            <otherPlatformRequirements>
+              <string language="en">Initial load time and load time on some screens may exceed 10 seconds on a dedicated 64kbps connection due to the use of rich media content.</string>
+            </otherPlatformRequirements>
+          </technical>
+          <educational>
+            <learningResourceType>
+              <source>DCMI Type</source>
+              <value>Interactive resource</value>
+            </learningResourceType>
+            <intendedEndUserRole>
+              <source>LOMv1.0</source>
+              <value>learner</value>
+            </intendedEndUserRole>
+            <context>
+              <source>LOMv1.0</source>
+              <value>school</value>
+            </context>
+            <typicalAgeRange>
+              <string language="en">9,10,11,12,13,14</string>
+            </typicalAgeRange>
+          </educational>
+          <rights>
+            <description>
+              <string language="en">&#xa9; Minerals Council of Australia, 2004</string>
+            </description>
+          </rights>
+          <relation>
+            <kind>
+              <source>The GEM Element Set Qualifier Vocabulary</source>
+              <value>issiblingof</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L925</entry>
+              </identifier>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>The GEM Element Set Qualifier Vocabulary</source>
+              <value>issiblingof</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L926</entry>
+              </identifier>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>hasformat</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>URI</catalog>
+                <entry>support_files/main.jpg</entry>
+              </identifier>
+              <description>
+                <string language="en">Large thumbnail version of current resource</string>
+              </description>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>isbasedon</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L927</entry>
+              </identifier>
+              <description>
+                <string language="en">v.2.0 Includes support files, updated metadata and branding syntax.
+v.1.0 Originally published as a .zip file on the website of Minerals Council of Australia and also published on a CD-ROM titled 'Down to Earth'.</string>
+              </description>
+            </resource>
+          </relation>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-userlevel</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">5</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">6</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">7</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">8</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>idea</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>6463</id>
+                <entry>
+                  <string language="en">Household appliances</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>511</id>
+                <entry>
+                  <string language="en">Industrial design</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>1015</id>
+                <entry>
+                  <string language="en">Metals</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>6369</id>
+                <entry>
+                  <string language="en">Nonrenewable resources</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>7893</id>
+                <entry>
+                  <string language="en">Ore deposits</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>3555</id>
+                <entry>
+                  <string language="en">Periodic table</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>5798</id>
+                <entry>
+                  <string language="en">Recycling</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>3014</id>
+                <entry>
+                  <string language="en">Supply and demand</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>skill level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Knowledge</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Comprehension</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Application</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Analysis</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Interactives</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Analysis</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Modelling</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Data manipulation and interpretation</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Experiential learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Independent learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Problem solving</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Visual learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students identify metals commonly found in household objects.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students relate demand for commodities to supply of mineral resources.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students relate properties of metals and metalloids to their industrial applications.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Demonstrates that growing world demand for commodities is dependent on limited supplies of mineral resources.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Illustrates the composition of metallic and metalloid components within household commodities.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Emphasises that alloys and composite materials are commonly used in the manufacture of household commodities.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Links the periodic table to descriptions of the properties and uses of metals and metalloids.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Provides an interactive notebook to record and print facts about commodities, metals and metalloids.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Provides an interactive calculator and global map to work out relationships between world demand for commodities and supply of mineral resources.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Includes detailed information about recycling metals in Australia.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Includes a series of questions which could be used to create a worksheet.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-kla</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Natural and processed materials</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Science inquiry skills</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Science understanding</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Industrial applications</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Quantitative data</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Materials</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Natural resources</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Periodic table</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Mineralogy</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Physical properties</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">AGIFT</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Education and training</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">School education</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>accessibility restrictions</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_accessprofile</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Generic</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+        </lom>
+      </metadata>
+      <file href="xml/bedroom.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185969</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248959</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>7670</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="xml/bathroom.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185971</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248961</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>4331</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="xml/exterior.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185972</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248962</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>4556</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="xml/kitchen.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185973</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248963</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>10271</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/challenges_metals.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185974</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248964</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>4950</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Copper_Applications.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185975</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248965</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>7172</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/challenges_calc.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185976</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248966</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>7569</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/recycled_computer.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185977</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248967</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>13761</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/PeriodicTable.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185978</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248968</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>60946</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Australia's+Minerals.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185979</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248969</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>20189</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Recycling.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185980</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248970</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>13244</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Production+figures.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185981</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248971</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>2108</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Metal_Composition.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185982</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248972</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>36412</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/credits.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185984</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248974</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>1084</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Metals+and+non-metals.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185985</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248975</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>3175</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/Metal_websites.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185986</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248976</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>4826</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/table.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185987</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248977</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>38779</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mca_lo_1.swf">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185989</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248979</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-shockwave-flash</format>
+              <size>604154</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="js/script.js">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F186067</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>249083</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-javascript</format>
+              <size>172</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="xml/elements.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185970</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248960</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>67276</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="htm/elements.htm">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185983</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248973</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>82954</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/thumb.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F374848</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>520560</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>6680</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/tlf_logo.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F374849</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>520561</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>2931</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/icon.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F374850</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>520562</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>17637</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/main.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F374851</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>520563</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>63500</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="css/mystyle.css">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185988</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248978</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/css</format>
+              <size>1043</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="index.html">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F185990</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>5.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>248980</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>1424</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="ConditionsOfUse.html" />
+      <file href="description.html" />
+      <file href="rights.xml" />
+    </resource>
+  </resources>
+</manifest>

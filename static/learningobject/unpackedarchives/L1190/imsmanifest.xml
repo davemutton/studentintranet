@@ -1,0 +1,2114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="M861957" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lom_custom.xsd" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.3</schemaversion>
+    <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+      <general>
+        <identifier>
+          <catalog>TLF-LearningObject</catalog>
+          <entry>L1190</entry>
+        </identifier>
+        <identifier>
+          <catalog>SCIS</catalog>
+          <entry>1234017</entry>
+        </identifier>
+        <title>
+          <string language="en">Accelerate: mass</string>
+        </title>
+        <language>en</language>
+        <description>
+          <string language="en">Pilot a spaceship in deep space. Investigate how the mass of the ship affect its acceleration. Discover how these concepts are related as explained by Newton's second law of motion. Examine velocity-time line graphs showing acceleration as the gradient. This learning object is one in a series of three objects. The series is also packaged as a combined learning object.</string>
+        </description>
+        <keyword>
+          <string language="en">Motion</string>
+        </keyword>
+        <aggregationLevel>
+          <source>LOMv1.0</source>
+          <value>2</value>
+        </aggregationLevel>
+      </general>
+      <lifeCycle>
+        <version>
+          <string>10.0</string>
+        </version>
+        <status>
+          <source>LOMv1.0</source>
+          <value>revised</value>
+        </status>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Script writer</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2005-05-20T13:53:09+09:30
+ADR:;;;Blackburn;VIC;;Australia
+ORG:Rees Films Pty Ltd
+N:Rees;Rod;;;
+FN:Rod  Rees
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Technical implementer</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2005-05-20T13:53:09+09:30
+ADR:;;;Melbourne;VIC;;Australia
+ORG:CSIRO Publishing
+URL:http://www.publish.csiro.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Publisher</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2010-05-13T15:11:38.0+09:30
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Education Services Australia Ltd
+URL:http://www.esa.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+          <date>
+            <dateTime>2014-01-28T04:42:18.0Z</dateTime>
+          </date>
+        </contribute>
+        <contribute>
+          <role>
+            <source>LOMv1.0</source>
+            <value>Subject matter expert</value>
+          </role>
+          <entity>BEGIN:VCARD
+REV:2010-05-26T17:47:26.0+09:30
+ADR:;;;Marcus Beach;QLD;4573;Australia
+N:Coghill;Graham;;;
+FN:Graham  Coghill
+VERSION:3.0
+END:VCARD
+
+</entity>
+        </contribute>
+      </lifeCycle>
+      <metaMetadata>
+        <identifier>
+          <catalog>TLF-Metadata</catalog>
+          <entry>648309</entry>
+        </identifier>
+        <metadataSchema>LOMv1.0</metadataSchema>
+        <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+        <metadataSchema>ednav1.1</metadataSchema>
+        <language>en</language>
+      </metaMetadata>
+      <technical>
+        <format>text/html</format>
+        <format>application/x-shockwave-flash</format>
+        <format>audio/mpeg</format>
+        <format>image/jpeg</format>
+        <format>image/png</format>
+        <format>text/css</format>
+        <format>text/xml</format>
+        <size>159056</size>
+        <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/3762</location>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MacOS</value>
+            </name>
+            <minimumVersion>10.6</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Operating System</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>MS-Windows</value>
+            </name>
+            <minimumVersion>x</minimumVersion>
+            <maximumVersion>7</maximumVersion>
+          </orComposite>
+        </requirement>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Microsoft Internet Explorer</value>
+            </name>
+            <minimumVersion>8.0 (MS-Windows)</minimumVersion>
+            <maximumVersion>9.0 (MS-Windows)</maximumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Firefox</value>
+            </name>
+            <minimumVersion>(MS-Windows)</minimumVersion>
+          </orComposite>
+          <orComposite>
+            <type>
+              <source>LOMv1.0</source>
+              <value>Browser</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Safari</value>
+            </name>
+            <minimumVersion>5.1 (MacOS)</minimumVersion>
+          </orComposite>
+        </requirement>
+        <requirement>
+          <orComposite>
+            <type>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Plug-in</value>
+            </type>
+            <name>
+              <source>Curriculum Corporation technical requirement</source>
+              <value>Adobe Flash Player</value>
+            </name>
+            <minimumVersion>10</minimumVersion>
+          </orComposite>
+        </requirement>
+      </technical>
+      <educational>
+        <learningResourceType>
+          <source>DCMI Type</source>
+          <value>Interactive resource</value>
+        </learningResourceType>
+        <intendedEndUserRole>
+          <source>LOMv1.0</source>
+          <value>learner</value>
+        </intendedEndUserRole>
+        <context>
+          <source>LOMv1.0</source>
+          <value>school</value>
+        </context>
+        <typicalAgeRange>
+          <string language="en">14,15,16</string>
+        </typicalAgeRange>
+      </educational>
+      <rights>
+        <description>
+          <string language="en">&#xa9; Education Services Australia Ltd, 2013, except where indicated under Acknowledgements.</string>
+        </description>
+      </rights>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>ispartof</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L1188</entry>
+          </identifier>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>The GEM Element Set Qualifier Vocabulary</source>
+          <value>issiblingof</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L1189</entry>
+          </identifier>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>The GEM Element Set Qualifier Vocabulary</source>
+          <value>issiblingof</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L1191</entry>
+          </identifier>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>hasformat</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>URI</catalog>
+            <entry>support_files/main.jpg</entry>
+          </identifier>
+          <description>
+            <string language="en">Large thumbnail version of current resource</string>
+          </description>
+        </resource>
+      </relation>
+      <relation>
+        <kind>
+          <source>LOMv1.0</source>
+          <value>isbasedon</value>
+        </kind>
+        <resource>
+          <identifier>
+            <catalog>TLF-LearningObject</catalog>
+            <entry>L1190</entry>
+          </identifier>
+          <description>
+            <string language="en">v.7.0 Includes metadata and licensing updates.
+v.6.0 Includes updated metadata.
+v.5.0 Includes updated metadata. 
+v.4.0 Includes technical and editorial improvements and updated metadata. 
+v.3.0 Added support for Gecko-based browsers.
+v.2.0 Includes editorial improvements.
+v.1.0 First public release.</string>
+          </description>
+        </resource>
+      </relation>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Australian Curriculum Content Description</string>
+          </source>
+          <taxon>
+            <id>http://www.australiancurriculum.edu.au/Elements/ACSSU229</id>
+            <entry>
+              <string language="en">The motion of objects can be described and predicted using the laws of physics</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-userlevel</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">10</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>idea</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">ScOT</string>
+          </source>
+          <taxon>
+            <id>402</id>
+            <entry>
+              <string language="en">Motion</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>skill level</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Knowledge</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Comprehension</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Application</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Bloom's taxonomy of the cognitive domain</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Analysis</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Interactives</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Experiment</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Analysis</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Modelling</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_studentactivity</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Data manipulation and interpretation</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Experiential learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Independent learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Problem solving</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_learningdesign</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Visual learning</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students distinguish between the concepts of speed and acceleration.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students explore relationships between acceleration, force and mass.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students identify that the greater the mass of an object, then the greater the force needed to accelerate that object.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students predict the force needed to produce a given acceleration.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Key learning objective</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Students analyse number patterns in a data table to verify Newton's second law of motion.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>educational objective</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Introduces SI units for velocity, acceleration, force and mass.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Introduces velocity versus time line graphs; explains that the slope of the line indicates acceleration.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Encourages students to interpret velocity versus time line graphs.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Enables students to generate and interpret data that support Newton&#x2019;s second law of motion.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">Educational value</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Includes an option to print a table of results.</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">edna-kla</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Physical sciences</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Energy and change</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_strand</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Science understanding</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Newton's Laws</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Motion</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_concepts</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">science</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">Force</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>discipline</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">AGIFT</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Education and training</string>
+            </entry>
+          </taxon>
+          <taxon>
+            <entry>
+              <string language="en">School education</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+      <classification>
+        <purpose>
+          <source>LOMv1.0</source>
+          <value>accessibility restrictions</value>
+        </purpose>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_accessprofile</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Colour independence</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_accessprofile</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Device independence</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+        <taxonPath>
+          <source>
+            <string language="en">TLF_accessprofile</string>
+          </source>
+          <taxon>
+            <entry>
+              <string language="en">Hearing independence</string>
+            </entry>
+          </taxon>
+        </taxonPath>
+      </classification>
+    </lom>
+  </metadata>
+  <organizations default="O182361">
+    <organization identifier="O182361">
+      <title>Accelerate: mass</title>
+      <item identifier="O182361I0" identifierref="R841881">
+        <title>Start: Accelerate: mass</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="R841881" type="webcontent" href="index.html">
+      <metadata>
+        <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+          <general>
+            <identifier>
+              <catalog>TLF-LearningObject</catalog>
+              <entry>L1190</entry>
+            </identifier>
+            <identifier>
+              <catalog>SCIS</catalog>
+              <entry>1234017</entry>
+            </identifier>
+            <title>
+              <string language="en">Accelerate: mass</string>
+            </title>
+            <language>en</language>
+            <description>
+              <string language="en">Pilot a spaceship in deep space. Investigate how the mass of the ship affect its acceleration. Discover how these concepts are related as explained by Newton's second law of motion. Examine velocity-time line graphs showing acceleration as the gradient. This learning object is one in a series of three objects. The series is also packaged as a combined learning object.</string>
+            </description>
+            <keyword>
+              <string language="en">Motion</string>
+            </keyword>
+            <aggregationLevel>
+              <source>LOMv1.0</source>
+              <value>2</value>
+            </aggregationLevel>
+          </general>
+          <lifeCycle>
+            <version>
+              <string>10.0</string>
+            </version>
+            <status>
+              <source>LOMv1.0</source>
+              <value>revised</value>
+            </status>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Script writer</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2005-05-20T13:53:09+09:30
+ADR:;;;Blackburn;VIC;;Australia
+ORG:Rees Films Pty Ltd
+N:Rees;Rod;;;
+FN:Rod  Rees
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Technical implementer</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2005-05-20T13:53:09+09:30
+ADR:;;;Melbourne;VIC;;Australia
+ORG:CSIRO Publishing
+URL:http://www.publish.csiro.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Publisher</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2010-05-13T15:11:38.0+09:30
+ADR:;;;Melbourne;VIC;3000;Australia
+ORG:Education Services Australia Ltd
+URL:http://www.esa.edu.au/
+VERSION:3.0
+END:VCARD
+
+</entity>
+              <date>
+                <dateTime>2014-01-28T04:42:18.0Z</dateTime>
+              </date>
+            </contribute>
+            <contribute>
+              <role>
+                <source>LOMv1.0</source>
+                <value>Subject matter expert</value>
+              </role>
+              <entity>BEGIN:VCARD
+REV:2010-05-26T17:47:26.0+09:30
+ADR:;;;Marcus Beach;QLD;4573;Australia
+N:Coghill;Graham;;;
+FN:Graham  Coghill
+VERSION:3.0
+END:VCARD
+
+</entity>
+            </contribute>
+          </lifeCycle>
+          <metaMetadata>
+            <identifier>
+              <catalog>TLF-Metadata</catalog>
+              <entry>648309</entry>
+            </identifier>
+            <metadataSchema>LOMv1.0</metadataSchema>
+            <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+            <metadataSchema>ednav1.1</metadataSchema>
+            <language>en</language>
+          </metaMetadata>
+          <technical>
+            <format>text/html</format>
+            <format>application/x-shockwave-flash</format>
+            <format>audio/mpeg</format>
+            <format>image/jpeg</format>
+            <format>image/png</format>
+            <format>text/css</format>
+            <format>text/xml</format>
+            <size>159056</size>
+            <location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/3762</location>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MacOS</value>
+                </name>
+                <minimumVersion>10.6</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Operating System</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>MS-Windows</value>
+                </name>
+                <minimumVersion>x</minimumVersion>
+                <maximumVersion>7</maximumVersion>
+              </orComposite>
+            </requirement>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Microsoft Internet Explorer</value>
+                </name>
+                <minimumVersion>8.0 (MS-Windows)</minimumVersion>
+                <maximumVersion>9.0 (MS-Windows)</maximumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Firefox</value>
+                </name>
+                <minimumVersion>(MS-Windows)</minimumVersion>
+              </orComposite>
+              <orComposite>
+                <type>
+                  <source>LOMv1.0</source>
+                  <value>Browser</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Safari</value>
+                </name>
+                <minimumVersion>5.1 (MacOS)</minimumVersion>
+              </orComposite>
+            </requirement>
+            <requirement>
+              <orComposite>
+                <type>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Plug-in</value>
+                </type>
+                <name>
+                  <source>Curriculum Corporation technical requirement</source>
+                  <value>Adobe Flash Player</value>
+                </name>
+                <minimumVersion>10</minimumVersion>
+              </orComposite>
+            </requirement>
+          </technical>
+          <educational>
+            <learningResourceType>
+              <source>DCMI Type</source>
+              <value>Interactive resource</value>
+            </learningResourceType>
+            <intendedEndUserRole>
+              <source>LOMv1.0</source>
+              <value>learner</value>
+            </intendedEndUserRole>
+            <context>
+              <source>LOMv1.0</source>
+              <value>school</value>
+            </context>
+            <typicalAgeRange>
+              <string language="en">14,15,16</string>
+            </typicalAgeRange>
+          </educational>
+          <rights>
+            <description>
+              <string language="en">&#xa9; Education Services Australia Ltd, 2013, except where indicated under Acknowledgements.</string>
+            </description>
+          </rights>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>ispartof</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L1188</entry>
+              </identifier>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>The GEM Element Set Qualifier Vocabulary</source>
+              <value>issiblingof</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L1189</entry>
+              </identifier>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>The GEM Element Set Qualifier Vocabulary</source>
+              <value>issiblingof</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L1191</entry>
+              </identifier>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>hasformat</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>URI</catalog>
+                <entry>support_files/main.jpg</entry>
+              </identifier>
+              <description>
+                <string language="en">Large thumbnail version of current resource</string>
+              </description>
+            </resource>
+          </relation>
+          <relation>
+            <kind>
+              <source>LOMv1.0</source>
+              <value>isbasedon</value>
+            </kind>
+            <resource>
+              <identifier>
+                <catalog>TLF-LearningObject</catalog>
+                <entry>L1190</entry>
+              </identifier>
+              <description>
+                <string language="en">v.7.0 Includes metadata and licensing updates.
+v.6.0 Includes updated metadata.
+v.5.0 Includes updated metadata. 
+v.4.0 Includes technical and editorial improvements and updated metadata. 
+v.3.0 Added support for Gecko-based browsers.
+v.2.0 Includes editorial improvements.
+v.1.0 First public release.</string>
+              </description>
+            </resource>
+          </relation>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Australian Curriculum Content Description</string>
+              </source>
+              <taxon>
+                <id>http://www.australiancurriculum.edu.au/Elements/ACSSU229</id>
+                <entry>
+                  <string language="en">The motion of objects can be described and predicted using the laws of physics</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-userlevel</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">10</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>idea</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">ScOT</string>
+              </source>
+              <taxon>
+                <id>402</id>
+                <entry>
+                  <string language="en">Motion</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>skill level</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Knowledge</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Comprehension</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Application</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Bloom's taxonomy of the cognitive domain</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Analysis</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Interactives</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Experiment</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Analysis</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Modelling</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_studentactivity</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Data manipulation and interpretation</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Experiential learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Independent learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Problem solving</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_learningdesign</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Visual learning</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students distinguish between the concepts of speed and acceleration.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students explore relationships between acceleration, force and mass.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students identify that the greater the mass of an object, then the greater the force needed to accelerate that object.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students predict the force needed to produce a given acceleration.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Key learning objective</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Students analyse number patterns in a data table to verify Newton's second law of motion.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>educational objective</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Introduces SI units for velocity, acceleration, force and mass.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Introduces velocity versus time line graphs; explains that the slope of the line indicates acceleration.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Encourages students to interpret velocity versus time line graphs.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Enables students to generate and interpret data that support Newton&#x2019;s second law of motion.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">Educational value</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Includes an option to print a table of results.</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">edna-kla</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Physical sciences</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Energy and change</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_strand</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Science understanding</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Newton's Laws</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Motion</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_concepts</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">science</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">Force</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>discipline</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">AGIFT</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Education and training</string>
+                </entry>
+              </taxon>
+              <taxon>
+                <entry>
+                  <string language="en">School education</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+          <classification>
+            <purpose>
+              <source>LOMv1.0</source>
+              <value>accessibility restrictions</value>
+            </purpose>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_accessprofile</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Colour independence</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_accessprofile</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Device independence</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+            <taxonPath>
+              <source>
+                <string language="en">TLF_accessprofile</string>
+              </source>
+              <taxon>
+                <entry>
+                  <string language="en">Hearing independence</string>
+                </entry>
+              </taxon>
+            </taxonPath>
+          </classification>
+        </lom>
+      </metadata>
+      <file href="mp3/neg.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116016</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136789</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>2195</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mp3/beep.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116018</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136791</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>2537</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mp3/amb_d.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116019</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136792</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>5747</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mp3/beepx2.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116020</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136793</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>6785</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mp3/thrust_d.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116021</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136794</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>6165</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="loader.swf">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116024</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>3.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136797</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-shockwave-flash</format>
+              <size>1574</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="mp3/beepx4.mp3">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116017</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136790</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>audio/mpeg</format>
+              <size>14304</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/thumb.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F365922</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>510203</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>2418</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/main.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F365925</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>510206</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>16753</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/icon.jpg">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F365924</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>510205</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/jpeg</format>
+              <size>260</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="xml/maindata.xml">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116022</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>6.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136795</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/xml</format>
+              <size>6538</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="index.swf">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116025</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>20.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136798</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>application/x-shockwave-flash</format>
+              <size>80972</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/tlf_logo.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F365923</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>2.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>510204</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>4042</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="support_files/creativecommons88x31.png">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F466443</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>1.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>639138</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>image/png</format>
+              <size>5083</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="css/mystyle.css">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116023</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>5.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136796</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/css</format>
+              <size>1792</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="index.html">
+        <metadata>
+          <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+            <general>
+              <identifier>
+                <catalog>TLF-File</catalog>
+                <entry>F116026</entry>
+              </identifier>
+              <aggregationLevel>
+                <source>LOMv1.0</source>
+                <value>1</value>
+              </aggregationLevel>
+            </general>
+            <lifeCycle>
+              <version>
+                <string>5.0</string>
+              </version>
+            </lifeCycle>
+            <metaMetadata>
+              <identifier>
+                <catalog>TLF-Metadata</catalog>
+                <entry>136799</entry>
+              </identifier>
+              <metadataSchema>LOMv1.0</metadataSchema>
+              <metadataSchema>ANZ-LOMv1.0</metadataSchema>
+              <metadataSchema>ednav1.1</metadataSchema>
+            </metaMetadata>
+            <technical>
+              <format>text/html</format>
+              <size>1891</size>
+            </technical>
+          </lom>
+        </metadata>
+      </file>
+      <file href="ConditionsOfUse.html" />
+      <file href="description.html" />
+      <file href="rights.xml" />
+    </resource>
+  </resources>
+</manifest>

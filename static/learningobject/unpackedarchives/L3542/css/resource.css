@@ -1,0 +1,442 @@
+/* General ------------------------------------------------- */
+
+/* font */
+
+html {
+    height:100%;
+}
+
+body {
+    font-family : Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    color: #333333; /* dark grey */
+    background-color:#666666;
+    text-align:center;
+    height:100%;
+}
+
+/* images within links have no border, but 1px margin */
+a img {
+  border: none;
+  margin: 1px;
+  padding: 0px;
+}
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: underline;	
+}
+
+a.redlink {
+	color: #990000;
+	text-decoration: underline;	
+}
+
+a.whitelink {
+	color: #FFFFFF;
+	text-decoration: underline;	
+}
+
+/* headers
+  first and second level have the same font size as the rest of the document
+  all headers have no padding or margins 
+  (rest of text is dark grey) */
+h1 {
+  font-size: 1.4em;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #BB2331;
+}
+
+/* second level headers have light bottom border */
+h2 {
+  border-bottom: solid 1px silver;
+  color: #BB2331;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* title ------------------------------------------ */
+/*  tlf blue as background */
+
+div.container {
+  padding: 0px;
+  width: 95%;
+  background-color: #E0E0E0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-right: 1px solid #666666;
+}
+
+div.screenshot {
+	text-align: center;
+}
+
+div.appletcontainer {
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+  color: #CCCCCC;
+}
+
+div.title {
+  padding: 0.18em 0 0.18em 0.66em;
+  background-color: #28478F;
+  color: #FFFFFF;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content {
+  padding: 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  height: 100%;
+}
+
+div.appletcontent {
+  margin: 0px;
+  padding: 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+div.logos {
+  margin: 0px;
+  padding: 10px 10px 10px 10px;
+  background-color:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* 2 column layout ------------------------------------------ */
+/* left column 50% wide */
+div.leftcolumn {
+  float: left;
+  margin: 0px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #E0E0E0;
+}
+
+/* right column 50% wide + paragraph internal padding to seperate columns */
+.rightcolumn {
+  margin-left: 50%;
+  height: 100%;
+  background-color: #E0E0E0;
+}
+
+.conditions {
+  margin-left: 50%;
+  padding-top: 75px;
+  text-align: right;
+  color: #FFFFCC;
+}
+
+/* styles for the copyright and conditions of use statements */
+#copyright   
+  {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+	color: #FFFFFF;
+  }
+  
+#conditions   
+  {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+	color: #FFFFFF;
+  } 
+
+/* resource section ------------------------------------------ */
+/*  centre align the resource 
+  padding of 10px around resource */
+div.resource {
+  text-align: center;
+  border: 0px;
+  margin-bottom:10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+}
+
+/* container to manage right side z-index ------------------------------------------ */
+div.rightContainer {
+  background-color: #FFFFFF;
+  border: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  background-color: #FFFFFF;
+}
+
+img.resource {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #CCCCCC;
+} 
+
+/* information section ------------------------------------------ */
+/*  contains description and educational value sections
+  paragraph padding as top padding
+  dark border below to seperate from metadata section */
+div.information {
+  padding-top: 1.12em;
+  padding-bottom: 1px;
+  height: 100%;
+  border: 0px;
+  padding-left: 1.22em;
+  padding-right: 3.22em;
+
+}
+
+/* align lists with other left hand edge of rest of text */
+.information ul {
+  margin-left: 2.12em;
+}
+
+/* metadata section ------------------------------------------ */
+/*  use table to layout metadata
+  small font size
+  paragraph padding as top and botton margin
+*/
+
+div.metadata {
+  text-align: center;
+  padding: 1.12em 0em 0em 0em;
+  background-color: #E0E0E0;
+}
+
+div.metadata2 {
+  text-align: left;
+  background-color: #E0E0E0;
+  margin-left: 1.9em;
+  margin-right: auto;
+  width: 90%;
+}
+
+table.metadata {
+  width: 100%;
+  margin-top: 1.12em;
+  font-size: 0.95em;
+  padding-top: 1em;
+}
+
+table.instructions {
+  font-size: 1em;
+  padding: 1em;
+
+}
+
+table.metadataapplet {
+  width: 80%;
+  margin-top: 1.12em;
+  font-size: 0.95em;
+  padding-top: 1em;
+  color: #FFFFFF;
+}
+
+table.description {
+  width: 100%;
+  font-size: 1em;
+  border: 1px solid #CCCCCC;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+td.padding {
+  text-align: left;
+  vertical-align: top;
+  margin: 0px;
+  padding: 5px;
+  border: 0px;
+
+}
+
+/* align logos in metadata with top of text */
+span img {
+  vertical-align: top;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* minimum width for metadata attribute names */
+th {
+  width: 6em;
+}
+
+img.icon {
+  vertical-align:middle;
+}
+
+/* positioning for nlvm logo */
+.nlvmlogo {
+  text-align: left;
+  margin-left: 1.7em;
+}
+
+/* positioning for footer red angled graphic */
+
+.redangleright {
+	margin-left: 50%;
+	text-align: right;
+	height: 19px;
+    padding-left: 1.22em;
+}
+
+.redangle2 {
+	background-color: #BB2331;
+	font-size: 0.35em;
+	height:100%;
+	width: 100%;
+	
+}
+
+.redangleright2 {
+	text-align: right;
+	height: 19px;
+	width:100%;
+	background-color: #FFFFFF;
+	position: relative;
+	top:0px;
+}
+
+/* styles for the applet page with included activities text box */
+
+div.container_activities {
+  width: 95%;
+  background-color: #666666;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.activities_applet {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.activities_textbox {
+  border-bottom: solid 1px #404040;
+  border-right: solid 1px #404040;
+  border-left: solid 1px #FFFFFF;
+  border-top: solid 1px #FFFFFF;
+  background: #C0C0C0;
+  padding: 7px;
+  float: left;
+}
+
+.activities_textbox3 {
+  border-bottom: solid 1px #FFFFFF;
+  border-right: solid 1px #FFFFFF;
+  border-left: solid 1px #808080;
+  border-top: solid 1px #808080;
+}
+
+.activities_textbox2 {
+  font-size: 1em;
+  border-bottom: solid 1px #C0C0C0;
+  border-right: solid 1px #C0C0C0;
+  border-left: solid 1px #000000;
+  border-top: solid 1px #000000;
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+div.appletmetadata_activities {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+div.appletmetadata_activities2 {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 0px;
+  width: 100%;
+}
+
+h2.activitiesh2 {
+  border-bottom: solid 1px #C0C0C0;
+  color: #BB2331;
+}
+
+ol {
+  font-size: 1em;
+}
+
+#copyright {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 8pt;
+}
+#conditions {
+  color: #ff0000;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 8pt;
+}
+#bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+.logo {
+  width: 20%;
+  float: left;
+}
+#logo {
+
+  float: left;
+  margin-left: 12%;
+}
+.partnerlogo {
+  width:240px;
+  height: 70px;
+  float: right;
+  background-color: #d0d0d0;
+  margin-right: 2.6%
+}
+#conditions a,#conditions a:link {
+  color: #0000ff;
+}
+#conditions a:visited {
+  color: #990099;
+}
+#conditions a:active {
+  color: #aaffaa;
+}
+#conditions a:hover,#conditions a:focus {
+  color: #ff0000;
+  outline: 1px solid #000000;
+}
+

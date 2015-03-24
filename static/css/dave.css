@@ -114,3 +114,7 @@ opacity: 0.35;
 }
 
  /*end video page format*/
+
+ .pagination{
+ 	clear: both;
+ }

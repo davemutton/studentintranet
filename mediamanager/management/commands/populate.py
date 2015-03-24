@@ -12,6 +12,7 @@ class Command(BaseCommand):
 			for row in reader:
 				data.append(row)
 		n=0
+		all_tags = ['cheese','apple','europe','local politics','local government','torrens council','relief','end of term']
 		for x in range(25):
 			for row in data:
 				for url in row:
@@ -19,6 +20,8 @@ class Command(BaseCommand):
 					age = random.choice(AgeBracket.objects.all())
 					pathway = random.choice(AssoePathway.objects.all())
 					subject = random.choice(AssoeSubjects.objects.all())
+					tag = random.choice(all_tags)
+					print tag
 					n=n+1
 					print n
 					title = "test " +str(n)
@@ -30,5 +33,6 @@ class Command(BaseCommand):
 					p.agebracket.add(age.pk)
 					p.pathway.add(pathway.pk)
 					p.subject.add(subject.pk)
+					p.tags.add(tag)
 
 					p.save()
