@@ -19,7 +19,7 @@ class Command(BaseCommand):
 			p = AssoePathway(pathway=pathway,order=order)
 			p.save()	
 
-		ages = ['A','B','C']
+		ages = ['Junior','Senior']
 		order = 0
 		for age in ages:
 			order = order + 1

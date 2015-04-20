@@ -11,10 +11,16 @@ import zipfile, os,fnmatch
  
 # Create your models here.
 
-
+#########################################################
+#
+#
+#Classification models
+#
+#
+#########################################################
 class AssoeLevel(models.Model):
 	#
-	# Used for content tagging
+	# Used for content tagging(what Level is the object suitable for?)
 	#
 	level = models.CharField(max_length=25)
 	order = models.IntegerField()
@@ -23,7 +29,7 @@ class AssoeLevel(models.Model):
 
 class AssoePathway(models.Model):
 	#
-	# Used for content tagging
+	# Used for content tagging(what pathway is the object suitable for?)
 	#
 	pathway = models.CharField(max_length=1)
 	order = models.IntegerField()
@@ -32,7 +38,7 @@ class AssoePathway(models.Model):
 
 class AgeBracket(models.Model):
 	#
-	# Used for content tagging
+	# Used for content tagging (what age is the object suitable for?)
 	#
 	agebracket = models.CharField(max_length=25)
 	order = models.IntegerField()
@@ -41,7 +47,7 @@ class AgeBracket(models.Model):
 
 class AssoeSubjects(models.Model):
 	#
-	# Used for content tagging
+	# Used for content tagging(what subject is the object suitable for?)
 	#
 	subject = models.CharField(max_length=55)
 	order = models.IntegerField()
@@ -52,6 +58,15 @@ class AssoeSubjects(models.Model):
 		#if not self.id:
 		self.slug = slugify(self.subject)
 		super(AssoeSubjects, self).save(*args, **kwargs)
+
+#########################################################
+#
+#
+#object storage models
+#
+#
+#########################################################
+
 
 class DefaultResource(models.Model):
 	#
@@ -71,10 +86,6 @@ class DefaultResource(models.Model):
 	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
 	icon = models.CharField(max_length=254,editable=False,blank=True)
 	subject = models.ManyToManyField(AssoeSubjects)
-
-	#def return_tags(self):
-	#	taglist = self.tags.names()
-	#	return taglist
 
 	def calculate_score(self):
 		score = float(self.updownvotes.likes) - float(self.updownvotes.dislikes)
@@ -102,12 +113,7 @@ class VideoResource(DefaultResource):
 		self.icon = "/static/images/icons/video.png"
 		super(VideoResource, self).save(*args, **kwargs)
 
-class FileResource(DefaultResource):
-	#
-	#This class creates a object to store collections attached file objects
-	#
-	def __unicode__ (self): 
-		return self.title
+
 
 class UrlResource(DefaultResource):
 	#
@@ -117,6 +123,12 @@ class UrlResource(DefaultResource):
 	def __unicode__ (self): 
 		return self.title
 
+class FileResource(DefaultResource):
+	#
+	#This class creates a object to store collections attached file objects
+	#
+	def __unicode__ (self): 
+		return self.title
 
 class AttachedFiles(models.Model):
 	#
@@ -125,8 +137,8 @@ class AttachedFiles(models.Model):
 	created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
 	attachedfiles = models.FileField(upload_to='static/attachedfiles/%Y/%m/%d')
 	fileresource =models.ForeignKey(FileResource,blank=True, null=True) 
-	def __unicode__ (self): 
-		return self.attachedfiles
+	#def __unicode__ (self): 
+	#	return self.fileresource
 
 
 class LearningObject(DefaultResource):

@@ -80,19 +80,37 @@ def createLearningobject(request,learningobject_pk=False):
 	return render_to_response('mediamanager/edit_learningobject.html', {'form': form,},context_instance=RequestContext(request)) 
 
 
-
 class UpdateLearningObject(UpdateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
 	def get_success_url(self):
 		return reverse('index')
 
+
+
 class createFileResource(CreateView):
+	model = LearningObject
+	template_name = 'mediamanager/file_upload.html'
+	def get_success_url(self):
+		return reverse('index')
+	fields =['title','tags','pathway','level','agebracket']
+	
+class UpdateFileResource(UpdateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
 	def get_success_url(self):
 		return reverse('index')
-	fields =['title','tags','pathway','level','agebracket']
+
+
+
+
+
+
+
+
+
+
+
 
 def index(request):
 	context = RequestContext(request)
@@ -113,11 +131,8 @@ def index(request):
 	else:
 		default_resource_list = DefaultResource.objects.order_by('-score')
 #Start exclusive keyword tags		
-	if exclusiveurltags:
-		for objects in default_resource_list:
-			print objects.tags.names()
-			for tag in objects.tags.names():
-				print tag
+
+#Nothing here yet
 
 #end exclusive keyword tags		
 	
@@ -256,10 +271,17 @@ def FileResourceFormView(request):
 	if request.method == 'GET':
 		form = FileResourceForm()
 	else:
-		form = FileResourceForm(request.POST)
+		form = FileResourceForm(request.POST, request.FILES)
 		if form.is_valid():
 			title = form.cleaned_data['title']
-			post = Page.objects.create(title=title)
+			fileholder = FileResource.objects.create(title=title)
+			for each in request.FILES.getlist('files'):
+				attachedfile =  AttachedFiles.objects.create(attachedfiles=each, fileresource=fileholder)
+
+
+			#AttachedFiles
+
+
 			return HttpResponseRedirect(reverse('index', ))
 	return render(request, 'mediamanager/file_upload.html', {'form': form,})
 
