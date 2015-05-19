@@ -1,16 +1,15 @@
 from mediamanager.models import LearningObject, FileResource,AssoeLevel,AssoePathway,AgeBracket
 from django import forms
 from mediamanager.fields import MultiFileField
-
+from filemanage.models import AttachedFiles
  
 class UploadFileForm(forms.ModelForm):
-     
     class Meta:
-        model = FileResource
-        fields =['title']
+        model = AttachedFiles
+        exclude =[]
 
 
-
+ 
 class FileResourceForm(forms.ModelForm):
     title = forms.CharField(max_length=100)
     files = MultiFileField(max_num = 20, min_num = 3, maximum_file_size = 1024*1024*100)

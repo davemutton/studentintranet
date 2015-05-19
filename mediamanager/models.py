@@ -130,15 +130,7 @@ class FileResource(DefaultResource):
 	def __unicode__ (self): 
 		return self.title
 
-class AttachedFiles(models.Model):
-	#
-	#This class creates stores attached files so they can be attached to other objects
-	#
-	created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
-	attachedfiles = models.FileField(upload_to='static/attachedfiles/%Y/%m/%d')
-	fileresource =models.ForeignKey(FileResource,blank=True, null=True) 
-	#def __unicode__ (self): 
-	#	return self.fileresource
+
 
 
 class LearningObject(DefaultResource):

@@ -6,5 +6,6 @@ docutils==0.12
 geordi==0.3
 gprof2dot===dev
 gunicorn==19.1.1
+hurry.filesize==0.9
 Unidecode==0.4.17
 webkit2png==0.8.3

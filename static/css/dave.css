@@ -118,3 +118,20 @@ opacity: 0.35;
  .pagination{
  	clear: both;
  }
+
+
+
+/*file upload page*/
+.uploaded_file{
+	display: block;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	background-color: pink;
+	float: left;
+	margin: 5px;
+
+}
+.dropzone{
+	clear:both;
+}

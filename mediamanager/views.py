@@ -1,13 +1,13 @@
 from django.shortcuts import render, render_to_response
 from django.views.generic import CreateView
-from mediamanager.models import LearningObject, FileResource, AttachedFiles, DefaultResource, AssoeLevel, AgeBracket, AssoePathway, AssoeSubjects
+from mediamanager.models import LearningObject, FileResource, DefaultResource, AssoeLevel, AgeBracket, AssoePathway, AssoeSubjects
 from forms import UploadFileForm
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from mediamanager.forms import FileResourceForm, LearningObjectuploadform, LearningObjectuploadform2
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from taggit.models import Tag
-import sys
+import sys, json
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import UpdateView
 from itertools import chain
@@ -54,6 +54,7 @@ def createLearningobject(request,learningobject_pk=False):
 			print "form not valid"
 	return render(request, 'mediamanager/edit_learningobject.html', {'form': form,})
 '''
+'''
 def createLearningobject(request,learningobject_pk=False):
 	if request.method == 'POST':
 		if learningobject_pk:
@@ -78,7 +79,13 @@ def createLearningobject(request,learningobject_pk=False):
 		form.base_fields['archivefile'].required = False
 		print instance.pk
 	return render_to_response('mediamanager/edit_learningobject.html', {'form': form,},context_instance=RequestContext(request)) 
+'''
 
+class CreateLearningObject(CreateView):
+	model = LearningObject
+	template_name = 'mediamanager/edit_learningobject.html'
+	def get_success_url(self):
+		return reverse('index')
 
 class UpdateLearningObject(UpdateView):
 	model = LearningObject
@@ -87,28 +94,18 @@ class UpdateLearningObject(UpdateView):
 		return reverse('index')
 
 
-
-class createFileResource(CreateView):
-	model = LearningObject
+class CreateFileResource(CreateView):
+	model = FileResource
 	template_name = 'mediamanager/file_upload.html'
 	def get_success_url(self):
 		return reverse('index')
 	fields =['title','tags','pathway','level','agebracket']
 	
 class UpdateFileResource(UpdateView):
-	model = LearningObject
+	model = FileResource
 	template_name = 'mediamanager/edit_learningobject.html'
 	def get_success_url(self):
 		return reverse('index')
-
-
-
-
-
-
-
-
-
 
 
 
@@ -231,10 +228,6 @@ def index(request):
 
 
 
-	
-
-
-
 
 
 
@@ -267,36 +260,22 @@ def defaultresourceview(request, default_resource_slug):
 	return render(request,'mediamanager/default_resource.html',context_dict)
 
 
-def FileResourceFormView(request):
-	if request.method == 'GET':
-		form = FileResourceForm()
-	else:
-		form = FileResourceForm(request.POST, request.FILES)
-		if form.is_valid():
-			title = form.cleaned_data['title']
-			fileholder = FileResource.objects.create(title=title)
-			for each in request.FILES.getlist('files'):
-				attachedfile =  AttachedFiles.objects.create(attachedfiles=each, fileresource=fileholder)
 
 
-			#AttachedFiles
 
-
-			return HttpResponseRedirect(reverse('index', ))
-	return render(request, 'mediamanager/file_upload.html', {'form': form,})
 
 
 def test(request):
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
-        if form.is_valid():
-            new_file = AttachedFiles.objects.create(attachedfiles=request.FILES['file'])
-            new_file.save()
-            print "got to here"
- 
-            return HttpResponseRedirect(reverse('main:home'))
-    else:
-        form = UploadFileForm()
- 
-    data = {'form': form}
-    return render_to_response('mediamanager/test.html', data, context_instance=RequestContext(request))
+	if request.method == 'POST':
+		if request.FILES['file']:
+			new_file = AttachedFiles(attachedfile=request.FILES['file'])
+			new_file.save()
+			id = new_file.pk
+			return HttpResponse(json.dumps({'id': id}), content_type="application/json")
+ 	return render_to_response('mediamanager/test.html', context_instance=RequestContext(request))
+
+
+
+
+
+

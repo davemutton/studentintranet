@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Create a File resource{% endblock %}
+{% load staticfiles %}
+{% block extra-head %}
+
+<script src="{% static '/static/dropzone/js/dropzone.js' %}"></script>
+<link href="{% static '/static/dropzone/css/dropzone.css' %}" type="text/css" rel="stylesheet"/>
+<script type="text/javascript">
+Dropzone.autoDiscover = false;
+$(document).ready(function() {
+  console.log("doc ready")
+
+  var myDropzone = new Dropzone("#ThisDropzone", { 
+    url: "http://192.168.1.140/filemanage/upload/",
+    addRemoveLinks: true,
+    });
+
+myDropzone.on("success", function(file,response) {
+   console.log("file uploaded")
+   console.log(response.id)
+   myDropzone.removeFile(file);
+   var html1 = "<span class = 'uploaded_file'>"
+   var html2 = " file</span>"
+   
+   $( "#attached_files" ).append(html1.concat(response.id,html2));
+
+});
+
+
+});// end of doc ready function
+</script>
+
+
+
+{% endblock %}
+
+{% block body_block %}
+
+
+<body>
+<div class="container">	
+
+</div>
+</body>
+<div id="attached_files">
+  </div>
+
+<form action="" class="dropzone" id="ThisDropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+<span data-dz-name>test</span>
+
+
+
+
+</html>
+
+{% endblock %}

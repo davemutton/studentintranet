@@ -8,24 +8,27 @@
     </head>
     <body>
  
+<form action="{% url "test" %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+<input type="file" name="file" />
+<input type="submit" value="Submit">
+</form>
+
+
+
         <!-- IMPORTANT enctype attribute! -->
-        <form class="dropzone" action="/mediamanager/test/" method="post" enctype="multipart/form-data">
+        <form id="my_dropzone" class="dropzone" action="/filemanage/upload/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-        
          <button id="submit-all">
             Submit all files
         </button>
         </form>
-
         <script src="{% static 'dropzone/js/dropzone.js' %}"></script>
-        
-
-
         <script type="text/javascript">
             Dropzone.options.myDropzone = {
  
                 // Prevents Dropzone from uploading dropped files immediately
-                autoProcessQueue : false,
+                autoProcessQueue : true,
  
                 init : function() {
                     var submitButton = document.querySelector("#submit-all")
@@ -42,7 +45,6 @@
                         // Show submit button here and/or inform user to click it.
                         console.log("blah")
                     });
- 
                 }
             };
         </script>

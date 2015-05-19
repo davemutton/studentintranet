@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # end examples
     url(r'^wiki/', include('wiki.urls')),
     url(r'^mediamanager/',include('mediamanager.urls')),
+    url(r'^filemanage/', include('filemanage.urls')),
     #for admin
     url(r'^admin/', include(admin.site.urls)),
 

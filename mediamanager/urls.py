@@ -6,10 +6,9 @@ urlpatterns = patterns('',
 	
 #urls for adding resources
 	url(r'^edit/learningobject/(?P<pk>\d+)', views.UpdateLearningObject.as_view(), name='learningobject-edit',),
-	url(r'^edit/learningobject/', views.UpdateLearningObject, name='learningobject-new',),
-	url(r'^edit/learningobject/(?P<pk>\d+)', views.UpdateLearningObject.as_view(), name='learningobject-edit',),
-    url(r'^edit/fileresource(?P<pk>\d+)', views.FileResourceFormView, name='fileresource-new',),
-
+	url(r'^edit/learningobject/', views.CreateLearningObject.as_view(), name='learningobject-new',),
+    url(r'^edit/fileresource/(?P<pk>\d+)', views.UpdateFileResource.as_view(), name='fileresource-new',),
+    url(r'^edit/fileresource/', views.CreateFileResource.as_view(), name='fileresource-new',),
 
 
 
@@ -22,7 +21,7 @@ urlpatterns = patterns('',
 
 
 
-
+ 
 
 
 

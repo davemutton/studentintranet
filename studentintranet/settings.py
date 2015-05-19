@@ -56,6 +56,7 @@ INSTALLED_APPS = (
     #local apps created or downloaded with git clone.
     'wiki',
     'mediamanager',
+    'filemanage',
     'froala_editor',
     'taggit_autosuggest',
     'updown',

@@ -11,10 +11,12 @@
        <p>
         {{default_resource.page.body|safe}}
         <p>
+            <!-- Start section for learningobject resources-->
           {%elif default_resource.learningobject.indexpath %}
         
         <iframe scrolling="no" src="/{{default_resource.learningobject.indexpath}}" width="1200" height="800" frameBorder="0" >
         </iframe>
+        <!-- Start section for video resources-->
         {%elif default_resource.videoresource.videofile %}
         <div id="center"><video width="900" height="560" controls autoplay>
   		<source src="/media/{{default_resource.videoresource.videofile}}" type="video/mp4">
@@ -28,9 +30,11 @@
         
 
 
-          {% endif  %}
+          
+<!-- Start section for file resources-->
+{%elif default_resource.fileresource.title %}
 
-
+{% endif  %}
 <br />
 
 
