@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{{default_resource.title}}{% endblock %}
+{%if default_resource.learningobject.indexpath %}
+          {% block extra-menu-item %}<li><a href="/mediamanager/edit/learningobject/{{default_resource.pk}}">Edit this resource</a></li>{% endblock %}
+    {% endif  %}
+
+
+{% block body_block %}
+       <h1>{{default_resource.title}}</h1>
+       <div id="attached_files">
+
+        {% for file in default_resource.files.all %}
+        <div class='uploaded_file_holder'><span class = 'uploaded_file'  style='background-image:url("{{file.icon}}");'></span><span class='file_name'>{{file.}} </span></div>
+
+       
+
+
+        {% endfor %}
+        </div>
+
+
+<br />
+
+
+<br />
+{% endblock %}

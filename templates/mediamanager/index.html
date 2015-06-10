@@ -249,10 +249,13 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
     </span>
 </div>
 <!-- end pageination -->
+<!--
+ HERE IS THE ACTUAL CONTENT-->
 
         {% if default_resource_list %}
             <table class="table table-condensed table-hover">
                 {% for resource in default_resource_list %}
+      
                 <tr>
                 <td class="span1" style="text-align: center;vertical-align:middle;">
                     <div id="upvote{{resource.pk}}"><img class="updownbutton" src="/static/images/upvote.png"></div>
@@ -261,8 +264,14 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
                     <div id="downvote{{resource.pk}}"><img class="updownbutton" src="/static/images/downvote.png"></div></td>
                     <td class="span1" style="text-align: center;vertical-align:middle;"><img src="{{resource.icon}}" >
                     </td>
-   
-                <td class="span4"><h6><a href="/mediamanager/view/{{resource.slug}}">{{ resource.title }}</a></h6>
+                {%if resource.fileresource.files %}
+                <td class="span4"><h6><a href="/mediamanager/view/file/{{resource.slug}}">{{ resource.title }}</a></h6>
+                {% else %}
+
+
+                <td class="span4"><h6><a href="/mediamanager/view/default/{{resource.slug}}">{{ resource.title }}</a></h6>
+                {% endif %}
+
                 <p>{{ resource.learningobject.description }}</p></td>
                 <td class="span1">
                 {% for level in resource.level.all %}
@@ -439,7 +448,12 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
             <!-- nothing was found so there is nothing here :(-->
         {% endif %}
         
+
+
 <!-- start pageination -->
+
+
+
 <div class="pagination">
     <span class="step-links">
         {% if default_resource_list.has_previous %}

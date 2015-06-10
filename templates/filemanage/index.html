@@ -18,11 +18,26 @@ $(document).ready(function() {
 myDropzone.on("success", function(file,response) {
    console.log("file uploaded")
    console.log(response.id)
+   console.log(response.path)
+   console.log(response.icon)
+   console.log(response.filesize)
+   console.log(response.filename)
    myDropzone.removeFile(file);
-   var html1 = "<span class = 'uploaded_file'>"
-   var html2 = " file</span>"
+   var html_test = "<div class='uploaded_file_holder'><span class = 'uploaded_file "
+  + String(response.id)
+  +"' style='background-image:url("
+  +String(response.icon)
+  +")'></span><span class='file_name'>"
+  +String(response.filename) 
+  +"(" 
+  +String(response.filesize) 
+  +")"
+  +"</span></div>"
    
-   $( "#attached_files" ).append(html1.concat(response.id,html2));
+
+   
+   
+   $( "#attached_files" ).append(html_test);
 
 });
 

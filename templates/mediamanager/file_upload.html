@@ -2,20 +2,90 @@
 {% block title %}Create a File resource{% endblock %}
 {% load staticfiles %}
 {% block extra-head %}
+  {{ form.media }}
+<script src="{% static '/static/dropzone/js/dropzone.js' %}"></script>
+<link href="{% static '/static/dropzone/css/dropzone.css' %}" type="text/css" rel="stylesheet"/>
+<script type="text/javascript">
+Dropzone.autoDiscover = false;
+$(document).ready(function() {
+  console.log("doc ready")
+
+  var myDropzone = new Dropzone("#ThisDropzone", { 
+    url: "http://192.168.1.140/filemanage/upload/",
+    addRemoveLinks: true,
+    });
+
+myDropzone.on("success", function(file,response) {
+   console.log("file uploaded")
+   var existingfiles = String($("input[name=filesattached]").val());
+   var newfiles = String(response.id)+",";
+   $("input[name=filesattached]").val(existingfiles + newfiles )
+
+   console.log(response.path)
+   console.log(response.icon)
+   console.log(response.filesize)
+   console.log(response.filename)
+   myDropzone.removeFile(file);
+   var html_test = "<div class='uploaded_file_holder'><span class = 'uploaded_file "
+  + String(response.id)
+  +"' style='background-image:url("
+  +String(response.icon)
+  +")'></span><span class='file_name'>"
+  +String(response.filename) 
+  +"(" 
+  +String(response.filesize) 
+  +")"
+  +"</span></div>"
+   
+
+   
+   
+   $( "#attached_files" ).append(html_test);
+
+});
 
 
-<link href="/static/jquery-autosuggest/css/autoSuggest-upshot.css" type="text/css" media="all" rel="stylesheet" />
-<script type="text/javascript" src="/static/jquery-autosuggest/js/jquery.autoSuggest.minified.js"> </script>
-        <link href="{% static '/static/dropzone/css/dropzone.css' %}" type="text/css" rel="stylesheet"/>
+});// end of doc ready function
+</script>
+
+
 
 {% endblock %}
 
 {% block body_block %}
 
 
-       <h1>Create a file resource</h1>
+<body>
+<div class="container">	
+</div>
+</body>
+
+  </div>
+<form action='' enctype="multipart/form-data" id="metadataform" method='post'>
+{% csrf_token %}
+{{ form.as_table  }}
+<input type="text" name="filesattached" class="hidden_field">
+<input type='submit' value='Submit' id ='myHiddenButton'/>
+</form>
 
 
 
+<div id="attached_files"></div>
+<form action="" class="dropzone" id="ThisDropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+<input type='submit' value='Submit' id="submit_page"/>
+
+<script>
+var form = $("#myHiddenButton");
+
+document.getElementById("submit_page").addEventListener("click", function () {
+  form.click();
+});
+</script>
+
+</html>
 
 {% endblock %}
