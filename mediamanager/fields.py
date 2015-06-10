@@ -11,7 +11,7 @@ class MultiFileInput(forms.FileInput):
             return files.getlist(name)
         else:
             return [files.get(name)]
- 
+  
 class MultiFileField(forms.FileField):
     widget = MultiFileInput
     default_error_messages = {

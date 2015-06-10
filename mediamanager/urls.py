@@ -7,8 +7,9 @@ urlpatterns = patterns('',
 #urls for adding resources
 	url(r'^edit/learningobject/(?P<pk>\d+)', views.UpdateLearningObject.as_view(), name='learningobject-edit',),
 	url(r'^edit/learningobject/', views.CreateLearningObject.as_view(), name='learningobject-new',),
-    url(r'^edit/fileresource/(?P<pk>\d+)', views.UpdateFileResource.as_view(), name='fileresource-new',),
-    url(r'^edit/fileresource/', views.CreateFileResource.as_view(), name='fileresource-new',),
+    #url(r'^edit/fileresource/(?P<pk>\d+)', views.UpdateFileResource.as_view(), name='fileresource-new',),
+    #url(r'^edit/fileresource/', views.CreateFileResource.as_view(), name='fileresource-new',),
+    url(r'^edit/fileresource/', views.CreateFileResource, name='fileresource-new',),
 
 
 
@@ -30,6 +31,7 @@ urlpatterns = patterns('',
 # testing file uploads  
     url(r'^test/', views.test, name='test'),
 #this url displays individual resources
-    url(r'^view/(?P<default_resource_slug>[\w\-]+)/', views.defaultresourceview, name='defaultpageview'),
-
+    url(r'^view/default/(?P<default_resource_slug>[\w\-]+)/', views.defaultresourceview, name='defaultpageview'),
+    url(r'^view/file/(?P<resource_slug>[\w\-]+)/', views.fileresourceview, name='filepageview'),
+    
 	)

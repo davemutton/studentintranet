@@ -1,7 +1,7 @@
 from django.shortcuts import render, render_to_response
 from django.views.generic import CreateView
 from mediamanager.models import LearningObject, FileResource, DefaultResource, AssoeLevel, AgeBracket, AssoePathway, AssoeSubjects
-from forms import UploadFileForm
+
 from django.http import HttpResponseRedirect, HttpResponse
 from mediamanager.forms import FileResourceForm, LearningObjectuploadform, LearningObjectuploadform2
 from django.template import RequestContext
@@ -11,8 +11,7 @@ import sys, json
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import UpdateView
 from itertools import chain
-
-
+from filemanage.models import AttachedFiles
 
  #Create your views here.
 
@@ -94,18 +93,37 @@ class UpdateLearningObject(UpdateView):
 		return reverse('index')
 
 
-class CreateFileResource(CreateView):
-	model = FileResource
-	template_name = 'mediamanager/file_upload.html'
-	def get_success_url(self):
-		return reverse('index')
-	fields =['title','tags','pathway','level','agebracket']
-	
-class UpdateFileResource(UpdateView):
-	model = FileResource
-	template_name = 'mediamanager/edit_learningobject.html'
-	def get_success_url(self):
-		return reverse('index')
+#class CreateFileResource(CreateView):
+#	model = FileResource
+#	template_name = 'mediamanager/file_upload.html'
+#	def get_success_url(self):
+#		return reverse('index')
+#	fields =['title','tags','pathway','level','agebracket']
+def CreateFileResource(request):
+	context = RequestContext(request)
+	if request.method == 'POST':
+		form = FileResourceForm(request.POST)
+		if form.is_valid():
+			newobject = form.save()
+			filesattached = request.POST.get('filesattached',False)
+			if filesattached:
+				if filesattached[-1:] == ",":
+					filesattached = filesattached[:-1]
+				filesattached_list = filesattached.split(",")
+				for each in filesattached_list:
+					print int(each)
+					file_to_attach = AttachedFiles.objects.get(pk=int(each))
+					newobject.files.add(file_to_attach)
+					newobject.save()
+
+				
+
+
+			return HttpResponseRedirect(reverse('index', ))
+	else:
+		form = FileResourceForm()
+	return render_to_response('mediamanager/file_upload.html', {'form': form,},context) 
+
 
 
 
@@ -260,7 +278,23 @@ def defaultresourceview(request, default_resource_slug):
 	return render(request,'mediamanager/default_resource.html',context_dict)
 
 
-
+def fileresourceview(request, resource_slug):
+	#
+	#This view displays an individual resource
+	#
+	context_dict = {}
+	default_resource = FileResource.objects.get(slug=resource_slug)
+	default_resource.views = default_resource.views + 1
+	default_resource.save()
+	print default_resource.files.all()
+	print default_resource.title
+	for each in default_resource.files.all():
+		print "yep"
+		print each.pk
+	print default_resource.views
+	context_dict['default_resource'] = default_resource
+	
+	return render(request,'mediamanager/file_resource.html',context_dict)
 
 
 

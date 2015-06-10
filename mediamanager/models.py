@@ -5,6 +5,7 @@ from taggit_autosuggest.managers import TaggableManager
 from updown.fields import RatingField
 from taggit.models import Tag
 from model_utils.managers import InheritanceManager
+from filemanage.models import AttachedFiles
 #need zipfile to unpack archive
 import zipfile, os,fnmatch
 
@@ -86,6 +87,8 @@ class DefaultResource(models.Model):
 	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
 	icon = models.CharField(max_length=254,editable=False,blank=True)
 	subject = models.ManyToManyField(AssoeSubjects)
+	description = models.TextField(blank=True)
+
 
 	def calculate_score(self):
 		score = float(self.updownvotes.likes) - float(self.updownvotes.dislikes)
@@ -127,6 +130,7 @@ class FileResource(DefaultResource):
 	#
 	#This class creates a object to store collections attached file objects
 	#
+	files = models.ManyToManyField(AttachedFiles, blank=True)
 	def __unicode__ (self): 
 		return self.title
 
@@ -136,7 +140,6 @@ class FileResource(DefaultResource):
 class LearningObject(DefaultResource):
 	archivefile = models.FileField(upload_to='static/learningobject/archivefiles/%Y/%m/%d')
 	indexpath = models.CharField(max_length=254,editable=False,blank=True)
-	description = models.TextField(blank=True)
 	def unpackarchive(self):
 		if not self.pk:
 			if self.archivefile:
