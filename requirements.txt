@@ -7,5 +7,6 @@ geordi==0.3
 gprof2dot===dev
 gunicorn==19.1.1
 hurry.filesize==0.9
+Pillow==2.8.1
 Unidecode==0.4.17
 webkit2png==0.8.3
