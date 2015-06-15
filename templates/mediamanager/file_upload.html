@@ -5,13 +5,15 @@
   {{ form.media }}
 <script src="{% static '/static/dropzone/js/dropzone.js' %}"></script>
 <link href="{% static '/static/dropzone/css/dropzone.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static '/static/css/daveform.css' %}" type="text/css" rel="stylesheet"/>
+
 <script type="text/javascript">
 Dropzone.autoDiscover = false;
 $(document).ready(function() {
   console.log("doc ready")
 
   var myDropzone = new Dropzone("#ThisDropzone", { 
-    url: "http://192.168.1.140/filemanage/upload/",
+    url: "/filemanage/upload/",
     addRemoveLinks: true,
     });
 
@@ -57,19 +59,63 @@ myDropzone.on("success", function(file,response) {
 
 <body>
 <div class="container">	
-</div>
+
 </body>
 
   </div>
-<form action='' enctype="multipart/form-data" id="metadataform" method='post'>
+<form action='' enctype="multipart/form-data" id="msform" method='post'>
+    <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Who is this for?</li>
+    <li>What is it?</li>
+    <li>Upload files</li>
+  </ul>
 {% csrf_token %}
-{{ form.as_table  }}
+<fieldset>
+<div class="fieldWrapper">
+    {{ form.pathway.errors }}
+    <label for="{{ form.pathway.id_for_label }}">Pathway</label>
+    {{ form.pathway }}
+</div>
+<div class="fieldWrapper">
+    {{ form.level.errors }}
+    <label for="{{ form.level.id_for_label }}">Level</label>
+    {{ form.level }}
+</div>
+<div class="fieldWrapper">
+    {{ form.subject.errors }}
+    <label for="{{ form.subject.id_for_label }}">Subject</label>
+    {{ form.subject }}
+</div>
+<div class="fieldWrapper">
+    {{ form.agebracket.errors }}
+    <label for="{{ form.agebracket.id_for_label }}">Agebracket</label>
+    {{ form.agebracket }}
+</div>
+</fieldset>
+<fieldset>
+<div class="fieldWrapper">
+    {{ form.tags.errors }}
+    <label for="{{ form.tags.id_for_label }}">Agebracket</label>
+    {{ form.tags }}
+</div>
+
+<div class="fieldWrapper">
+    {{ form.description.errors }}
+    <label class="fs-title" for="{{ form.description.id_for_label }}">Description</label>
+    {{ form.description }}
+</div>
+</fieldset>
+
+
+<fieldset>
 <input type="text" name="filesattached" class="hidden_field">
 <input type='submit' value='Submit' id ='myHiddenButton'/>
+<fieldset>
 </form>
 
 
-
+<fieldset>
 <div id="attached_files"></div>
 <form action="" class="dropzone" id="ThisDropzone">
   <div class="fallback">
@@ -78,6 +124,10 @@ myDropzone.on("success", function(file,response) {
 </form>
 <input type='submit' value='Submit' id="submit_page"/>
 
+
+</html>
+</fieldset>
+</div>
 <script>
 var form = $("#myHiddenButton");
 
@@ -85,7 +135,5 @@ document.getElementById("submit_page").addEventListener("click", function () {
   form.click();
 });
 </script>
-
-</html>
 
 {% endblock %}
