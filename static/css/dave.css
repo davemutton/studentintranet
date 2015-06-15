@@ -1,11 +1,4 @@
-body {
-	height: 100%;
-	/*Image only BG fallback*/
-	background: url('http://thecodeplayer.com/uploads/media/gs.png');
-	/*background = gradient + image pattern combo*/
-	background: url('http://thecodeplayer.com/uploads/media/gs.png');
-	
-}
+
 .container{
 background-color: rgba(255, 255, 255, 0.8);
 }
@@ -132,42 +125,6 @@ opacity: 0.35;
  }
 
 
-
-/*file upload page*/
-.uploaded_file{
-	display: block;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-
-
-}
-.uploaded_file_holder{
-	display: block;
-max-width: 110px;
-height:110px;
-float: left;
-margin: 5px;
-}
-.file_name{
-font-size: 11px;
-font-weight: bold;
-}
-.dropzone{
-	clear:both;
-}
-
-#myHiddenButton{
-	  visibility: hidden;
-	background: transparent;
-    border: none !important;
-    font-size:0;
-}
-.hidden_field{
-	visibility: hidden;
-}
 label{
 	font-size: 20px;
 }
