@@ -133,6 +133,9 @@ class FileResource(DefaultResource):
 	files = models.ManyToManyField(AttachedFiles, blank=True)
 	def __unicode__ (self): 
 		return self.title
+	def save(self, *args, **kwargs):
+		self.icon = "/static/images/icons/folder.png"
+		super(FileResource, self).save(*args, **kwargs)
 
 
 

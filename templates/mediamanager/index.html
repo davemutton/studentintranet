@@ -13,22 +13,7 @@
 
 <!--start tag cloud -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--end tag cloud -->
-
-
 
 <script>
 var tags = getQueryVariable('tag');
@@ -272,7 +257,47 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
                 <td class="span4"><h6><a href="/mediamanager/view/default/{{resource.slug}}">{{ resource.title }}</a></h6>
                 {% endif %}
 
-                <p>{{ resource.learningobject.description }}</p></td>
+                <p>{{ resource.description }}</p></td>
+
+
+                  
+                 <td class="span2">
+                        {% get_tags_for_object resource as "tags" %}
+                        {% for tag in tags %}
+                        <span class="tagging {{resource.pk}}{{tag.slug}} tag"><a>{{tag}}</a></span>
+                        
+                        <script>
+                        $(document).ready(function() {
+                        var tagstring =  DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
+                       
+                        if (clean_tags_list.indexOf(tagstring) >=0){
+                            $( ".{{resource.pk}}{{tag.slug}}" ).css("opacity","1.0")
+                        }
+                    })
+   
+                        $( ".{{resource.pk}}{{tag.slug}}" ).click(function() {
+                        var tagstring = DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
+                        var index = clean_tags_list .indexOf(tagstring)
+                       
+
+                        if ( index >=0){   
+                            tags_list.sort().splice(index, 1);
+                      
+                      window.location = RewriteUrlWithTags(); 
+
+                          } else{
+                           tags_list.push("{{tag}}");
+                        window.location = RewriteUrlWithTags(); 
+                          }
+                    
+                        });
+                        </script>
+
+
+                        {%endfor%}
+    
+                    </td>
+
                 <td class="span1">
                 {% for level in resource.level.all %}
                 <span class="level tag {{resource.pk}}{{level}}">{{level}}</span>
@@ -300,6 +325,8 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
                 {%endfor%}
     
                     </td>
+
+
                 <td class="span1">
                 {% for agebracket in resource.agebracket.all %}
                 <span class="agebracket {{resource.pk}}{{agebracket}} tag">{{agebracket}}</span>
@@ -386,44 +413,6 @@ $("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
                     </td>
                  
 
-
-
-                 <td class="span2">
-                        {% get_tags_for_object resource as "tags" %}
-                        {% for tag in tags %}
-                        <span class="tagging {{resource.pk}}{{tag.slug}} tag"><a>{{tag}}</a></span>
-                        
-                        <script>
-                        $(document).ready(function() {
-                        var tagstring =  DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
-                       
-                        if (clean_tags_list.indexOf(tagstring) >=0){
-                            $( ".{{resource.pk}}{{tag.slug}}" ).css("opacity","1.0")
-                        }
-                    })
-   
-                        $( ".{{resource.pk}}{{tag.slug}}" ).click(function() {
-                        var tagstring = DaveSlugify($( ".{{resource.pk}}{{tag.slug}}" ).text())
-                        var index = clean_tags_list .indexOf(tagstring)
-                       
-
-                        if ( index >=0){   
-                            tags_list.sort().splice(index, 1);
-                      
-                      window.location = RewriteUrlWithTags(); 
-
-                          } else{
-                           tags_list.push("{{tag}}");
-                        window.location = RewriteUrlWithTags(); 
-                          }
-                    
-                        });
-                        </script>
-
-
-                        {%endfor%}
-    
-                    </td>
 
 
 

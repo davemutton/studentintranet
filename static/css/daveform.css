@@ -94,11 +94,11 @@ body {
 .fieldWrapper {
   display: block;
   width:20%;
-  float:right;
+  float:left;
 }
 #id_subject li {
 	display: block;
-	float:right;
+	float:left;
 	max-width:100px !important;
 }
 .subjectWrapper{
@@ -108,7 +108,7 @@ width:35% !important;
 width:35% !important;	
 }
 .descriptionWrapper{
-	width:6% !important;	
+	width:60% !important;	
 }
 }
 
