@@ -31,9 +31,12 @@ padding-left: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: black;
-
-
 }
+/*
+.all .selector-checkbox{
+	background-position: 0px 0px;
+}
+*/
 
 .selector-group{
 padding-left: 40px;
@@ -127,4 +130,29 @@ opacity: 0.35;
 
 label{
 	font-size: 20px;
+}
+
+ul#subject-selector {
+  width:520px;
+  overflow:hidden;
+}
+#subject-selector li{
+  float:left;
+  display:inline;
+  min-width: 25%;
+  max-width:33%;
+}
+.selector-section ul{
+	border-left: solid;
+	border-left-color:#F5F5F5; 
+	border-left-width:1px;
+	padding: 10px;
+	margin: 5px;
+	height: 200px;
+}
+
+.agebracket-selector ul {
+		border-right: solid;
+border-right-color:#F5F5F5; 
+	border-right-width:1px;
 }

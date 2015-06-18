@@ -23,30 +23,6 @@
     {{ form.title }}
     {{ form.title.errors }}
 </div>
-
-  
-<div class="fieldWrapper tagWrapper">
-   
-    <label for="{{ form.tags.id_for_label }}">Keywords</label>
-     <span class="helptext"> Please enter keywords that are linked to the curriculum. Each keyword should be followed by a comma.<span>
-
-    {{ form.tags }}
-    {{ form.tags.errors }}
-</div>
-
-<div class="fieldWrapper descriptionWrapper">
-    
-    <label class="fs-title" for="{{ form.description.id_for_label }}">Description</label>
-    <span class="helptext"> Enter a short description of this resource<span>
-
-    {{ form.description }}
-    {{ form.description.errors }}
-</div>
-  <input type="button" name="next" id="firstnext"  class="next action-button" value="Next" />
-
-</fieldset>
-
-<fieldset id="secondsection">
 <div class="fieldWrapper pathwaywrapper wrapper">
     
     <label for="{{ form.pathway.id_for_label }}">Pathway</label>
@@ -71,7 +47,25 @@
     {{ form.agebracket }}
     {{ form.agebracket.errors }}
 </div>
+  <input type="button" name="next" id="firstnext"  class="next action-button" value="Next" />
 
+</fieldset>
+
+<fieldset id="secondsection">
+<div class="fieldWrapper tagWrapper">
+   
+    <label for="{{ form.tags.id_for_label }}">Keywords</label>
+    {{ form.tags }}
+    {{ form.tags.errors }}
+    Please enter keywords that are linked to the curriculum.
+</div>
+
+<div class="fieldWrapper descriptionWrapper">
+    
+    <label class="fs-title" for="{{ form.description.id_for_label }}">Description</label>
+    {{ form.description }}
+    {{ form.description.errors }}
+</div>
     <input type="button" name="previous" id="firstprevious" class="previous action-button" value="Previous" />
   <input type="button" name="next" id="secondnext"  class="next action-button" value="Next" />
 </fieldset>

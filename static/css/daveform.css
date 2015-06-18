@@ -84,7 +84,7 @@ body {
 
 
 #msform label{
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .fieldWrapper li{
@@ -116,14 +116,21 @@ width:35% !important;
 	display: block;
 	clear:both;
 }
+.titleWrapper{
+width:80%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+}
 
-.id_title {
-	display:inline-block;
+
+input#id_title {
+	width:100%;
+
+
 
 }
-label[for=id_title]{
-		display:inline-block;
-}
+
 
 /*file upload page*/
 .uploaded_file{
@@ -137,8 +144,8 @@ label[for=id_title]{
 
 }
 .uploaded_file_holder{
-	display: block;
-max-width: 110px;
+display: block;
+width: 110px;
 height:110px;
 float: left;
 margin: 5px;
@@ -164,3 +171,26 @@ font-weight: bold;
 .errorlist{
 	color:red;
 }
+
+.wrapper {
+	border-left: solid;
+	border-left-color:#F5F5F5; 
+	border-left-width:1px;
+
+}
+
+.agewrapper {
+		border-right: solid;
+border-right-color:#F5F5F5; 
+	border-right-width:1px;
+}
+.pathwaywrapper{
+	width:10%;
+}
+
+.helptext {
+	font-size: 10px;
+	line-height: 8px;
+
+}
+

@@ -1,5 +1,5 @@
     
-       {% extends 'base.html' %}
+{% extends 'base.html' %}
 {% block title %}list of all Resources{% endblock %}
 {% block heading %}{% endblock %}
  {% block extra-head %}
@@ -36,76 +36,11 @@ var clean_subject_list= clean_subject.split("/")
 <div class = "selector-section">
 
 
-
-
-<!-- start level selector-->
-<div class="level-selector selector-group">
-<h4 class="level-selector-heading">Level</h4>
-<ul>
-
-{% for level in levels_list %}
- <li class="level-selector selector selector{{level}}"><span id="{{level}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{level}}</span></li>
-                <script>
-                        $(document).ready(function() {
-                        var levelstring = $( ".selector{{level}}" ).text()
-                        if (level_list .indexOf(levelstring) >=0){
-                            $( "#{{level}}-checkbox" ).css("background-position","0px 0px")
-                            }
-                         })
-                        $( ".selector{{level}}" ).click(function() {    
-                        var levelstring = $( ".selector{{level}}" ).text()
-                        var index = level_list.indexOf(levelstring)
-                        if ( index >=0){ 
-                            level_list.splice(index, 1);
-                            window.location = RewriteUrlWithTags();
-                          } else{
-                            level_list.push("{{level}}");
-                            window.location = RewriteUrlWithTags();
-                          }
-                        
-                        });
-                        </script>
-{% endfor %}
-</ul>
-</div>
-<!--end level selector -->
-
-<!--Start age bracket selector -->
-<div class="agebracket-selector selector-group">
-    <h4 class="level-selector-heading">Age bracket</h4>
-<ul>
- {% for agebracket in agebracket_list %}
-                <li class="agebracket-selector selector{{agebracket}} selector"><span id="{{agebracket}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{agebracket}}</span></li>
-                  <script>
-                        $(document).ready(function() {
-                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
-                        if (agebracket_list .indexOf(agebracketstring) >=0){
-                            $( "#{{agebracket}}-checkbox" ).css("background-position","0px 0px")
-                            }
-                         })
-                        $( ".selector{{agebracket}}" ).click(function() {    
-                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
-                        var index = agebracket_list.indexOf(agebracketstring)
-                        if ( index >=0){ 
-                            agebracket_list.splice(index, 1);
-                            window.location = RewriteUrlWithTags();
-                          } else{
-                            agebracket_list.push("{{agebracket}}");
-                            window.location = RewriteUrlWithTags();
-                          }
-                        
-                        });
-                        </script>
-                {%endfor%}
-            </ul>
-</div>
-
-<!--End age bracket selector -->
-
 <!--start pathway selector -->
 <div class="pathway-selector selector-group">
-    <h4 class="level-selector-heading">Pathway</h4>
+    <h4 class="pathway-selector-heading">Pathway</h4>
 <ul>
+     <li class="pathway-selector selector all"><span id="pathway-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
  {% for pathway in pathway_list %}
                 <li class="pathway-selector selector{{pathway}} selector"><span id="{{pathway}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{pathway}}</span></li>
                   <script>
@@ -133,10 +68,50 @@ var clean_subject_list= clean_subject.split("/")
 </div>
 
 <!--end pathway selector -->
+
+
+<!-- start level selector-->
+<div class="level-selector selector-group">
+<h4 class="level-selector-heading">Level</h4>
+<ul>
+ <li class="level-selector selector all levels"><span id="level-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+{% for level in levels_list %}
+ <li class="level-selector selector selector{{level}}"><span id="{{level}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{level}}</span></li>
+                <script>
+                        $(document).ready(function() {
+                        var levelstring = $( ".selector{{level}}" ).text()
+                        if (level_list .indexOf(levelstring) >=0){
+                              $( "#{{level}}-checkbox" ).css("background-position","0px 0px") 
+                            }else{
+                     $( "div#level-selector > li.all > span.selector-checkbox ").css("background-position","0px 0px")
+                        
+                            }
+                         })
+
+                        $( ".selector{{level}}" ).click(function() {    
+                        var levelstring = $( ".selector{{level}}" ).text()
+                        var index = level_list.indexOf(levelstring)
+                        if ( index >=0){ 
+                            level_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            level_list.push("{{level}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+{% endfor %}
+</ul>
+</div>
+<!--end level selector -->
+
+
 <!--start subject selector -->
 <div class="subject-selector selector-group">
     <h4 class="level-selector-heading">Subjects</h4>
-<ul>
+<ul id="subject-selector">
+         <li class="subject-selector selector all"><span id="subject-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
  {% for subject in subject_list %}
                 <li class="subject-selector selector{{subject.slug}} selector"><span id="{{subject.slug}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{subject}}</span></li>
                   <script>
@@ -165,24 +140,41 @@ var clean_subject_list= clean_subject.split("/")
 
 <!--end subject selector -->
 
-
-
-
-
-<div class="tagcloud-selector selector-group">
-    <h4 class="level-selector-heading">Tagcloud</h4>
-<script type="text/javascript">
-var word_list = JSON.parse("{{ tagcloud }}".replace(/&quot;/g,'"'));;
-
-console.log(word_list)
-$(function() {
-$("#tagcloud").jQCloud(word_list, {shape: "rectangular"});
-});
-</script>
-
-<div id="tagcloud" style="width: 420px; height: 250px; border: 0px solid #ccc;"></div>
+<!--Start age bracket selector -->
+<div class="agebracket-selector selector-group">
+    <h4 class="level-selector-heading">Age bracket</h4>
+<ul>
+     <li class="age-selector selector all levels"><span id="age-all" class="selector-checkbox"></span><span class="selector-text">Both</span></li>
+ {% for agebracket in agebracket_list %}
+                <li class="agebracket-selector selector{{agebracket}} selector"><span id="{{agebracket}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{agebracket}}</span></li>
+                  <script>
+                        $(document).ready(function() {
+                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
+                        if (agebracket_list .indexOf(agebracketstring) >=0){
+                            $( "#{{agebracket}}-checkbox" ).css("background-position","0px 0px")
+                            }
+                         })
+                        $( ".selector{{agebracket}}" ).click(function() {    
+                        var agebracketstring = $( ".selector{{agebracket}}" ).text()
+                        var index = agebracket_list.indexOf(agebracketstring)
+                        if ( index >=0){ 
+                            agebracket_list.splice(index, 1);
+                            window.location = RewriteUrlWithTags();
+                          } else{
+                            agebracket_list.push("{{agebracket}}");
+                            window.location = RewriteUrlWithTags();
+                          }
+                        
+                        });
+                        </script>
+                {%endfor%}
+            </ul>
 </div>
-</div>
+
+<!--End age bracket selector -->
+
+
+
 
 <!-- end  selector-->
 

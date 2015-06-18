@@ -1,13 +1,19 @@
 from django.db import models
 #create slugs for pages
 from django.template.defaultfilters import slugify
+from django.conf import settings
+from django.http import HttpResponse
+
 from taggit_autosuggest.managers import TaggableManager
 from updown.fields import RatingField
 from taggit.models import Tag
 from model_utils.managers import InheritanceManager
 from filemanage.models import AttachedFiles
 #need zipfile to unpack archive
-import zipfile, os,fnmatch
+import os,fnmatch, io
+from StringIO import StringIO 
+from zipfile import ZipFile
+
 
  
 # Create your models here.
@@ -130,10 +136,37 @@ class FileResource(DefaultResource):
 	#
 	#This class creates a object to store collections attached file objects
 	#
-	files = models.ManyToManyField(AttachedFiles, blank=True)
+	files = models.ManyToManyField(AttachedFiles, blank=True,related_name="files")
+	zipfile = models.FileField(upload_to='zipfilesofattachedfiles/%Y/%m/%d', blank=True)
 	def __unicode__ (self): 
 		return self.title
+	def createzip(self):
+		zip_filename =self.slug+".zip"
+		list_of_files = self.files.all()
+		print list_of_files
+		filenames =[]
+		for each in list_of_files:
+			filenames.append(settings.MEDIA_ROOT + '/' + str(each.attachedfile))
+		in_memory2 = StringIO()
+		filelocationinmedia = '/' + "temp/" + str(self.slug)+'.zip'
+		filelocation = settings.MEDIA_ROOT + filelocationinmedia
+		zip = ZipFile(filelocation, "w")
+		for fpath in filenames:
+			zip.write(fpath,os.path.basename(fpath))
+		for filez in zip.filelist:  
+			filez.create_system = 0
+		zip.close()
+		print "bleh"
+		self.zipfile.name = filelocationinmedia
+		self.save()
+		return "done"
+
+
+			
+
 	def save(self, *args, **kwargs):
+		if not self.zipfile:
+			self.createzip()
 		self.icon = "/static/images/icons/folder.png"
 		super(FileResource, self).save(*args, **kwargs)
 

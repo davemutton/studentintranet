@@ -286,12 +286,6 @@ def fileresourceview(request, resource_slug):
 	default_resource = FileResource.objects.get(slug=resource_slug)
 	default_resource.views = default_resource.views + 1
 	default_resource.save()
-	print default_resource.files.all()
-	print default_resource.title
-	for each in default_resource.files.all():
-		print "yep"
-		print each.pk
-	print default_resource.views
 	context_dict['default_resource'] = default_resource
 	
 	return render(request,'mediamanager/file_resource.html',context_dict)

@@ -1,7 +1,11 @@
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
+
+from django.conf import settings
 from filemanage.models import AttachedFiles
+import os.path
+import mimetypes
 # Create your views here.
 
 def index(request):
@@ -35,5 +39,23 @@ def FileUpload(request):
 	print "that was not POST"
  	return JsonResponse({'error': 'no POST request detected'})
 
+def DownloadFile(request,pk):
+	queriedfile = AttachedFiles.objects.get(pk=pk)
+	mimetypes.init()
 
-    
+
+	file_url = str(queriedfile.attachedfile)
+	print file_url
+	file_path = settings.MEDIA_ROOT + '/' + file_url
+	fsock = open(file_path,"r")
+	#file = fsock.read()
+	#fsock = open(file_path,"r").read()
+	file_name = os.path.basename(file_path)
+	file_size = os.path.getsize(file_path)
+	print "file size is: " + str(file_size)
+	mime_type_guess = mimetypes.guess_type(file_name)
+	if mime_type_guess is not None:
+		response = HttpResponse(fsock, content_type=mime_type_guess[0])
+	response['Content-Disposition'] = 'attachment; filename=' + file_name            
+
+	return response

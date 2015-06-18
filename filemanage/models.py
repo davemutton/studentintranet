@@ -2,6 +2,8 @@ from django.db import models
 from hurry.filesize import size
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
+from django.conf import settings
+
 import os
 from PIL import Image
 
@@ -23,6 +25,11 @@ class AttachedFiles(models.Model):
 		if len(filename) > 15:
 			filename = filename[:8] + "..." +filename[-5:]
 		return filename
+	def getfullfilename(self):
+		file = self.attachedfile
+		filename = os.path.basename(file.name)
+		return filename
+	
 	def getfilesize(self):
 		file = self.attachedfile
 		return size(file.size)
@@ -37,7 +44,7 @@ class AttachedFiles(models.Model):
 			from django.core.files.uploadedfile import SimpleUploadedFile
 
 			# Set our max thumbnail size in a tuple (max width, max height)
-			THUMBNAIL_SIZE = (100, 100)
+			THUMBNAIL_SIZE = (200, 200)
 
 			# Open original photo which we want to thumbnail using PIL's Image
 			# object

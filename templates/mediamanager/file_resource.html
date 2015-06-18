@@ -1,16 +1,36 @@
 {% extends 'base.html' %}
 {% block title %}{{default_resource.title}}{% endblock %}
 {%if default_resource.learningobject.indexpath %}
-          {% block extra-menu-item %}<li><a href="/mediamanager/edit/learningobject/{{default_resource.pk}}">Edit this resource</a></li>{% endblock %}
+          {% block extra-menu-item %}<li><a href="/mediamanager/edit/fileresource/{{default_resource.pk}}">Edit this resource</a></li>{% endblock %}
     {% endif  %}
-
 
 {% block body_block %}
        <h1>{{default_resource.title}}</h1>
-       <div id="attached_files">
+       {% if default_resource.fileresource.zipfile %}
+       <a href='/media/{{default_resource.fileresource.zipfile}}'> Download all</a>
+       {% else %}
+       {{default_resource.fileresource.createzip}}
+       {% endif %}
 
+       <table class="table table-condensed table-hover">
         {% for file in default_resource.files.all %}
-        <div class='uploaded_file_holder'><span class = 'uploaded_file'  style='background-image:url("{{file.icon}}");'></span><span class='file_name'>{{file.}} </span></div>
+        <tr>
+        <td class="span1" style="text-align: center;vertical-align:middle;"><img src="{{file.icon}}" >
+                    </td>
+         <td class="span4"><h2>{{file.getfullfilename}}</h2>
+         	{{ file.getfilesize }} (<a href='/filemanage/download/file/{{file.pk}}'>Download file</a>)
+          
+         
+
+        
+
+
+
+
+
+
+
+        <div class='uploaded_file_holder'><span class = 'uploaded_file'  style='background-image:url("{{file.icon}}");'></span><span class='file_name'>{{file.name}} </span></div>
 
        
 
