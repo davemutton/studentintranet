@@ -14,8 +14,8 @@
 
        <table class="table table-condensed table-hover">
         {% for file in default_resource.files.all %}
-        <tr>
-        <td class="span1" style="text-align: center;vertical-align:middle;"><img src="{{file.icon}}" >
+        <tr class="{{file.pk}}">
+        <td class="span1" style="text-align: center;vertical-align:middle;"><img class="iconimage" src="{{file.icon}}" >
                     </td>
          <td class="span4"><h2>{{file.getfullfilename}}</h2>
          	{{ file.getfilesize }} (<a href='/filemanage/download/file/{{file.pk}}'>Download file</a>)

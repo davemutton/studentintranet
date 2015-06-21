@@ -15,71 +15,6 @@ from filemanage.models import AttachedFiles
 
  #Create your views here.
 
-
-
-'''
-def createLearningobject(request,learningobject_pk=False):
-	if request.method == 'GET':
-		if learningobject_pk:
-			instance = LearningObject.objects.get( pk=learningobject_pk)
-			form = LearningObjectuploadform(request.POST or None, request.FILES or None, instance=instance)
-			form.base_fields['archivefile'].required = False
-		else:
-			form = LearningObjectuploadform()
-	else:	
-		form = LearningObjectuploadform(request.POST, request.FILES)
-		if learningobject_pk:
-			form.base_fields['archivefile'].required = False
-		if form.is_valid():
-			learningobject = request.FILES['archivefile']
-			title = form.cleaned_data['title']
-			description = form.cleaned_data['description']
-			tags = form.cleaned_data['tags']
-			levels = form.cleaned_data['level']
-			pathways = form.cleaned_data['pathway']
-			agebrackets = form.cleaned_data['agebracket']
-			post = LearningObject.objects.create(archivefile=learningobject,title=title, description=description)
-			for tag in tags:
-				post.tags.add(tag)
-			for level in levels:
-				post.level.add(level.pk)
-			for pathway in pathways:
-				post.pathway.add(pathway.pk)
-			for agebracket in agebrackets:
-				post.agebracket.add(agebracket.pk)
-			post.save()
-			return HttpResponseRedirect(reverse('index', ))
-		else:
-			print "form not valid"
-	return render(request, 'mediamanager/edit_learningobject.html', {'form': form,})
-'''
-'''
-def createLearningobject(request,learningobject_pk=False):
-	if request.method == 'POST':
-		if learningobject_pk:
-			instance = LearningObject.objects.get(pk=learningobject_pk)
-			form = LearningObjectuploadform2(request.POST,request.FILES, instance=instance)
-			if form.is_valid():
-				form.save(instance)
-		else:
-			instance = None
-			form = LearningObjectuploadform2(request.POST,request.FILES)
-			if form.is_valid():
-				form.save()
-		
-
-			return HttpResponseRedirect(reverse('index', ))
-	else:
-		if learningobject_pk:
-			instance = LearningObject.objects.get( pk=learningobject_pk)
-		else:
-			instance = LearningObject()
-		form = LearningObjectuploadform(instance=instance)
-		form.base_fields['archivefile'].required = False
-		print instance.pk
-	return render_to_response('mediamanager/edit_learningobject.html', {'form': form,},context_instance=RequestContext(request)) 
-'''
-
 class CreateLearningObject(CreateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
@@ -91,14 +26,37 @@ class UpdateLearningObject(UpdateView):
 	template_name = 'mediamanager/edit_learningobject.html'
 	def get_success_url(self):
 		return reverse('index')
+'''
+class UpdateFileResource(UpdateView):
+	model = FileResource
+	template_name = 'mediamanager/edit_fileresource.html'
+	def get_success_url(self):
+		return reverse('index')
+'''
+
+def UpdateFileResource(request,pk):
+	instance = FileResource.objects.get(pk=pk)
+	context = RequestContext(request)
+	if request.method == 'POST':
+		form = FileResourceForm(request.POST,instance=instance)
+		if form.is_valid():
+			newobject = form.save()
+			filesattached = request.POST.get('filesattached',False)
+			if filesattached:
+				if filesattached[-1:] == ",":
+					filesattached = filesattached[:-1]
+				filesattached_list = filesattached.split(",")
+				for each in filesattached_list:
+					print int(each)
+					file_to_attach = AttachedFiles.objects.get(pk=int(each))
+					newobject.files.add(file_to_attach)
+					newobject.save()
+			return HttpResponseRedirect(reverse('index', ))
+	else:
+		form = FileResourceForm(instance=instance)
+	return render_to_response('mediamanager/edit_fileresource.html', {'form': form,},context) 
 
 
-#class CreateFileResource(CreateView):
-#	model = FileResource
-#	template_name = 'mediamanager/file_upload.html'
-#	def get_success_url(self):
-#		return reverse('index')
-#	fields =['title','tags','pathway','level','agebracket']
 def CreateFileResource(request):
 	context = RequestContext(request)
 	if request.method == 'POST':
@@ -115,14 +73,10 @@ def CreateFileResource(request):
 					file_to_attach = AttachedFiles.objects.get(pk=int(each))
 					newobject.files.add(file_to_attach)
 					newobject.save()
-
-				
-
-
 			return HttpResponseRedirect(reverse('index', ))
 	else:
 		form = FileResourceForm()
-	return render_to_response('mediamanager/file_upload.html', {'form': form,},context) 
+	return render_to_response('mediamanager/create_fileresource.html', {'form': form,},context) 
 
 
 

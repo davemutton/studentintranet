@@ -239,7 +239,7 @@ var clean_subject_list= clean_subject.split("/")
 
                     <div id="score{{resource.pk}}">{{resource.calculate_score}}</div>
                     <div id="downvote{{resource.pk}}"><img class="updownbutton" src="/static/images/downvote.png"></div></td>
-                    <td class="span1" style="text-align: center;vertical-align:middle;"><img src="{{resource.icon}}" >
+                    <td class="span1" style="text-align: center;vertical-align:middle;"><img class="iconimage" src="{{resource.icon}}" >
                     </td>
                 {%if resource.fileresource.files %}
                 <td class="span4"><h6><a href="/mediamanager/view/file/{{resource.slug}}">{{ resource.title }}</a></h6>

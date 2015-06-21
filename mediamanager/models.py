@@ -165,8 +165,9 @@ class FileResource(DefaultResource):
 			
 
 	def save(self, *args, **kwargs):
-		if not self.zipfile:
-			self.createzip()
+		if self.pk:
+			if not self.zipfile:
+				self.createzip()
 		self.icon = "/static/images/icons/folder.png"
 		super(FileResource, self).save(*args, **kwargs)
 

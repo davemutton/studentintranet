@@ -39,7 +39,7 @@ padding-left: 5px;
 */
 
 .selector-group{
-padding-left: 40px;
+padding-left: 2.5%;
 	float: left;
 	display:inline-block;
 
@@ -133,14 +133,15 @@ label{
 }
 
 ul#subject-selector {
-  width:520px;
+  min-width: 400px;
+  max-width:440px;
   overflow:hidden;
 }
 #subject-selector li{
   float:left;
   display:inline;
   min-width: 25%;
-  max-width:33%;
+  
 }
 .selector-section ul{
 	border-left: solid;
@@ -155,4 +156,7 @@ ul#subject-selector {
 		border-right: solid;
 border-right-color:#F5F5F5; 
 	border-right-width:1px;
+}
+.iconimage{
+width: 90px;
 }

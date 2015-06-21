@@ -4,9 +4,6 @@ from mediamanager.fields import MultiFileField
 from filemanage.models import AttachedFiles
  
 
-
-
- 
 class FileResourceForm(forms.ModelForm):
     title = forms.CharField(max_length=100)
     level = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple,queryset=None,required=True)
