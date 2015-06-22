@@ -83,22 +83,17 @@ def CreateFileResource(request):
 
 def index(request):
 	context = RequestContext(request)
-	exclusiveurltags = request.GET.get('extag', False)
 	urltags = request.GET.get('tag', False)
 	urlpathwaylist =[]
-	
+	default_resource_list = DefaultResource.objects.all()
+#start tagging section	
 	if urltags:
 		urltagslist = urltags.split("/")
-		default_resource_list =[]
-		for tag in urltagslist:
-			print tag
-			for objects in DefaultResource.objects.filter(tags__name__in=urltagslist):
-				default_resource_list.append(objects)
-		default_resource_list = list(set(default_resource_list))
-		default_resource_list.sort(key=lambda x: x.score, reverse=True)
-		
-	else:
-		default_resource_list = DefaultResource.objects.order_by('-score')
+		print urltagslist
+		default_resource_list = default_resource_list.filter(tags__name__in=urltagslist).distinct()
+
+
+#end tagging secetion
 #Start exclusive keyword tags		
 
 #Nothing here yet
@@ -177,12 +172,7 @@ def index(request):
 				objectslist.append(AssoeSubjects.objects.get(subject=each).pk)
 			default_resource_list = default_resource_list.filter(subject__in=objectslist).distinct()
 	
-	default_resource_list = default_resource_list.order_by('-score').select_subclasses()
-	tagcloud = []
-	for each in default_resource_list[0:100]:
-		for all in each.tags.all():
-			tagcloud.append(all)
-	print tagcloud
+
 
 
 	#default_resource_list.sort(key=lambda x: x.score, reverse=True)
@@ -212,7 +202,7 @@ def index(request):
 	default_resource_list.sort(key=lambda x: x.score, reverse=True)
 
 	
-	context_dict = {'default_resource_list':paged_list,'levels_list':levels_list,'agebracket_list':agebracket_list,'pathway_list':pathway_list,'subject_list':subject_list,'tagcloud':tagcloud}
+	context_dict = {'default_resource_list':paged_list,'levels_list':levels_list,'agebracket_list':agebracket_list,'pathway_list':pathway_list,'subject_list':subject_list}
 	return render_to_response('mediamanager/index.html', context_dict, context)
 
 

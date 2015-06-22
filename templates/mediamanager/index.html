@@ -40,7 +40,19 @@ var clean_subject_list= clean_subject.split("/")
 <div class="pathway-selector selector-group">
     <h4 class="pathway-selector-heading">Pathway</h4>
 <ul>
-     <li class="pathway-selector selector all"><span id="pathway-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+     <li class="pathway-selector selector all"><span id="pathway-all-checkbox" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+<script>
+$(document).ready(function() {
+    if (pathway_list.length < 2 ){
+        console.log(pathway_list.length)
+    $( "#pathway-all-checkbox" ).css("background-position","0px 0px");
+    }
+    $( "#pathway-all-checkbox" ).click(function() {
+                    pathway_list.length = 0;
+                    window.location = RewriteUrlWithTags();
+    });
+});
+</script>
  {% for pathway in pathway_list %}
                 <li class="pathway-selector selector{{pathway}} selector"><span id="{{pathway}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{pathway}}</span></li>
                   <script>
@@ -74,7 +86,20 @@ var clean_subject_list= clean_subject.split("/")
 <div class="level-selector selector-group">
 <h4 class="level-selector-heading">Level</h4>
 <ul>
- <li class="level-selector selector all levels"><span id="level-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+ <li class="level-selector selector all levels"><span id="level-all-checkbox" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+<script>
+$(document).ready(function() {
+    if (level_list.length < 2 ){
+        console.log(level_list.length)
+    $( "#level-all-checkbox" ).css("background-position","0px 0px");
+    }
+    $( "#level-all-checkbox" ).click(function() {
+                    level_list.length = 0;
+                    window.location = RewriteUrlWithTags();
+    });
+});
+</script>
+
 {% for level in levels_list %}
  <li class="level-selector selector selector{{level}}"><span id="{{level}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{level}}</span></li>
                 <script>
@@ -111,7 +136,19 @@ var clean_subject_list= clean_subject.split("/")
 <div class="subject-selector selector-group">
     <h4 class="level-selector-heading">Subjects</h4>
 <ul id="subject-selector">
-         <li class="subject-selector selector all"><span id="subject-all" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+         <li class="subject-selector selector all"><span id="subject-all-checkbox" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
+ <script>
+$(document).ready(function() {
+    if (subject_list.length < 2 ){
+        console.log(level_list.length)
+    $( "#subject-all-checkbox" ).css("background-position","0px 0px");
+    }
+    $( "#subject-all-checkbox" ).click(function() {
+                    subject_list.length = 0;
+                    window.location = RewriteUrlWithTags();
+    });
+});
+</script>
  {% for subject in subject_list %}
                 <li class="subject-selector selector{{subject.slug}} selector"><span id="{{subject.slug}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{subject}}</span></li>
                   <script>
@@ -144,7 +181,19 @@ var clean_subject_list= clean_subject.split("/")
 <div class="agebracket-selector selector-group">
     <h4 class="level-selector-heading">Age bracket</h4>
 <ul>
-     <li class="age-selector selector all levels"><span id="age-all" class="selector-checkbox"></span><span class="selector-text">Both</span></li>
+     <li class="age-selector selector all levels"><span id="age-all-checkbox" class="selector-checkbox"></span><span class="selector-text">Both</span></li>
+  <script>
+$(document).ready(function() {
+    if (agebracket_list.length < 2 ){
+        console.log(agebracket_list.length)
+    $( "#age-all-checkbox" ).css("background-position","0px 0px");
+    }
+    $( "#age-all-checkbox" ).click(function() {
+                    agebracket_list.length = 0;
+                    window.location = RewriteUrlWithTags();
+    });
+});
+</script>
  {% for agebracket in agebracket_list %}
                 <li class="agebracket-selector selector{{agebracket}} selector"><span id="{{agebracket}}-checkbox" class="selector-checkbox"></span><span class="selector-text">{{agebracket}}</span></li>
                   <script>
@@ -385,7 +434,8 @@ var clean_subject_list= clean_subject.split("/")
                             $( ".{{resource.pk}}{{subject.slug}}" ).css("opacity","1.0")
                             }
                          })
-                        $( ".{{resource.pk}}{{subject}}" ).click(function() {    
+                        $( ".{{resource.pk}}{{subject.slug}}" ).click(function() {
+           
                         var subjecttring = DaveSlugify($( ".{{resource.pk}}{{subject.slug}}" ).text())
                         var index = clean_subject_list.indexOf(subjecttring)
                         if ( index >=0){ 

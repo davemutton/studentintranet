@@ -13,6 +13,7 @@ from filemanage.models import AttachedFiles
 import os,fnmatch, io
 from StringIO import StringIO 
 from zipfile import ZipFile
+import datetime
 
 
  
@@ -83,16 +84,16 @@ class DefaultResource(models.Model):
 	title = models.CharField(max_length=100)
 	created_date = models.DateTimeField(auto_now_add=True, auto_now=False)
 	edited_date =  models.DateTimeField(auto_now_add=False,auto_now=True)
-	level = models.ManyToManyField(AssoeLevel)
-	agebracket= models.ManyToManyField(AgeBracket)
-	pathway= models.ManyToManyField(AssoePathway)
+	level = models.ManyToManyField(AssoeLevel,db_index=True)
+	agebracket= models.ManyToManyField(AgeBracket,db_index=True)
+	pathway= models.ManyToManyField(AssoePathway,db_index=True)
 	tags = TaggableManager()
 	slug = models.SlugField(max_length=100,editable=False,blank=True)
 	updownvotes = RatingField(can_change_vote=True)
 	views = models.DecimalField(max_digits=20,decimal_places=2,default=0,blank=True)
 	score = models.DecimalField(max_digits=20,decimal_places=4,default=0,blank=True)
 	icon = models.CharField(max_length=254,editable=False,blank=True)
-	subject = models.ManyToManyField(AssoeSubjects)
+	subject = models.ManyToManyField(AssoeSubjects,db_index=True)
 	description = models.TextField(blank=True)
 
 
