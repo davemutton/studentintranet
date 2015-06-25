@@ -18,18 +18,22 @@
 <script>
 var tags = getQueryVariable('tag');
 clean_tags = DaveSlugify(tags);
-var clean_tags_list = clean_tags.split("/")
-var tags_list = tags.split("/")
+var clean_tags_list = clean_tags.split("/");
+var tags_list = tags.split("/");
 var level = getQueryVariable('level');
-var level_list = level.split("/")
+var level_list = level.split("/");
 var age = getQueryVariable('age');
-var agebracket_list = age.split("/")
+var agebracket_list = age.split("/");
 var pathway = getQueryVariable('pathway');
-var pathway_list = pathway.split("/")               
+var pathway_list = pathway.split("/");              
 var subject = getQueryVariable('subject');
-var subject_list = subject.split("/")  
-var clean_subject = DaveSlugify(subject)
-var clean_subject_list= clean_subject.split("/")
+var subject_list = subject.split("/");  
+var clean_subject = DaveSlugify(subject);
+var clean_subject_list= clean_subject.split("/");
+var page_number = parseInt(getQueryVariable('page'));
+ if (isNaN(page_number) == true) {
+    page_number = 1
+    }
 </script>
 
 <!-- start  selector-->
@@ -43,6 +47,7 @@ var clean_subject_list= clean_subject.split("/")
      <li class="pathway-selector selector all"><span id="pathway-all-checkbox" class="selector-checkbox"></span><span class="selector-text">Any</span></li>
 <script>
 $(document).ready(function() {
+   
     if (pathway_list.length < 2 ){
         console.log(pathway_list.length)
     $( "#pathway-all-checkbox" ).css("background-position","0px 0px");
@@ -228,41 +233,11 @@ $(document).ready(function() {
 <!-- end  selector-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- start pageination -->
 <div class="pagination">
     <span class="step-links">
         {% if default_resource_list.has_previous %}
-            <a href="?page={{ default_resource_list.previous_page_number }}">previous</a>
+            <a class="page_previous" >Previous</a>
         {% endif %}
 
         <span class="current">
@@ -270,8 +245,9 @@ $(document).ready(function() {
         </span>
 
         {% if default_resource_list.has_next %}
-            <a href="?page={{ default_resource_list.next_page_number }}">next</a>
+            <a class="page_next" >Next page</a>
         {% endif %}
+ 
     </span>
 </div>
 <!-- end pageination -->
@@ -488,7 +464,14 @@ $(document).ready(function() {
 <div class="pagination">
     <span class="step-links">
         {% if default_resource_list.has_previous %}
-            <a href="?page={{ default_resource_list.previous_page_number }}">previous</a>
+            <a class="page_previous" >Previous</a>
+                <script>
+        $(".page_previous").click(function(){
+        page_number = parseInt({{ default_resource_list.previous_page_number }});
+         console.log(page_number)
+         window.location = RewriteUrlWithTags();
+        });
+        </script>
         {% endif %}
 
         <span class="current">
@@ -496,8 +479,17 @@ $(document).ready(function() {
         </span>
 
         {% if default_resource_list.has_next %}
-            <a href="?page={{ default_resource_list.next_page_number }}">next</a>
+            <a class="page_next" >Next page</a>
+              <script>
+        $(".page_next").click(function(){
+        page_number = parseInt({{ default_resource_list.next_page_number }});
+         console.log(page_number)
+         window.location = RewriteUrlWithTags();
+        });
+        </script>
         {% endif %}
+      
+
     </span>
 </div>
 <!-- end pageination -->

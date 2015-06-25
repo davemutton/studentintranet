@@ -24,7 +24,8 @@ function RewriteUrlWithTags()
         var age= uniq(agebracket_list).join("/")
         var pathway = uniq(pathway_list).join("/")
         var subject = uniq(subject_list).join("/")
-        url = base_url+"/mediamanager/search?tag="+tags+"&level="+level+"&age="+age+"&pathway="+pathway+"&subject="+subject;
+        console.log(page_number)
+        url = base_url+"/mediamanager/search?tag="+tags+"&level="+level+"&age="+age+"&pathway="+pathway+"&subject="+subject+"&page="+page_number;
         return(url);
 
 }
