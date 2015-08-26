@@ -12,15 +12,16 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import UpdateView
 from itertools import chain
 from filemanage.models import AttachedFiles
+from django.contrib.auth.decorators import login_required
 
  #Create your views here.
-
+@login_required
 class CreateLearningObject(CreateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
 	def get_success_url(self):
 		return reverse('index')
-
+@login_required
 class UpdateLearningObject(UpdateView):
 	model = LearningObject
 	template_name = 'mediamanager/edit_learningobject.html'
@@ -33,7 +34,7 @@ class UpdateFileResource(UpdateView):
 	def get_success_url(self):
 		return reverse('index')
 '''
-
+@login_required
 def UpdateFileResource(request,pk):
 	instance = FileResource.objects.get(pk=pk)
 	context = RequestContext(request)
@@ -56,7 +57,7 @@ def UpdateFileResource(request,pk):
 		form = FileResourceForm(instance=instance)
 	return render_to_response('mediamanager/edit_fileresource.html', {'form': form,},context) 
 
-
+@login_required
 def CreateFileResource(request):
 	context = RequestContext(request)
 	if request.method == 'POST':
@@ -69,7 +70,6 @@ def CreateFileResource(request):
 					filesattached = filesattached[:-1]
 				filesattached_list = filesattached.split(",")
 				for each in filesattached_list:
-					print int(each)
 					file_to_attach = AttachedFiles.objects.get(pk=int(each))
 					newobject.files.add(file_to_attach)
 					newobject.save()
@@ -78,7 +78,17 @@ def CreateFileResource(request):
 		form = FileResourceForm()
 	return render_to_response('mediamanager/create_fileresource.html', {'form': form,},context) 
 
-
+@login_required
+def CreateURLResource(request):
+	context = RequestContext(request)
+	if request.method == 'POST':
+		form = FileResourceForm(request.POST)
+		if form.is_valid():
+			newobject = form.save()
+			return HttpResponseRedirect(reverse('index', ))
+	else:
+		form = FileResourceForm()
+	return render_to_response('mediamanager/create_urlresource.html', {'form': form,},context) 
 
 
 def index(request):
@@ -91,17 +101,6 @@ def index(request):
 		urltagslist = urltags.split("/")
 		print urltagslist
 		default_resource_list = default_resource_list.filter(tags__name__in=urltagslist).distinct()
-
-
-#end tagging secetion
-#Start exclusive keyword tags		
-
-#Nothing here yet
-
-#end exclusive keyword tags		
-	
-# Start of Pathway retreiving section.
-
 	try:
 		urlpathway = request.GET.get('pathway', False).lstrip("/")
 		print urlpathway
@@ -116,14 +115,6 @@ def index(request):
 				objectslist.append(AssoePathway.objects.get(pathway=each).pk)
 			default_resource_list = default_resource_list.filter(pathway__in=objectslist).distinct()
 
-		#if len(urlpathwaylist) > 0:
-		#	for pathways in urlpathwaylist:
-		#		for pathway in AssoePathway.objects.all():
-		#			if str(pathway.pathway) not in urlpathwaylist:
-		#				default_resource_list = default_resource_list.exclude(pathway=pathway.pk)
-# END of Pathway retreiving section.
-
-
 # Start of Level retreiving section.
 	
 	try:
@@ -131,6 +122,7 @@ def index(request):
 	except:
 		urllevel = []
 	urllevelfiltered_list = []
+	
 	if urllevel:
 		urllevellist = urllevel.split("/")
 		if len(urllevellist) > 0:
@@ -171,12 +163,6 @@ def index(request):
 			for each in urlsubjectlist:
 				objectslist.append(AssoeSubjects.objects.get(subject=each).pk)
 			default_resource_list = default_resource_list.filter(subject__in=objectslist).distinct()
-	
-
-
-
-	#default_resource_list.sort(key=lambda x: x.score, reverse=True)
-	
 	paginator = Paginator(default_resource_list, 20)
 	page = request.GET.get('page')
 	try:
@@ -200,6 +186,8 @@ def index(request):
 	subject_list = AssoeSubjects.objects.order_by('order')
 	default_resource_list = list(set(default_resource_list))
 	default_resource_list.sort(key=lambda x: x.score, reverse=True)
+	for query in default_resource_list:
+		print query.created_date
 
 	
 	context_dict = {'default_resource_list':paged_list,'levels_list':levels_list,'agebracket_list':agebracket_list,'pathway_list':pathway_list,'subject_list':subject_list}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cp:manifest xmlns:lom="http://ltsc.ieee.org/xsd/LOM" identifier="s0945d646-e9d5-45b7-bdaf-301048590f76" xmlns:cp="http://www.imsglobal.org/xsd/imscp_v1p1">
+  <cp:metadata>
+    <cp:schema>IMS Content</cp:schema>
+    <cp:schemaversion>1.1.4</cp:schemaversion>
+    <lom:lom>
+      <lom:general>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Learning Resource</lom:catalog>
+          <lom:entry>S0688</lom:entry>
+        </lom:identifier>
+        <lom:title>
+          <lom:string language="en">Kitchen scenarios: identify the hygiene hazards</lom:string>
+        </lom:title>
+        <lom:keyword>
+          <lom:string language="en">Year 8 Food and Nutrition</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">Year 9 Food and Nutrition</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">kitchens</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">safety education</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">hygiene</lom:string>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:string language="en">public health</lom:string>
+        </lom:keyword>
+        <lom:aggregationLevel>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>2</lom:value>
+        </lom:aggregationLevel>
+        <lom:language>en</lom:language>
+        <lom:description>
+          <lom:string language="en">Learners roll the mouse over a series of kitchen scenarios to reveal information about why each may be hygienic or unhygienic. The animated object is one of a group called ‘Keeping it safe’ and is part of year 8 and 9 Food and Nutrition.</lom:string>
+        </lom:description>
+      </lom:general>
+      <lom:lifeCycle>
+        <lom:contribute>
+          <lom:role>
+            <lom:source>MARC Relator</lom:source>
+            <lom:value>Copyright holder</lom:value>
+          </lom:role>
+          <lom:entity>BEGIN:VCARD
+N:;;;;
+FN:
+ADR:;;;;;;AUSTRALIA
+VERSION:3.0
+END:VCARD
+</lom:entity>
+        </lom:contribute>
+        <lom:version>
+          <lom:string>2.0</lom:string>
+        </lom:version>
+        <lom:status>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>final</lom:value>
+        </lom:status>
+      </lom:lifeCycle>
+      <lom:metaMetadata>
+        <lom:identifier>
+          <lom:catalog>Sharing Exchange Metadata</lom:catalog>
+          <lom:entry>S0688</lom:entry>
+        </lom:identifier>
+        <lom:language>en</lom:language>
+        <lom:metadataSchema>LOMv1.0</lom:metadataSchema>
+        <lom:metadataSchema>ANZ-LOMv1.0</lom:metadataSchema>
+      </lom:metaMetadata>
+      <lom:technical>
+        <lom:format>text/html</lom:format>
+        <lom:format>application/x-shockwave-flash</lom:format>
+        <lom:format>text/plain</lom:format>
+        <lom:format>application/x-javascript</lom:format>
+        <lom:location>http://resolver.thelearningfederation.edu.au/?rft_id=10257/5828898</lom:location>
+        <lom:size>62687</lom:size>
+      </lom:technical>
+      <lom:educational>
+        <lom:learningResourceType>
+          <lom:source>DCMI Type</lom:source>
+          <lom:value>Interactive resource</lom:value>
+        </lom:learningResourceType>
+      </lom:educational>
+      <lom:rights>
+        <lom:cost>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>no</lom:value>
+        </lom:cost>
+        <lom:copyrightAndOtherRestrictions>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>yes</lom:value>
+        </lom:copyrightAndOtherRestrictions>
+        <lom:description>
+          <lom:string language="en">© Minister for Education and Children's Services for and on behalf of the Crown in right of the State of South Australia.</lom:string>
+        </lom:description>
+      </lom:rights>
+      <lom:classification>
+        <lom:purpose>
+          <lom:source>LOMv1.0</lom:source>
+          <lom:value>idea</lom:value>
+        </lom:purpose>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>6805</lom:id>
+            <lom:entry>
+              <lom:string language="en">Hygiene</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>7346</lom:id>
+            <lom:entry>
+              <lom:string language="en">Kitchens</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+        <lom:taxonPath>
+          <lom:taxon>
+            <lom:id>2141</lom:id>
+            <lom:entry>
+              <lom:string language="en">Public health</lom:string>
+            </lom:entry>
+          </lom:taxon>
+          <lom:source>
+            <lom:string language="en">ScOT</lom:string>
+          </lom:source>
+        </lom:taxonPath>
+      </lom:classification>
+    </lom:lom>
+  </cp:metadata>
+  <cp:organizations default="s95af2543-2d9e-4f08-b0bf-1678108e1daf">
+    <cp:organization identifier="s95af2543-2d9e-4f08-b0bf-1678108e1daf" structure="hierarchical">
+      <cp:title>Kitchen scenarios: identify the hygiene hazards</cp:title>
+      <cp:item identifier="s36245fa1-8271-407d-bc78-cd80e8f4bdf9" identifierref="s56579828-0e07-43c4-a464-0336c8547fbe">
+        <cp:title>Start: Kitchen scenarios: identify the hygiene hazards</cp:title>
+      </cp:item>
+    </cp:organization>
+  </cp:organizations>
+  <cp:resources>
+    <cp:resource href="13169_05/index.htm" identifier="s56579828-0e07-43c4-a464-0336c8547fbe" type="webcontent">
+      <cp:file href="13169_05/_scripts/indexi1f1.js" />
+      <cp:file href="13169_05/_scripts/indexi1f2.js" />
+      <cp:file href="13169_05/index.htm" />
+      <cp:file href="13169_05/logo.swf" />
+      <cp:file href="13169_05/unit_1e%20Report.txt" />
+      <cp:file href="13169_05/unit_1e.swf" />
+    </cp:resource>
+  </cp:resources>
+</cp:manifest>

@@ -97,6 +97,7 @@ class DefaultResource(models.Model):
 	description = models.TextField(blank=True)
 
 
+
 	def calculate_score(self):
 		score = float(self.updownvotes.likes) - float(self.updownvotes.dislikes)
 		score = score + (float(self.views)**(float(1)/float(2)))
@@ -132,6 +133,10 @@ class UrlResource(DefaultResource):
 	url = models.URLField(max_length=400)
 	def __unicode__ (self): 
 		return self.title
+	#def save(self, *args, **kwargs):
+	#	self.icon = "/static/images/icons/hyperlink.png"
+	#	print self.icon
+	#super(UrlResource, self).save(*args, **kwargs)
 
 class FileResource(DefaultResource):
 	#
@@ -201,8 +206,6 @@ class LearningObject(DefaultResource):
 		else:
 			pass
 	def findindex(self,path):
-
-		print path
 		for root, dirnames, filenames in os.walk(path):
 			for filename in fnmatch.filter(filenames, 'index.ht*'):
 				print filename

@@ -72,6 +72,7 @@
 
 
 <input type="text" name="filesattached" class="hidden_field">
+<input type="text" name="deletedfiles" class="">
 <input type='submit' value='Submit' id ='myHiddenButton'/>
 </form>
 
@@ -102,7 +103,7 @@ var attachedfile = $.get( "/filemanage/query/singlefile/{{each.pk}}", function(r
    console.log(response.icon)
    console.log(response.filesize)
    console.log(response.filename)
-   var html = $("<div class='uploaded_file_holder'><span class = 'uploaded_file "
+   var html = $("<div class='uploaded_file_holder' id='uploaded_file{{each.pk}}'><span class = 'uploaded_file "
   + String(response.id)
   +"' style='background-image:url("
   +String(response.icon)
@@ -111,10 +112,16 @@ var attachedfile = $.get( "/filemanage/query/singlefile/{{each.pk}}", function(r
   +"(" 
   +String(response.filesize) 
   +")"
-  +"</span><span class='deletebutton' id='deletebutton{{each.pk}}'></span></div>")
+  +"</span><span class='deletebutton' id='deletebutton{{each.pk}}' name='{{each.pk}}'></span></div>")
   
     html.on("click",function(){
-    alert("clicked");
+   var existingfilestobedeleted = String($("input[name=deletedfiles]").val());
+   var newfilestobedeleted = String(response.id)+",";
+   $("input[name=deletedfiles]").val(existingfilestobedeleted + newfilestobedeleted);
+   $('#deletebutton{{each.pk}}').remove;
+  
+
+
 });
 
 
@@ -122,10 +129,12 @@ var attachedfile = $.get( "/filemanage/query/singlefile/{{each.pk}}", function(r
 }
 
   );
-
+$(document).ready(function() {
 $('#deletebutton{{each.pk}}').click(function(){
 alert('deleted');
 });
+});
+
 </script>
 
 {%endfor%}

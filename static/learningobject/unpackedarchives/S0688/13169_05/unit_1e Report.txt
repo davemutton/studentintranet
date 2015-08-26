@@ -1,0 +1,138 @@
+Movie Report
+-------------
+FrameFrame #    Frame Bytes    Total Bytes    Page
+------------    -----------    -----------    ---------------
+    1         41245          41245        Scene 1
+    2         29155          70400          2
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0           346
+
+Page                       Symbol Bytes    Text Bytes
+-----------------------    ------------    ----------
+eyes2                           261             0
+Tween 16                         79             0
+Tween 9                           0             0
+Tween 9 copy                      0             0
+Tween 7                           0             0
+sneezingBTN                     337            58
+Tween 18                          0             0
+warm_foodBTN                    496             0
+food2                           283             0
+tasting_foodBTN                 905             0
+tastingFOOD                       0             0
+tastingFOOD copy                  0             0
+dirty_benchBTN                  196             0
+dirtyBENCH                      192             0
+hair                              0             0
+sink                            546             0
+Tween 10                        823             0
+plate                           627             0
+flyingFLY                         0             0
+b                               324             0
+onion                           330             0
+carrot                          353             0
+steak                           425             0
+Tween 6                           0           441
+Tween 21                          0           496
+Tween 13                          0           368
+Tween 22                          0           510
+Tween 12                          0           734
+Tween 20                          0           445
+Tween 14                          0           424
+Tween 14 copy                     0           602
+Tween 145                         0           605
+Tween 15                          0           398
+fade                              0             0
+mov2                            147             0
+mov7                              0             0
+mov3                              0             0
+mov8                              0             0
+mov10                           103             0
+mov4                              0             0
+mov1                              0             0
+mov6                            140             0
+mov5                           1656             0
+mov9                            104             0
+fliesBTN                         75            54
+board                           130             0
+bin                             846             0
+girl2                             0             0
+girl4                             0             0
+girl3                             0             0
+girl                              0             0
+binBTN                          121             0
+hedder                            0            70
+blackrec                          0             0
+AM rolling button                41             0
+logo_initials                   486            74
+am moveee                       828             0
+access                          697             0
+media                           396            50
+amroll                           51             0
+access media                   2758             0
+circle001                         0             0
+closePopup                        0             0
+closeBtnAppearance              200            57
+mainmenu                          0             0
+invis                            79             0
+circle2                          79             0
+arrow                           157             0
+circle button                     0             0
+circle line                      65             0
+s1                                0             0
+s2                                0           146
+text                             89             0
+kitchen                        1676             0
+arm2                             74             0
+girlBTN                         261             0
+head2                           317             0
+legs                            158             0
+body                            179             0
+arm                             209             0
+arm3                            468             0
+arm3 copy                       447             0
+girl2BTN                        310             0
+girl3BTN copy                   386            45
+head3                           465             0
+boardBTN                        118             0
+cake                            510             0
+wing                              0             0
+Tween 5                          69             0
+fly                              77             0
+fly2                              0             0
+washingHANDS                   1062             0
+washingDISHES                  1770             0
+Tween 2                          84             0
+Tween 1                         266             0
+handWASHING                     296             0
+head4                           451             0
+head                            565             0
+head copy                       774             0
+eyes                            459             0
+girl                              0             0
+rhand                           115             0
+BUBBLES3                        646             0
+shinnyTHING                       0             0
+1                                62             0
+chicken                         581             0
+heat                            468             0
+bacteria2                         0             0
+bacteria                          0             0
+Tween 3                         385             0
+bananaPEEL                      470             0
+apple                           204             0
+eggs                            506             0
+sneezing                        137             0
+tissue                          233             0
+arm copy                        207             0
+Symbol 20                         0             0
+subtitle                          0            63
+
+
+Sound name                 Bytes        Format    
+-----------------------    ---------    ----------
+Verdana                      3019         !'(),-.;?ACFHIKLMNRTUWabcdefghiklmnopqrstuvwxyz
+Verdana Bold                 2753         -.12CDFHKLMQSTWabcdefghiklmnoprstuvwyz
+Arial Black                   505        AMadei

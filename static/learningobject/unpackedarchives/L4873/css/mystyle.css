@@ -1,0 +1,221 @@
+/* ex Tai Hao Le! content css for TLF use */
+
+
+/* set the body to 100% to enable the gecko embed to display correctly */
+html, body
+  {
+    height: 100%;
+  }
+
+
+/* default body styles */
+body {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333333; /* dark grey */
+	margin: 0px;
+	padding: 0px;
+	background-color: #dddddd; /* light grey */
+	text-align: center; /* required by IE to centre mainframe div */	
+	}
+
+body.resource { /* used by sub pages */
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333333; 
+	background-color:#ffffff;
+	height: 95%;
+}
+
+/* main page divs */
+div.mainframe {
+	width: 760px;
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	text-align: left; /* reverts back to default left align after IE fix above */
+	}
+	
+div.mainbody {
+	background-color:#ffffff;
+	background-image: url(../graphics/background.jpg);
+	background-repeat: repeat-y; 
+	background-position: bottom right;
+	border: 1px solid;
+	}
+
+div.header {
+	background-color: #000000;
+	padding: 10px 10px;
+	}
+
+div.title {
+	background-color: #28478F;
+	color: #ffffff;
+	padding: 5px 0px 5px 10px;
+	}
+	
+div.leftcolumn {
+	padding: 20px 0px 10px 0px;
+	width: 379px; /* 1px narrow to allow for the mainbody border */
+	margin: 0px;
+	float: left;
+	background-color: #ffffff;
+	text-align: center;
+	}
+
+div.rightcolumn {
+	padding: 10px 0px 10px 0px;
+	width: 379px; /* 1px narrow to allow for the mainbody border */ 
+	margin: 0px;
+	background-color: #E3E4FF;
+	background-image: url(../graphics/background.jpg);
+	background-repeat: repeat-y; 
+	background-position: bottom right;	
+	float: right;
+	}
+	
+div.columnbottom {
+	clear: both;
+	}
+
+div.columnfooter {
+	height: 10px;
+	background-color: #28478F;
+	}
+
+div.information {
+	padding: 10px;
+	}
+
+div.destlogo {
+	padding: 0px;
+	margin: 0px;
+	}
+
+div.acknowledgements {
+	text-align: left;
+	padding: 0px 10px 0px 10px;
+	margin-top: 20px;
+}	
+
+div.object {
+	text-align: center;
+	border: 0px;
+	margin-bottom:10px;
+}
+
+div.menu {
+	text-align: center;
+	}
+
+div.footer {
+	margin-top: 10px;
+	}
+
+/* thumbnails image menu */
+.menu ul {
+	padding: 0px;
+	margin-bottom: -6px; /* prevents white space appearing at bottom */
+	list-style: none;
+}
+
+.menu li {
+	margin-bottom: -6px; /* prevents white space appearing betwen items */
+	}
+
+/* specific classes not associated with layout */
+
+h1, h2 {
+	padding: 0px;
+	margin: 0px;
+	}
+
+h1 {
+	color: #ffffff;
+	font-size: 1.4em;
+	}
+
+h1 a:link,
+h1 a:visited,
+h1 a {
+	color: #ffffff;
+	text-decoration: underline;
+	}
+
+h2 {
+	border-bottom: solid 1px silver;
+	font-size: 1.2em;
+}
+
+.footer-bold {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* images within links have no border nor padding */
+a img {
+	border: none;
+	padding: 0px;
+	}
+	
+          html, body {
+    height: 100%;
+    color: black;
+    background: #ffffff;
+	padding-bottom: 17px;
+	margin-top: 1px;
+  }
+#divcenter {
+    height: 95%;
+    text-align: center;
+  }
+  
+#conditions {
+	font-family: Arial Unicode MS, Helvetica, Lucida Sans Unicode, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	display: block;
+}
+
+#copyright {
+	font-family: Arial Unicode MS, Helvetica, Lucida Sans Unicode, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+}
+
+.logo {
+    width: 20%; float: left;
+  }
+  
+#logo {
+    width: 108px; height: 49px; float: left;
+  }
+  
+.partnerlogo {
+    width: 20%; float: right;
+  }
+  
+.copyright-conditions {
+    float: left; width: 59.5%;height: 48px; vertical-align: text-bottom;
+  }
+
+#conditions a,#conditions a:link {
+    color: #0000ff;
+  }
+
+#conditions a:visited {
+    color:#990099;
+  }
+
+#conditions a:active {
+    color:#aaffaa;
+  }
+
+#conditions a:hover, #conditions a:focus {
+    color:#ff0000;
+    outline:#000000 solid 1px;
+  }

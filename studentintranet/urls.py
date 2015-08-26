@@ -7,10 +7,14 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     # end examples
     url(r'^wiki/', include('wiki.urls')),
+    url(r'^',include('mediamanager.urls')),
     url(r'^mediamanager/',include('mediamanager.urls')),
     url(r'^filemanage/', include('filemanage.urls')),
     #for admin
     url(r'^admin/', include(admin.site.urls)),
+    #for users
+    url(r'^users/', include('users.urls')),
+
 
     #for third party apps
     url(r'^froala_editor/', include('froala_editor.urls')),

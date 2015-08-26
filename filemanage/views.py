@@ -7,16 +7,20 @@ from filemanage.models import AttachedFiles
 from mediamanager.models import FileResource
 import os.path
 import mimetypes
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 
 def index(request):
 	context = RequestContext(request)
 	return render_to_response('filemanage/index.html', context)
 
+
 def QuerySingleFile(request,pk):
 	queriedfile = AttachedFiles.objects.get(pk=pk)
 	filepath = str(queriedfile.attachedfile)
-	return JsonResponse({'path':filepath,'filename': queriedfile.getfilename(),'icon':queriedfile.icon,'filesize': queriedfile.getfilesize()})
+	id = queriedfile.pk
+	return JsonResponse({'path':filepath,'id':id,'filename': queriedfile.getfilename(),'icon':queriedfile.icon,'filesize': queriedfile.getfilesize()})
 
 def ReturnAttachedFiles(request,pk):
 	queriedfile = FileResource.objects.get(pk=pk)
@@ -24,10 +28,11 @@ def ReturnAttachedFiles(request,pk):
 		print each
 	return JsonResponse({'files':str(queriedfile.files.all())})
 
+@login_required
 def DeleteFile(request,pk):
 	AttachedFiles.objects.get(pk=pk).delete()
 	return JsonResponse({'success': True})
-
+@login_required
 def FileUpload(request):
 	if request.method == 'OPTIONS':
 		response = HttpResponse()

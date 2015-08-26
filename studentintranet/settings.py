@@ -53,16 +53,19 @@ INSTALLED_APPS = (
     'gunicorn',
 
 
-    #local apps created or downloaded with git clone.
+    #local apps created 
     'wiki',
     'mediamanager',
     'filemanage',
+    'users',
+    #local apps downloaded with git clone.
+
     'froala_editor',
     'taggit_autosuggest',
     'updown',
     'taggit',
     'taggit_templatetags',
-        'taggit_templatetags2'
+    'taggit_templatetags2'
 
 )
 
